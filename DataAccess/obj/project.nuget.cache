@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1btNuh5TB5M=",
+  "dgSpecHash": "wvAVFN5gGq0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Blog\\Blog.csproj",
+  "projectFilePath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Furkan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Furkan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

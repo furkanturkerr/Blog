@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Blog\\Blog.csproj": {}
+    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Data Access Layer\\Data Access Layer.csproj": {}
   },
   "projects": {
     "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Blog\\Blog.csproj": {
@@ -28,9 +28,6 @@
             "projectReferences": {
               "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj": {
                 "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj"
-              },
-              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj"
               },
               "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj"
@@ -152,14 +149,14 @@
         }
       }
     },
-    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Data Access Layer\\Data Access Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj",
-        "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Data Access Layer\\Data Access Layer.csproj",
+        "projectName": "Data Access Layer",
+        "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Data Access Layer\\Data Access Layer.csproj",
         "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Data Access Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -174,6 +171,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Blog\\Blog.csproj": {
+                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Blog\\Blog.csproj"
+              },
               "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj"
               }
