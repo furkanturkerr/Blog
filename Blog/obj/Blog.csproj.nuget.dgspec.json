@@ -115,7 +115,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -251,11 +258,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
