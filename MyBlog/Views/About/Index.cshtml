@@ -1,0 +1,55 @@
+@model Entities.Concrate.About
+@{
+    ViewData["Title"] = "Hakkımda";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container my-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <h1 class="mb-3">Hakkımda</h1>
+
+            <form asp-action="Index" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="AboutId" />
+                <label class="form-label">İçerik</label>
+
+                <!-- EDITÖR -->
+                <div id="toolbar" class="mb-2">
+                    <button class="ql-bold"></button>
+                    <button class="ql-italic"></button>
+                    <button class="ql-underline"></button>
+                    <button class="ql-list" value="ordered"></button>
+                    <button class="ql-list" value="bullet"></button>
+                    <button class="ql-link"></button>
+                </div>
+                <div id="editor" style="height:360px;background:#fff;border:1px solid #e5e7eb;border-radius:8px;"></div>
+                <input type="hidden" id="AboutContent" name="AboutContent" />
+
+                <div class="text-end mt-3">
+                    <button class="btn btn-primary">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Quill CDN -->
+<link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.min.js"></script>
+<script>
+  const quill = new Quill('#editor', {
+    theme: 'snow',
+    modules: { toolbar: '#toolbar' }
+  });
+
+  (function preload(){
+    const html = `@Html.Raw(Model?.AboutContent ?? "")`;
+    const delta = quill.clipboard.convert(html);
+    quill.setContents(delta);
+  })();
+
+  document.querySelector('form').addEventListener('submit', function(){
+    document.getElementById('AboutContent').value = quill.root.innerHTML;
+  });
+</script>
