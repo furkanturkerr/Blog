@@ -1,0 +1,28 @@
+@model System.Collections.Generic.List<Entities.Concrate.Experience>
+
+@{
+    ViewData["Title"] = "Servisler";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4 mb-4" style="margin-left: 12rem">Deneyimlerim</h2>
+<a class="btn btn-outline-success" style="margin-left: 12rem; margin-bottom: 5px;" href="/Experince/Add">Yeni Görsel Ekle</a>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
+            <input type="hidden" name="ExperienceId" value="@item.ExperienceId" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Başlık</label>
+                <input type="text" name="ExperiencImage" value="@item.ExperiencImage" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+            <a asp-controller="Experince" asp-action="Delete" asp-route-id="@item.ExperienceId" 
+               class="btn btn-danger">Sil</a>
+
+        </form>
+    }
+</div>

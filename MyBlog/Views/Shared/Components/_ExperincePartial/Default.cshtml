@@ -1,0 +1,15 @@
+@model System.Collections.Generic.List<Entities.Concrate.Experience>
+
+
+<section class="clients">
+    <!--<h3 class="h3 clients-title">Clients</h3>-->
+
+    <ul class="clients-list has-scrollbar">
+        @foreach (var item in Model)
+        {
+            <li class="clients-item">
+                <a href="#"><img src="@item.ExperiencImage" alt="logo"></a>
+            </li>
+        }
+    </ul>
+</section>
