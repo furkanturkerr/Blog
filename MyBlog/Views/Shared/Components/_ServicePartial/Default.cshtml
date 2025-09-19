@@ -1,0 +1,23 @@
+@model System.Collections.Generic.List<Entities.Concrate.Service>
+
+<section class="service">
+                    <h3 class="h3 service-title">Odaklandığım Alanlar</h3>
+                   
+                   
+                    <ul class="service-list">
+                        @foreach (var item in Model)
+                        {
+                            <li class="service-item">
+                                <div class="service-icon-box">
+                                    <img src="@item.ServiceIcon" alt="icon" width="40">
+                                </div>
+
+                                <div class="service-content-box">
+                                    <h4 class="h4 service-item-title">@item.ServiceContent</h4>
+                                    <p class="service-item-text">@item.ServiceText</p>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                    
+                </section>
