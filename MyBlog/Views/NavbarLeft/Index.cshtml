@@ -1,0 +1,65 @@
+@model System.Collections.Generic.List<Entities.Concrate.NavbarLeft>
+
+@{
+    ViewData["Title"] = "Sol Menü";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4 mb-4" style="margin-left: 12rem">Sol Menü</h2>
+
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
+            <input type="hidden" name="NavbarLeftId" value="@item.NavbarLeftId" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Görsel</label>
+                <input type="text" name="NavbarLeftImage" value="@item.NavbarLeftImage" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">İsim Soyisim</label>
+                <input type="text" name="NavbarLefName" value="@item.NavbarLefName" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Ünvan</label>
+                <input type="text" name="NavbarLeftText" value="@item.NavbarLeftText" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">E-mail</label>
+                <input type="email" name="NavbarLeftEmail" value="@item.NavbarLeftEmail" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Telefon Numarası</label>
+                <input type="tel" name="NavbarLeftPhone" value="@item.NavbarLeftPhone" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Adres</label>
+                <input type="text" name="NavbarLeftAddress" value="@item.NavbarLeftAddress" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Instagram Link</label>
+                <input type="text" name="NavbarLeftLinkInstagram" value="@item.NavbarLeftLinkInstagram" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Linkedin Link</label>
+                <input type="text" name="NavbarLeftLinkLinkedin" value="@item.NavbarLeftLinkLinkedin" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">GitHub</label>
+                <input type="text" name="NavbarLeftLinkGithub" value="@item.NavbarLeftLinkGithub" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </form>
+    }
+</div>
