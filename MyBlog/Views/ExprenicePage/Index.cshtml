@@ -1,0 +1,42 @@
+@model System.Collections.Generic.List<Entities.Concrate.ExperiencePage>
+
+@{
+    ViewData["Title"] = "Özgeçmiş";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4 mb-4" style="margin-left: 12rem">Özgeçmiş</h2>
+<a class="btn btn-outline-success" style="margin-left: 12rem; margin-bottom: 5px;" href="/ExprenicePage/Add">Özgeçmiş</a>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
+            <input type="hidden" name="SkillsId" value="@item.ExperiencePageId" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Başlık</label>
+                <input type="text" name="ExperiencePageContent" value="@item.ExperiencePageContent" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Alt Başlıklar</label>
+                <input type="text" name="ExperiencePageContentlow" value="@item.ExperiencePageContentlow" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Tarih</label>
+                <input type="text" name="ExperiencePageTime" value="@item.ExperiencePageTime" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">Açıklama</label>
+                <input type="text" name="ExperiencePageText" value="@item.ExperiencePageText" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+            <a asp-controller="Skills" asp-action="Delete" asp-route-id="@item.ExperiencePageId" 
+               class="btn btn-danger">Sil</a>
+        </form>
+    }
+</div>

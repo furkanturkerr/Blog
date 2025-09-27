@@ -1,0 +1,25 @@
+@model Entities.Concrate.Skills
+
+@{
+    ViewData["Title"] = "Yeni Görsel Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4 mb-4" style="margin-left: 12rem">Yeni Görsel Ekle</h2>
+
+<div class="container">
+    <form method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Yetenek İsmi</label>
+            <input type="text" asp-for="SkillsContent" class="form-control" />
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label fw-bold">Yüzde</label>
+            <input type="text" asp-for="SkillsNumber" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Kaydet</button>
+    </form>
+</div>

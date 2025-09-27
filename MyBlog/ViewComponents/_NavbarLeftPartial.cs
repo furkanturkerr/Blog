@@ -1,8 +1,7 @@
 using Business.Abstract;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace MyBlog.VievComponents;
+namespace MyBlog.ViewComponents;
 
 public class _NavbarLeftPartial:ViewComponent
 {

@@ -1,0 +1,32 @@
+@model System.Collections.Generic.List<Entities.Concrate.Skills>
+
+@{
+    ViewData["Title"] = "Yeteneklerim";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4 mb-4" style="margin-left: 12rem">Yeteneklerim</h2>
+<a class="btn btn-outline-success" style="margin-left: 12rem; margin-bottom: 5px;" href="/Skills/Add">Yeni Yetenek Ekle</a>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
+            <input type="hidden" name="SkillsId" value="@item.SkillsId" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Görsel</label>
+                <input type="text" name="SkillsContent" value="@item.SkillsContent" class="form-control" />
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold">İsim Soyisim</label>
+                <input type="text" name="SkillsNumber" value="@item.SkillsNumber" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+            <a asp-controller="Skills" asp-action="Delete" asp-route-id="@item.SkillsId" 
+               class="btn btn-danger">Sil</a>
+        </form>
+    }
+</div>
