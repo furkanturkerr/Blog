@@ -12,12 +12,7 @@
     @foreach (var item in Model)
     {
         <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
-            <input type="hidden" name="SkillsId" value="@item.ExperiencePageId" />
-
-            <div class="mb-3">
-                <label class="form-label fw-bold">Başlık</label>
-                <input type="text" name="ExperiencePageContent" value="@item.ExperiencePageContent" class="form-control" />
-            </div>
+            <input type="hidden" name="ExperiencePageId" value="@item.ExperiencePageId" />
             
             <div class="mb-3">
                 <label class="form-label fw-bold">Alt Başlıklar</label>

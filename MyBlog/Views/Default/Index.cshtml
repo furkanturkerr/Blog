@@ -137,7 +137,7 @@
                     <div class="title-wrapper">
                         <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
-                        <h3 class="h3">Education</h3>
+                        <h3 class="h3">Eğitim</h3>
                     </div>
                     
                     <ol class="timeline-list">
@@ -149,27 +149,11 @@
                     <div class="title-wrapper">
                         <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
-                        <h3 class="h3">Experience</h3>
+                        <h3 class="h3">Deneyim</h3>
                     </div>
 
                     <ol class="timeline-list">
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Creative director</h4>
-                            <span>2015 - Present</span>
-                            <p class="timeline-text">I can develop and oversee creative concepts for projects and campaigns managing a team of designers, writers, and other creative professionals.</p>
-                        </li>
-
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Art director</h4>
-                            <span>2013 - 2015</span>
-                            <p class="timeline-text">I create and develop visual concepts that align with the project's goals and objectives, supervising the design process and managing timelines and budgets for design projects.</p>
-                        </li>
-
-                        <li class="timeline-item">
-                            <h4 class="h4 timeline-item-title">Web designer</h4>
-                            <span>2010 - 2013</span>
-                            <p class="timeline-text">I create logos, color schemes and typography for a brand's identity. Also I develop graphics for websites, social media and digital ads with applications that enhance user experience.</p>
-                        </li>
+                        @await Component.InvokeAsync("_EducationPartial");
                     </ol>
                 </section>
                 @await Component.InvokeAsync("_SkillsPartial");
