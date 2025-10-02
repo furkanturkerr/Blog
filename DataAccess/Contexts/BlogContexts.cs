@@ -20,4 +20,5 @@ public class BlogContexts :  DbContext
     public DbSet<Skills> Skills { get; set; }
     public DbSet<Service> Services { get; set; }
     public DbSet<Education> Educations { get; set; }
+    public DbSet<Portfolio> Portfolios { get; set; }
 }

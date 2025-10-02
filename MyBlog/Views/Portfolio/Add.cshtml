@@ -1,0 +1,43 @@
+@model Entities.Concrate.Portfolio
+
+@{
+    ViewData["Title"] = "Projelerim";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4 mb-4" style="margin-left: 12rem">Proje Ekle</h2>
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data" class="mb-4 p-3 border rounded bg-white shadow-sm">
+        
+        <div class="mb-3">
+            <label class="form-label fw-bold">Kategori</label>
+            <input type="text" asp-for="PortfolioCategory" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Proje İsmi</label>
+            <input type="text" asp-for="PortfolioName" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Proje Linki</label>
+            <input type="text" asp-for="PortfolioLink" class="form-control" />
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label fw-bold">Proje Resim Linki</label>
+            <input type="text" asp-for="PortfolioImage" class="form-control" />
+        </div>
+        
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Proje Resmi (Opsiyonel)</label>
+            <input type="file" name="PortfolioImageFile" class="form-control" />
+            <small class="text-muted">Resim seçmezseniz boş bırakabilirsiniz.</small>
+        </div>
+
+        <button type="submit" class="btn btn-success">Kaydet</button>
+        <a asp-action="Index" class="btn btn-secondary">İptal</a>
+    </form>
+</div>
