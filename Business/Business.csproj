@@ -11,4 +11,14 @@
       <ProjectReference Include="..\Entities\Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0\Business.csproj.AssemblyReference.cache" />
+      <Content Include="obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache" />
+      <Content Include="obj\Debug\net8.0\Business.csproj.Up2Date" />
+      <Content Include="obj\Debug\net8.0\Business.dll" />
+      <Content Include="obj\Debug\net8.0\Business.pdb" />
+      <Content Include="obj\Debug\net8.0\Business.sourcelink.json" />
+      <Content Include="obj\rider.project.model.nuget.info" />
+    </ItemGroup>
+
 </Project>

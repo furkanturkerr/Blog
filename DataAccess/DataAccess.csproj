@@ -20,4 +20,21 @@
       <ProjectReference Include="..\Entities\Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Data Access Layer.csproj.EntityFrameworkCore.targets" />
+      <Content Include="obj\DataAccess.csproj.EntityFrameworkCore.targets" />
+      <Content Include="obj\DataAccess.csproj.nuget.dgspec.json" />
+      <Content Include="obj\DataAccess.csproj.nuget.g.props" />
+      <Content Include="obj\DataAccess.csproj.nuget.g.targets" />
+      <Content Include="obj\Debug\net8.0\Data Access Layer.csproj.AssemblyReference.cache" />
+      <Content Include="obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache" />
+      <Content Include="obj\Debug\net8.0\DataAccess.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net8.0\DataAccess.csproj.Up2Date" />
+      <Content Include="obj\Debug\net8.0\DataAccess.dll" />
+      <Content Include="obj\Debug\net8.0\DataAccess.genruntimeconfig.cache" />
+      <Content Include="obj\Debug\net8.0\DataAccess.pdb" />
+      <Content Include="obj\Debug\net8.0\DataAccess.sourcelink.json" />
+      <Content Include="obj\rider.project.model.nuget.info" />
+    </ItemGroup>
+
 </Project>

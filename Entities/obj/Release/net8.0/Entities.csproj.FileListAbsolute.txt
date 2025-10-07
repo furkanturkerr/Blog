@@ -1,0 +1,13 @@
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\bin\Release\net8.0\Entities.deps.json
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\bin\Release\net8.0\Entities.dll
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\bin\Release\net8.0\Entities.pdb
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.AssemblyInfo.cs
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.sourcelink.json
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.dll
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\refint\Entities.dll
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\Entities.pdb
+C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Release\net8.0\ref\Entities.dll

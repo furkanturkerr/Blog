@@ -6,4 +6,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache" />
+      <Content Include="obj\Debug\net8.0\Entities.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net8.0\Entities.dll" />
+      <Content Include="obj\Debug\net8.0\Entities.pdb" />
+      <Content Include="obj\Debug\net8.0\Entities.sourcelink.json" />
+      <Content Include="obj\rider.project.model.nuget.info" />
+    </ItemGroup>
+
 </Project>

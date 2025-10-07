@@ -1,0 +1,39 @@
+@model Entities.Concrate.ImagesPage
+@{
+    ViewData["Title"] = "Görsel Yükle";
+}
+
+<h2>Görsel Yükle</h2>
+
+<form asp-action="AddImage" method="post" enctype="multipart/form-data" class="mt-3">
+    <div class="mb-3">
+        <label class="form-label">Görsel Dosyası</label>
+        <input type="file" name="file" accept="image/*" class="form-control" required />
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" placeholder="(Boş bırakırsan dosya adından gelir)" />
+        </div>
+        <div class="col-md-6 mb-3">
+            <label class="form-label">ALT</label>
+            <input asp-for="AltText" class="form-control" placeholder="(Boş bırakırsan Title kopyalanır)" />
+        </div>
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Slug</label>
+            <input asp-for="SeoSlug" class="form-control" placeholder="seo-slug (boşsa otomatik üretilir)" />
+        </div>
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Keywords</label>
+            <input asp-for="Keywords" class="form-control" placeholder="virgüllerle ayırın" />
+        </div>
+        <div class="col-12 mb-3">
+            <label class="form-label">Description</label>
+            <input asp-for="Description" class="form-control" />
+        </div>
+    </div>
+
+    <button class="btn btn-primary">Kaydet</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Geri</a>
+</form>
