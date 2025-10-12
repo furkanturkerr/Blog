@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0dwDD2RBgXoQcrqE3bGrGjcb5siF5aOGJLu+PMyQsLo=",
+  "Hash": "56bnKWIke7OV1i76M+BEjdOfqWcGzmrkRyoO09kf10I=",
   "Source": "MyBlog",
   "BasePath": "_content/MyBlog",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\experiences\\55de4814-6545-470f-8b6f-8a3c673ceb96.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\images\\experiences\\8be44fc9-f608-44a8-845b-6be376d8fa43.png",
+      "SourceId": "MyBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\",
+      "BasePath": "_content/MyBlog",
+      "RelativePath": "images/experiences/8be44fc9-f608-44a8-845b-6be376d8fa43.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\experiences\\8be44fc9-f608-44a8-845b-6be376d8fa43.png"
     },
     {
       "Identity": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\images\\navbarleft\\3b94bcc1-ce88-4893-9abf-cc84895fe2e3.png",
@@ -1271,6 +1290,25 @@
       "OriginalItemSpec": "wwwroot\\portfolio\\10ca62f2-4101-4a67-9f93-03735e7aa0ef_Ekran görüntüsü 2025-09-04 134707.png"
     },
     {
+      "Identity": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\portfolio\\13f2b914-8b24-48d2-9632-861fa0eb4bca_Ekran görüntüsü 2025-10-09 125209.png",
+      "SourceId": "MyBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\",
+      "BasePath": "_content/MyBlog",
+      "RelativePath": "portfolio/13f2b914-8b24-48d2-9632-861fa0eb4bca_Ekran görüntüsü 2025-10-09 125209.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\portfolio\\13f2b914-8b24-48d2-9632-861fa0eb4bca_Ekran görüntüsü 2025-10-09 125209.png"
+    },
+    {
       "Identity": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\portfolio\\18502dd2-bd4d-4bdc-a07f-3e74fdcfa194_Ekran görüntüsü 2025-09-04 124155.png",
       "SourceId": "MyBlog",
       "SourceType": "Discovered",
@@ -1345,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\portfolio\\81dbe478-0980-446c-80a3-078a67ba5609_Ekran görüntüsü 2025-09-04 124155.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\portfolio\\8ce7dd70-5de6-4695-9570-ad8b806d9bcc_Ekran görüntüsü 2025-10-09 113933.png",
+      "SourceId": "MyBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\",
+      "BasePath": "_content/MyBlog",
+      "RelativePath": "portfolio/8ce7dd70-5de6-4695-9570-ad8b806d9bcc_Ekran görüntüsü 2025-10-09 113933.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\portfolio\\8ce7dd70-5de6-4695-9570-ad8b806d9bcc_Ekran görüntüsü 2025-10-09 113933.png"
     },
     {
       "Identity": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\portfolio\\95ae34f5-e1f9-4199-b1eb-a7f8b15d0c5a_Ekran görüntüsü 2025-09-04 135818.png",

@@ -22,41 +22,49 @@
             
             <div class="mb-3">
                 <label class="form-label fw-bold">İsim Soyisim</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLefName")</span>
                 <input type="text" name="NavbarLefName" value="@item.NavbarLefName" class="form-control" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label fw-bold">Ünvan</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLeftText")</span>
                 <input type="text" name="NavbarLeftText" value="@item.NavbarLeftText" class="form-control" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label fw-bold">E-mail</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLeftEmail")</span>
                 <input type="email" name="NavbarLeftEmail" value="@item.NavbarLeftEmail" class="form-control" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label fw-bold">Telefon Numarası</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLeftPhone")</span>
                 <input type="tel" name="NavbarLeftPhone" value="@item.NavbarLeftPhone" class="form-control" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label fw-bold">Adres</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLeftAddress")</span>
                 <input type="text" name="NavbarLeftAddress" value="@item.NavbarLeftAddress" class="form-control" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label fw-bold">Instagram Link</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLeftAddress")</span>
                 <input type="text" name="NavbarLeftLinkInstagram" value="@item.NavbarLeftLinkInstagram" class="form-control" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label fw-bold">Linkedin Link</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLeftLinkLinkedin")</span>
                 <input type="text" name="NavbarLeftLinkLinkedin" value="@item.NavbarLeftLinkLinkedin" class="form-control" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label fw-bold">GitHub</label>
+                <span class="text-danger">@Html.ValidationMessage("NavbarLeftLinkGithub")</span>
                 <input type="text" name="NavbarLeftLinkGithub" value="@item.NavbarLeftLinkGithub" class="form-control" />
             </div>
 

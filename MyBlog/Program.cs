@@ -1,16 +1,21 @@
+using System.Globalization;
 using Business.Abstract;
 using Business.Concrate;
 using Data_Access_Layer.Abstract;
 using Data_Access_Layer.Concrate.EntityFramework;
 using Data_Access_Layer.Contexts;
 using Entities.Concrate;
+using FluentValidation;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<BlogContexts>();
+
 
 // ÖNEMLİ: Cookie ayarları
 builder.Services.ConfigureApplicationCookie(options =>
@@ -42,6 +47,13 @@ builder.Services.AddScoped<IPortfolioDal, EfPortfolioDal>();
 
 
 var app = builder.Build();
+
+var cultures = new[] { new CultureInfo("tr-TR") };
+app.UseRequestLocalization(new RequestLocalizationOptions{
+    DefaultRequestCulture = new RequestCulture("tr-TR"),
+    SupportedCultures = cultures,
+    SupportedUICultures = cultures
+});
 
 if (!app.Environment.IsDevelopment())
 {

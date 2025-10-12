@@ -29,8 +29,12 @@ public class SkillsController:Controller
     [HttpPost]
     public IActionResult Add(Skills skills)
     {
-        _skillsService.Insert(skills);
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            _skillsService.Insert(skills);
+            return RedirectToAction("Index");
+        }
+        return View();
     }
     
     [HttpPost]

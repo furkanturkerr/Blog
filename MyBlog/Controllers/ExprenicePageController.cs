@@ -27,8 +27,12 @@ public class ExprenicePageController : Controller
     [HttpPost]
     public IActionResult Add(ExperiencePage experiencePage)
     {
-        _experincepageService.Insert(experiencePage);
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            _experincepageService.Insert(experiencePage);
+            return RedirectToAction("Index");
+        }
+        return View();   
     }
     
     [HttpPost]

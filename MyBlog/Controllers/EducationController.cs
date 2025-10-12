@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
@@ -29,8 +31,20 @@ public class EducationController : Controller
     [HttpPost]
     public IActionResult Add(Education education)
     {
-        _educationService.Insert(education);
-        return RedirectToAction("Index");
+        EducationValidation validator = new EducationValidation();
+        ValidationResult result = validator.Validate(education);
+        if (result.IsValid)
+        {
+            _educationService.Insert(education);
+            return RedirectToAction("Index");
+        }else
+        {
+            foreach (var item in result.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View();
     }
 
     [HttpPost]

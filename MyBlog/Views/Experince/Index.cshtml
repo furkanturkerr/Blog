@@ -17,6 +17,7 @@
             <div class="mb-3">
                 <label class="form-label fw-bold">Başlık</label>
                 <input type="file" name="ExperiencImage" value="@item.ExperiencImage" class="form-control" />
+                <span class="text-danger">@Html.ValidationMessage("ExperiencImage")</span>
                 <img src="~/images/experiences/@item.ExperiencImage" alt="" width="100" height="100" />
             </div>
 

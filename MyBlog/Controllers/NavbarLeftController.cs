@@ -23,7 +23,7 @@ public class NavbarLeftController:Controller
     [HttpPost]
     public IActionResult Index(NavbarLeftViewModel navbarLeft)
     {
-        NavbarLeft w = _navbarLeftService.GetById(navbarLeft.NavbarLeftId);
+        NavbarLeft w = new NavbarLeft();
         if (navbarLeft.NavbarLeftImage != null)
         {
             var extention = Path.GetExtension(navbarLeft.NavbarLeftImage.FileName);
@@ -40,10 +40,7 @@ public class NavbarLeftController:Controller
         w.NavbarLeftLinkGithub = navbarLeft.NavbarLeftLinkGithub;
         w.NavbarLeftLinkLinkedin = navbarLeft.NavbarLeftLinkLinkedin;
         w.NavbarLeftLinkInstagram = navbarLeft.NavbarLeftLinkInstagram;
-        w.NavbarLeftText = navbarLeft.NavbarLeftText;
         var values = _navbarLeftService.GetAll();
-        
-        _navbarLeftService.Update(w);
-        return RedirectToAction("Index"); 
+        return View(values);
     }
 }

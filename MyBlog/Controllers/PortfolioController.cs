@@ -31,34 +31,38 @@ namespace MyBlog.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(Portfolio portfolio, IFormFile? PortfolioImageFile)
         {
-            if (PortfolioImageFile != null && PortfolioImageFile.Length > 0)
+            if (ModelState.IsValid)
             {
-                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "portfolio");
-                if (!Directory.Exists(uploadsFolder))
+                if (PortfolioImageFile != null && PortfolioImageFile.Length > 0)
                 {
-                    Directory.CreateDirectory(uploadsFolder);
+                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "portfolio");
+                    if (!Directory.Exists(uploadsFolder))
+                    {
+                        Directory.CreateDirectory(uploadsFolder);
+                    }
+
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + PortfolioImageFile.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await PortfolioImageFile.CopyToAsync(fileStream);
+                    }
+
+                    portfolio.PortfolioImage = "/portfolio/" + uniqueFileName;
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(portfolio.PortfolioImage))
+                    {
+                        portfolio.PortfolioImage = null; 
+                    }
                 }
 
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + PortfolioImageFile.FileName;
-                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await PortfolioImageFile.CopyToAsync(fileStream);
-                }
-
-                portfolio.PortfolioImage = "/portfolio/" + uniqueFileName;
+                _portfolioService.Insert(portfolio);
+                return RedirectToAction("Index");
             }
-            else
-            {
-                if (string.IsNullOrEmpty(portfolio.PortfolioImage))
-                {
-                    portfolio.PortfolioImage = null; 
-                }
-            }
-
-            _portfolioService.Insert(portfolio);
-            return RedirectToAction("Index");
+           return View();
         }
 
         [HttpPost]
