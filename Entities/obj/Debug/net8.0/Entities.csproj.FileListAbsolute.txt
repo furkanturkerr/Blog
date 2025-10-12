@@ -10,4 +10,3 @@ C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Debug\net8.0\Entities.dll
 C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Debug\net8.0\ref\Entities.dll
-C:\Users\Furkan\Proje ve Dersler\Blog\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache

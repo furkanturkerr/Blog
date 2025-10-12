@@ -8,11 +8,11 @@
 <h2 class="mt-4 mb-4" style="margin-left: 12rem">Yeni Görsel Ekle</h2>
 
 <div class="container">
-    <form method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
+    <form method="post" enctype="multipart/form-data" class="mb-4 p-3 border rounded bg-white shadow-sm">
 
         <div class="mb-3">
-            <label class="form-label fw-bold">Görsel Yolu</label>
-            <input type="text" asp-for="ExperiencImage" class="form-control" />
+            <label class="form-label fw-bold">Görsel</label>
+            <input type="file" name="ExperiencImage" class="form-control" />
         </div>
 
         <button type="submit" class="btn btn-success">Kaydet</button>

@@ -21,9 +21,7 @@ C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\staticwebassets\ms
 C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyBlog.props
 C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyBlog.props
 C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\scopedcss\bundle\MyBlog.styles.css
-C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\scopedcss\projectbundle\MyBlog.bundle.scp.css
 C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\MyBlog.dll
 C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\refint\MyBlog.dll
 C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\obj\Debug\net8.0\MyBlog.pdb

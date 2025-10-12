@@ -11,21 +11,21 @@
     </ItemGroup>
 
     <ItemGroup>
-      <AdditionalFiles Include="Views\ImagePage\Index.cshtml" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Pages\" />
+      <Folder Include="wwwroot\images\experiences\" />
+      <Folder Include="wwwroot\images\navbarleft\" />
     </ItemGroup>
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Views\Register\Add.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Register\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ImagePage\AddImage.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ImagePage\Index.cshtml" />
     </ItemGroup>
 
 </Project>

@@ -11,12 +11,13 @@
 <div class="container">
     @foreach (var item in Model)
     {
-        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
+        <form asp-action="Index" method="post" enctype="multipart/form-data" class="mb-4 p-3 border rounded bg-white shadow-sm">
             <input type="hidden" name="NavbarLeftId" value="@item.NavbarLeftId" />
 
             <div class="mb-3">
                 <label class="form-label fw-bold">Görsel</label>
-                <input type="text" name="NavbarLeftImage" value="@item.NavbarLeftImage" class="form-control" />
+                <input type="file" name="NavbarLeftImage" class="form-control" />
+                <img src="~/images/navbarleft/@item.NavbarLeftImage" alt="" class="img-thumbnail" style="width: 100px; height: 100px; margin-top: 10px" />
             </div>
             
             <div class="mb-3">

@@ -47,15 +47,13 @@ namespace MyBlog.Controllers
                     await PortfolioImageFile.CopyToAsync(fileStream);
                 }
 
-                // Resim yüklendiyse otomatik linki yaz
                 portfolio.PortfolioImage = "/portfolio/" + uniqueFileName;
             }
             else
             {
-                // Resim seçilmediyse, textbox'tan gelen linki bırak
                 if (string.IsNullOrEmpty(portfolio.PortfolioImage))
                 {
-                    portfolio.PortfolioImage = null; // hiç link girilmediyse null olsun
+                    portfolio.PortfolioImage = null; 
                 }
             }
 

@@ -39,8 +39,6 @@ builder.Services.AddScoped<IEducationService, EducationManager>();
 builder.Services.AddScoped<IEducationDal, EfEducationDal>();
 builder.Services.AddScoped<IPortfolioService, PortfolioManager>();
 builder.Services.AddScoped<IPortfolioDal, EfPortfolioDal>();
-builder.Services.AddScoped<IImagePageService, ImagesPageManager>();
-builder.Services.AddScoped<IImagesPageDal, EfImagesPageDal>();
 
 
 var app = builder.Build();

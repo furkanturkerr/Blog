@@ -1,6 +1,7 @@
 using Business.Abstract;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Mvc;
+using MyBlog.Models;
 
 namespace MyBlog.Controllers;
 
@@ -20,14 +21,29 @@ public class NavbarLeftController:Controller
     }
     
     [HttpPost]
-    public IActionResult Index(NavbarLeft navbarLeft)
+    public IActionResult Index(NavbarLeftViewModel navbarLeft)
     {
-        if (ModelState.IsValid)
+        NavbarLeft w = _navbarLeftService.GetById(navbarLeft.NavbarLeftId);
+        if (navbarLeft.NavbarLeftImage != null)
         {
-            _navbarLeftService.Update(navbarLeft);
-            return RedirectToAction("Index"); 
+            var extention = Path.GetExtension(navbarLeft.NavbarLeftImage.FileName);
+            var newimageName = Guid.NewGuid().ToString() + extention;
+            var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/navbarleft", newimageName);
+            var stream = new FileStream(location, FileMode.Create);
+            navbarLeft.NavbarLeftImage.CopyTo(stream);
+            w.NavbarLeftImage = newimageName;
         }
+        w.NavbarLefName = navbarLeft.NavbarLefName;
+        w.NavbarLeftAddress = navbarLeft.NavbarLeftAddress;
+        w.NavbarLeftEmail = navbarLeft.NavbarLeftEmail;
+        w.NavbarLeftPhone = navbarLeft.NavbarLeftPhone;
+        w.NavbarLeftLinkGithub = navbarLeft.NavbarLeftLinkGithub;
+        w.NavbarLeftLinkLinkedin = navbarLeft.NavbarLeftLinkLinkedin;
+        w.NavbarLeftLinkInstagram = navbarLeft.NavbarLeftLinkInstagram;
+        w.NavbarLeftText = navbarLeft.NavbarLeftText;
         var values = _navbarLeftService.GetAll();
-        return View(values);
+        
+        _navbarLeftService.Update(w);
+        return RedirectToAction("Index"); 
     }
 }

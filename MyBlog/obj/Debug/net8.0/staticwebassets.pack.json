@@ -1,16 +1,32 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MyBlog.bundle.scp.css",
-      "PackagePath": "staticwebassets\\MyBlog.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\images\\experiences\\55de4814-6545-470f-8b6f-8a3c673ceb96.png",
+      "PackagePath": "staticwebassets\\images\\experiences\\55de4814-6545-470f-8b6f-8a3c673ceb96.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\images\\navbarleft\\3b94bcc1-ce88-4893-9abf-cc84895fe2e3.png",
+      "PackagePath": "staticwebassets\\images\\navbarleft\\3b94bcc1-ce88-4893-9abf-cc84895fe2e3.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\images\\navbarleft\\54d18927-3855-4fd6-9712-82446539a028.png",
+      "PackagePath": "staticwebassets\\images\\navbarleft\\54d18927-3855-4fd6-9712-82446539a028.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\images\\navbarleft\\5873ddbc-e1ef-407f-9283-d09bebdb70dc.png",
+      "PackagePath": "staticwebassets\\images\\navbarleft\\5873ddbc-e1ef-407f-9283-d09bebdb70dc.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\images\\navbarleft\\a6d1c040-7754-4ddb-9d6f-273eeaac0daa.png",
+      "PackagePath": "staticwebassets\\images\\navbarleft\\a6d1c040-7754-4ddb-9d6f-273eeaac0daa.png"
     },
     {
       "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\js\\site.js",
@@ -295,6 +311,86 @@
     {
       "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\site\\style.css",
       "PackagePath": "staticwebassets\\site\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\401.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\401.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\404.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\500.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\500.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\charts.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\charts.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\css\\styles.css",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\index.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\layout-sidenav-light.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\layout-sidenav-light.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\layout-static.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\layout-static.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\login.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\password.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\password.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\register.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\startbootstrap-sb-admin-gh-pages\\tables.html",
+      "PackagePath": "staticwebassets\\startbootstrap-sb-admin-gh-pages\\tables.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\web.config",
+      "PackagePath": "staticwebassets\\web.config"
     },
     {
       "Id": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\MyBlog\\wwwroot\\web\\401.html",

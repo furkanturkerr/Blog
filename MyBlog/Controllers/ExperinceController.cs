@@ -1,6 +1,7 @@
 using Business.Abstract;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Mvc;
+using MyBlog.Models;
 
 namespace MyBlog.Controllers;
 
@@ -27,20 +28,36 @@ public class ExperinceController:Controller
     }
 
     [HttpPost]
-    public IActionResult Add(Experience experience)
+    public IActionResult Add(ExperinceViewModel experience)
     {
-        _experinceService.Insert(experience);
+        Experience w = new Experience();
+        if (experience.ExperiencImage != null)
+        {
+            var extention = Path.GetExtension(experience.ExperiencImage.FileName);
+            var newimageName = Guid.NewGuid().ToString() + extention;
+            var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/experiences", newimageName);
+            var stream = new FileStream(location, FileMode.Create);
+            experience.ExperiencImage.CopyTo(stream);
+            w.ExperiencImage = newimageName;
+        }
+        _experinceService.Insert(w);
         return RedirectToAction("Index");
     }
     
     [HttpPost]
-    public IActionResult Index(Experience experience)
+    public IActionResult Index(ExperinceViewModel experience)
     {
-        if (ModelState.IsValid)
+        Experience w = _experinceService.GetById(experience.ExperienceId);
+        if (experience.ExperiencImage != null)
         {
-            _experinceService.Update(experience);
-            return RedirectToAction("Index"); 
+            var extention = Path.GetExtension(experience.ExperiencImage.FileName);
+            var newimageName = Guid.NewGuid().ToString() + extention;
+            var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/experiences", newimageName);
+            var stream = new FileStream(location, FileMode.Create);
+            experience.ExperiencImage.CopyTo(stream);
+            w.ExperiencImage = newimageName;
         }
+        _experinceService.Update(w);
         var values = _experinceService.GetAll();
         return View(values);
     }
