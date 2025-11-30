@@ -19,6 +19,7 @@
     <input type="hidden" asp-for="AboutId" />
     <label>Hakkımda</label>
     <textarea name="AboutContent" class="form-control" rows="8">@Model.AboutContent</textarea>
+    @Html.ValidationMessageFor(x=> x.AboutContent)
     <br/>
     <button class="btn btn-outline-warning">Güncelle</button>
 </form>

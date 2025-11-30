@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
@@ -29,7 +31,20 @@ public class AboutController:Controller
     [HttpPost]
     public IActionResult Update(About about)
     {
-        _abautService.Update(about);
-        return RedirectToAction("Index");
+        AboutValidaton aboutValidaton = new AboutValidaton();
+        ValidationResult validationResult = aboutValidaton.Validate(about);
+        if (validationResult.IsValid)
+        {
+            _abautService.Update(about);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View(about);
     }
 }
