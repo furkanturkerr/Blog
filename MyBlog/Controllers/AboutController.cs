@@ -15,18 +15,21 @@ public class AboutController:Controller
     [HttpGet]
     public IActionResult Index()
     {
-        var about = _abautService.GetAll().FirstOrDefault()
-                    ?? new Entities.Concrate.About();
-        return View(about);
+        var values = _abautService.GetAll();
+        return View(values);
     }
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Index(Entities.Concrate.About model)
+    [HttpGet]
+    public IActionResult Update(int id)
     {
-        if (model.AboutId == 0) _abautService.Update(model);
-        else _abautService.Update(model);
-
-        return RedirectToAction(nameof(Index));
+        var values = _abautService.GetById(id);
+        return View(values);
+    }
+    
+    [HttpPost]
+    public IActionResult Update(About about)
+    {
+        _abautService.Update(about);
+        return RedirectToAction("Index");
     }
 }
