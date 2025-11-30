@@ -1,13 +1,13 @@
 /**
-=========================================================================
-=========================================================================
-Template Name: Datta Able - Tailwind Admin Template
-Author: CodedThemes
-Support: https://codedthemes.support-hub.io/
-File: themes.js
-=========================================================================
-=========================================================================
-*/
+ =========================================================================
+ =========================================================================
+ Template Name: Datta Able - Tailwind Admin Template
+ Author: CodedThemes
+ Support: https://codedthemes.support-hub.io/
+ File: themes.js
+ =========================================================================
+ =========================================================================
+ */
 
 'use strict';
 
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ========================================
-  
+
   var if_exist = document.querySelectorAll('.header-color');
   if (if_exist) {
     var preset_color = document.querySelectorAll('.header-color > a');
