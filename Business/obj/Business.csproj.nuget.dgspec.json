@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj": {}
+    "/Users/furkanturker/RiderProjects/Blog/Business/Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj": {
+    "/Users/furkanturker/RiderProjects/Blog/Business/Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj",
+        "projectUniqueName": "/Users/furkanturker/RiderProjects/Blog/Business/Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Business\\obj\\",
+        "projectPath": "/Users/furkanturker/RiderProjects/Blog/Business/Business.csproj",
+        "packagesPath": "/Users/furkanturker/.nuget/packages/",
+        "outputPath": "/Users/furkanturker/RiderProjects/Blog/Business/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/furkanturker/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj"
+              "/Users/furkanturker/RiderProjects/Blog/DataAccess/DataAccess.csproj": {
+                "projectPath": "/Users/furkanturker/RiderProjects/Blog/DataAccess/DataAccess.csproj"
               },
-              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj"
+              "/Users/furkanturker/RiderProjects/Blog/Entities/Entities.csproj": {
+                "projectPath": "/Users/furkanturker/RiderProjects/Blog/Entities/Entities.csproj"
               }
             }
           }
@@ -71,21 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj": {
+    "/Users/furkanturker/RiderProjects/Blog/DataAccess/DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "/Users/furkanturker/RiderProjects/Blog/DataAccess/DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\DataAccess\\obj\\",
+        "projectPath": "/Users/furkanturker/RiderProjects/Blog/DataAccess/DataAccess.csproj",
+        "packagesPath": "/Users/furkanturker/.nuget/packages/",
+        "outputPath": "/Users/furkanturker/RiderProjects/Blog/DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/furkanturker/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj"
+              "/Users/furkanturker/RiderProjects/Blog/Entities/Entities.csproj": {
+                "projectPath": "/Users/furkanturker/RiderProjects/Blog/Entities/Entities.csproj"
               }
             }
           }
@@ -119,6 +119,12 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
             },
@@ -149,21 +155,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj": {
+    "/Users/furkanturker/RiderProjects/Blog/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj",
+        "projectUniqueName": "/Users/furkanturker/RiderProjects/Blog/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan\\Proje ve Dersler\\Blog\\Entities\\obj\\",
+        "projectPath": "/Users/furkanturker/RiderProjects/Blog/Entities/Entities.csproj",
+        "packagesPath": "/Users/furkanturker/.nuget/packages/",
+        "outputPath": "/Users/furkanturker/RiderProjects/Blog/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/furkanturker/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -207,7 +213,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
