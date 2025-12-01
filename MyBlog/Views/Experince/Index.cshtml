@@ -5,26 +5,30 @@
     Layout = "_Layout";
 }
 
-<h2 class="mt-4 mb-4" style="margin-left: 12rem">Deneyimlerim</h2>
-<a class="btn btn-outline-success" style="margin-left: 12rem; margin-bottom: 5px;" href="/Experince/Add">Yeni Görsel Ekle</a>
 
-<div class="container">
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Anasayfa</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Deneyimlerim</li>
+        </ul>
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Görsel Yolu</th>
+        <th>Sil</th>
+    </tr>
     @foreach (var item in Model)
     {
-        <form asp-action="Index" enctype="multipart/form-data" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
-            <input type="hidden" name="ExperienceId" value="@item.ExperienceId" />
-
-            <div class="mb-3">
-                <label class="form-label fw-bold">Başlık</label>
-                <input type="file" name="ExperiencImage" value="@item.ExperiencImage" class="form-control" />
-                <span class="text-danger">@Html.ValidationMessage("ExperiencImage")</span>
-                <img src="~/images/experiences/@item.ExperiencImage" alt="" width="100" height="100" />
-            </div>
-
-            <button type="submit" class="btn btn-primary">Güncelle</button>
-            <a asp-controller="Experince" asp-action="Delete" asp-route-id="@item.ExperienceId" 
-               class="btn btn-danger">Sil</a>
-
-        </form>
+        <tr>
+            <td><img src="@item.ExperiencImage" width="300" alt="Görsel Yok"/></td>
+            <td><a href="~/Experince/Delete/@item.ExperienceId" class="btn btn-outline-dark">Sil</a></td>
+        </tr>
     }
-</div>
+</table>
+
+<a href="~/Experince/Add" class="btn btn-outline-dark">Yeni Görsel Ekle</a>

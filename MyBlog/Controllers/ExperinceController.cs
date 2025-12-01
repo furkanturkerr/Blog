@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using MyBlog.Models;
 
@@ -13,57 +15,37 @@ public class ExperinceController:Controller
         _experinceService = experinceService;
     }
     
-    
     [HttpGet]
     public IActionResult Index()
     {
         var values = _experinceService.GetAll();
         return View(values);
     }
-    
+
     [HttpGet]
     public IActionResult Add()
     {
         return View();
     }
-
-    [HttpPost]
-    public IActionResult Add(ExperinceViewModel experience)
-    {
-        if (ModelState.IsValid)
-        {
-            Experience w = new Experience();
-            if (experience.ExperiencImage != null)
-            {
-                var extention = Path.GetExtension(experience.ExperiencImage.FileName);
-                var newimageName = Guid.NewGuid().ToString() + extention;
-                var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/experiences", newimageName);
-                var stream = new FileStream(location, FileMode.Create);
-                experience.ExperiencImage.CopyTo(stream);
-                w.ExperiencImage = newimageName;
-            }
-            _experinceService.Insert(w);
-            return RedirectToAction("Index");
-        }
-       return View();   
-    }
     
     [HttpPost]
-    public IActionResult Index(ExperinceViewModel experience)
+    public IActionResult Add(Experience experience)
     {
-        Experience w = _experinceService.GetById(experience.ExperienceId);
-        if (experience.ExperiencImage != null)
+        ExperinceValidation experinceValidation = new ExperinceValidation();
+        ValidationResult validationResult = experinceValidation.Validate(experience);
+        if (validationResult.IsValid)
         {
-            var extention = Path.GetExtension(experience.ExperiencImage.FileName);
-            var newimageName = Guid.NewGuid().ToString() + extention;
-            var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/experiences", newimageName);
-            var stream = new FileStream(location, FileMode.Create);
-            experience.ExperiencImage.CopyTo(stream);
-            w.ExperiencImage = newimageName;
+            _experinceService.Insert(experience);
+            return RedirectToAction("Index");
         }
-        _experinceService.Update(w);
-        var values = _experinceService.GetAll();
-        return View(values);
+        else
+        {
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View();
     }
 
     public IActionResult Delete(int id)
