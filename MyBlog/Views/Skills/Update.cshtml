@@ -1,8 +1,8 @@
 @model Entities.Concrate.Skills
 
 @{
-    ViewData["Title"] = "Özgeçmiş";
     Layout = "_Layout";
+    ViewData["Title"] = "Özgeçmiş";
 }
 
 <div class="page-header">
@@ -12,19 +12,20 @@
         </div>
         <ul class="breadcrumb">
             <li class="breadcrumb-item" aria-current="page">Yeteneklerim</li>
-            <li class="breadcrumb-item" aria-current="page">Yetenek Ekleme</li>
+            <li class="breadcrumb-item" aria-current="page">Yetenek Güncelleme</li>
         </ul>
     </div>
 </div>
 
 <form method="post" class="form-control">
+    <input type="hidden" asp-for="SkillsId"/>
     <label>Yetenek Adı</label>
-    <input type="text" asp-for="SkillsContent" class="form-control"/>
+    <input type="text" asp-for="SkillsContent" value="@Model.SkillsContent" class="form-control"/>
     @Html.ValidationMessageFor(x=> x.SkillsContent)
     <br/>
     <label>Yüzde</label>
-    <input type="text" asp-for="SkillsNumber" class="form-control"/>
+    <input type="text" asp-for="SkillsNumber" value="@Model.SkillsNumber" class="form-control"/>
     @Html.ValidationMessageFor(x=> x.SkillsNumber)
     <br/>
-    <button class="btn btn-outline-dark">Ekle</button>
+    <button class="btn btn-outline-dark">Güncelle</button>
 </form>

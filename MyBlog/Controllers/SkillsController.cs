@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
@@ -16,8 +18,8 @@ public class SkillsController:Controller
     [HttpGet]
     public IActionResult Index()
     {
-        var services = _skillsService.GetAll();
-        return View(services);
+        var values = _skillsService.GetAll();
+        return View(values);
     }
     
     [HttpGet]
@@ -25,34 +27,58 @@ public class SkillsController:Controller
     {
         return View();
     }
-
+    
     [HttpPost]
     public IActionResult Add(Skills skills)
     {
-        if (ModelState.IsValid)
+        SkilsValidation skilsValidation = new SkilsValidation();
+        ValidationResult validationResult = skilsValidation.Validate(skills);
+        if (validationResult.IsValid)
         {
             _skillsService.Insert(skills);
             return RedirectToAction("Index");
         }
-        return View();
-    }
-    
-    [HttpPost]
-    public IActionResult Index(Skills service)
-    {
-        if (ModelState.IsValid)
+        else
         {
-            _skillsService.Update(service);
-            return RedirectToAction("Index"); 
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
         }
-        var services = _skillsService.GetAll();
-        return View(services);
+        return View();
     }
     
     public IActionResult Delete(int id)
     {
         var values = _skillsService.GetById(id);
         _skillsService.Delete(values);
-        return RedirectToAction("Index");   
+        return RedirectToAction("Index");
+    }
+    
+    [HttpGet]
+    public IActionResult Update(int id)
+    {
+        var values = _skillsService.GetById(id);
+        return View(values);
+    }
+    
+    [HttpPost]
+    public IActionResult Update(Skills skills)
+    {
+        SkilsValidation skilsValidation = new SkilsValidation();
+        ValidationResult validationResult = skilsValidation.Validate(skills);
+        if (validationResult.IsValid)
+        {
+            _skillsService.Update(skills);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View(skills);
     }
 }
