@@ -18,10 +18,10 @@ public class EducationController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        var views = _educationService.GetAll();
-        return View(views);
+        var vievs = _educationService.GetAll();
+        return View(vievs);
     }
-
+    
     [HttpGet]
     public IActionResult Add()
     {
@@ -31,39 +31,54 @@ public class EducationController : Controller
     [HttpPost]
     public IActionResult Add(Education education)
     {
-        EducationValidation validator = new EducationValidation();
-        ValidationResult result = validator.Validate(education);
-        if (result.IsValid)
+        EducationValidation experincePageValidation = new EducationValidation();
+        ValidationResult validationResult = experincePageValidation.Validate(education);
+        if (validationResult.IsValid)
         {
             _educationService.Insert(education);
             return RedirectToAction("Index");
-        }else
+        }
+        else
         {
-            foreach (var item in result.Errors)
+            foreach (var item in validationResult.Errors)
             {
                 ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
         }
         return View();
     }
-
-    [HttpPost]
-    public IActionResult Index(Education education)
-    {
-        if (ModelState.IsValid)
-        {
-            _educationService.Update(education);
-            return RedirectToAction("Index"); 
-        }
-
-        var services = _educationService.GetAll();
-        return View(services);
-    }
-
+    
     public IActionResult Delete(int id)
     {
         var values = _educationService.GetById(id);
         _educationService.Delete(values);
         return RedirectToAction("Index");   
+    }
+    
+    [HttpGet]
+    public IActionResult Update(int id)
+    {
+        var values = _educationService.GetById(id);
+        return View(values);
+    }
+
+    [HttpPost]
+    public IActionResult Update(Education education)
+    {
+       EducationValidation experincePageValidation = new EducationValidation();
+        ValidationResult validationResult = experincePageValidation.Validate(education);
+        if (validationResult.IsValid)
+        {
+            _educationService.Update(education);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View(education);
     }
 }

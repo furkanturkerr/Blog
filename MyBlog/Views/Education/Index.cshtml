@@ -1,37 +1,39 @@
 @model System.Collections.Generic.List<Entities.Concrate.Education>
 
 @{
-    ViewData["Title"] = "Özgeçmiş - Deneyim";
+    ViewData["Title"] = "Özgeçmiş";
     Layout = "_Layout";
 }
 
-<h2 class="mt-4 mb-4" style="margin-left: 12rem">Deneyim</h2>
-<a class="btn btn-outline-success" style="margin-left: 12rem; margin-bottom: 5px;" href="/Education/Add">Deneyim Ekle</a>
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Özgeçmiş</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Deneyim</li>
+        </ul>
+    </div>
+</div>
 
-<div class="container">
+<table class="table table-border">
+    <tr>
+        <th>Başlık</th>
+        <th>Tarih</th>
+        <th>Açıklama</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
     @foreach (var item in Model)
     {
-        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
-            <input type="hidden" name="EducationId" value="@item.EducationId" />
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Alt Başlıklar</label>
-                <input type="text" name="EducationContentlow" value="@item.EducationContentlow" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Tarih</label>
-                <input type="text" name="EducationTime" value="@item.EducationTime" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Açıklama</label>
-                <input type="text" name="EducationText" value="@item.EducationText" class="form-control" />
-            </div>
-
-            <button type="submit" class="btn btn-primary">Güncelle</button>
-            <a asp-controller="Skills" asp-action="Delete" asp-route-id="@item.EducationId" 
-               class="btn btn-danger">Sil</a>
-        </form>
+        <tr>
+            <td>@item</td>
+            <td>@item.EducationContentlow</td>
+            <td>@item.EducationText</td>
+            <td><a href="~/Education/Update/@item.EducationId" class="btn btn-outline-dark">Güncelle</a></td>
+            <td><a href="~/Education/Delete/@item.EducationId" class="btn btn-outline-dark">Sil</a></td>
+        </tr>
     }
-</div>
+</table>
+
+    <a href="~/Education/Add" class="btn btn-outline-dark">Yeni Deneyim Ekle</a>
