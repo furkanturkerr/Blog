@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
@@ -18,16 +20,31 @@ public class ServiceController:Controller
         var services = _serviceService.GetAll();
         return View(services);
     }
+
+    [HttpGet]
+    public IActionResult Update(int id)
+    {
+        var services = _serviceService.GetById(id);
+        return View(services);
+    }
     
     [HttpPost]
-    public IActionResult Index(Service service)
+    public IActionResult Update(Service service)
     {
-        if (ModelState.IsValid)
+        ServiceValidation serviceValidation = new ServiceValidation();
+        ValidationResult validationResult = serviceValidation.Validate(service);
+        if (validationResult.IsValid)
         {
             _serviceService.Update(service);
             return RedirectToAction("Index"); 
         }
-        var services = _serviceService.GetAll();
-        return View(services);
+        else
+        {
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View(service);
     }
 }

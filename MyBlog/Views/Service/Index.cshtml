@@ -5,30 +5,31 @@
     Layout = "_Layout";
 }
 
-<h2 class="mt-4 mb-4" style="margin-left: 12rem">Servisler</h2>
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Anasayfa</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Servisler</li>
+        </ul>
+    </div>
+</div>
 
-<div class="container">
+<table class="table table-bordered">
+    <tr>
+        <th>Başlık</th>
+        <th>Metin</th>
+        <th>İcon Yolu</th>
+        <th>Güncelle</th>
+    </tr>
     @foreach (var item in Model)
     {
-        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
-            <input type="hidden" name="ServiceId" value="@item.ServiceId" />
-
-            <div class="mb-3">
-                <label class="form-label fw-bold">Başlık</label>
-                <input type="text" name="ServiceContent" value="@item.ServiceContent" class="form-control" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label fw-bold">Açıklama</label>
-                <input type="text" name="ServiceText" value="@item.ServiceText" class="form-control" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label fw-bold">Icon</label>
-                <input type="text" name="ServiceIcon" value="@item.ServiceIcon" class="form-control" />
-            </div>
-
-            <button type="submit" class="btn btn-primary">Güncelle</button>
-        </form>
+        <tr>
+            <td>@item.ServiceContent</td>
+            <td>@item.ServiceText</td>
+            <td>@item.ServiceIcon</td>
+            <td><a href="~/Service/Update/@item.ServiceId" class="btn btn-outline-dark">Güncelle</a></td>
+        </tr>
     }
-</div>
+</table>
