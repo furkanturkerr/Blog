@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using MyBlog.Models;
 
@@ -19,28 +21,31 @@ public class NavbarLeftController:Controller
         var values = _navbarLeftService.GetAll();
         return View(values);
     }
-    
-    [HttpPost]
-    public IActionResult Index(NavbarLeftViewModel navbarLeft)
+
+    [HttpGet]
+    public IActionResult Update(int id)
     {
-        NavbarLeft w = new NavbarLeft();
-        if (navbarLeft.NavbarLeftImage != null)
+        var values = _navbarLeftService.GetById(id);
+        return View(values);   
+    }
+
+    [HttpPost]
+    public IActionResult Update(NavbarLeft navbarLeft)
+    {
+        NavbarLeftValidation navbarLeftValidation = new NavbarLeftValidation();
+        ValidationResult validationResult = navbarLeftValidation.Validate(navbarLeft);
+        if (validationResult.IsValid)
         {
-            var extention = Path.GetExtension(navbarLeft.NavbarLeftImage.FileName);
-            var newimageName = Guid.NewGuid().ToString() + extention;
-            var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/navbarleft", newimageName);
-            var stream = new FileStream(location, FileMode.Create);
-            navbarLeft.NavbarLeftImage.CopyTo(stream);
-            w.NavbarLeftImage = newimageName;
+            _navbarLeftService.Update(navbarLeft);
+            return RedirectToAction("Index");
         }
-        w.NavbarLefName = navbarLeft.NavbarLefName;
-        w.NavbarLeftAddress = navbarLeft.NavbarLeftAddress;
-        w.NavbarLeftEmail = navbarLeft.NavbarLeftEmail;
-        w.NavbarLeftPhone = navbarLeft.NavbarLeftPhone;
-        w.NavbarLeftLinkGithub = navbarLeft.NavbarLeftLinkGithub;
-        w.NavbarLeftLinkLinkedin = navbarLeft.NavbarLeftLinkLinkedin;
-        w.NavbarLeftLinkInstagram = navbarLeft.NavbarLeftLinkInstagram;
-        var values = _navbarLeftService.GetAll();
-        return View(values);
+        else
+        {
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View(navbarLeft);
     }
 }

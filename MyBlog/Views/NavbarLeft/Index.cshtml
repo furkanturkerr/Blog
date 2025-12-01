@@ -5,70 +5,35 @@
     Layout = "_Layout";
 }
 
-<h2 class="mb-4" style="font-size: 20px;">Sol Menü</h2>
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Furkan Türker</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Sol Menü</li>
+        </ul>
+    </div>
+</div>
 
-
-<div class="container">
+<table class="table table-bordered">
+    <tr>
+        <th>Görsel</th>
+        <th>İsim Soyisim</th>
+        <th>Ünvan</th>
+        <th>E-mail</th>
+        <th>Telefon</th>
+        <th>Güncelle</th>
+    </tr>
     @foreach (var item in Model)
     {
-        <form asp-action="Index" method="post" enctype="multipart/form-data" class="mb-4 p-3 border rounded bg-white shadow-sm">
-            <input type="hidden" name="NavbarLeftId" value="@item.NavbarLeftId" />
-
-            <div class="mb-3">
-                <label class="form-label fw-bold">Görsel</label>
-                <input type="file" name="NavbarLeftImage" class="form-control" />
-                <img src="~/images/navbarleft/@item.NavbarLeftImage" alt="" class="img-thumbnail" style="width: 100px; height: 100px; margin-top: 10px" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">İsim Soyisim</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLefName")</span>
-                <input type="text" name="NavbarLefName" value="@item.NavbarLefName" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Ünvan</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLeftText")</span>
-                <input type="text" name="NavbarLeftText" value="@item.NavbarLeftText" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">E-mail</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLeftEmail")</span>
-                <input type="email" name="NavbarLeftEmail" value="@item.NavbarLeftEmail" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Telefon Numarası</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLeftPhone")</span>
-                <input type="tel" name="NavbarLeftPhone" value="@item.NavbarLeftPhone" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Adres</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLeftAddress")</span>
-                <input type="text" name="NavbarLeftAddress" value="@item.NavbarLeftAddress" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Instagram Link</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLeftAddress")</span>
-                <input type="text" name="NavbarLeftLinkInstagram" value="@item.NavbarLeftLinkInstagram" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Linkedin Link</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLeftLinkLinkedin")</span>
-                <input type="text" name="NavbarLeftLinkLinkedin" value="@item.NavbarLeftLinkLinkedin" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">GitHub</label>
-                <span class="text-danger">@Html.ValidationMessage("NavbarLeftLinkGithub")</span>
-                <input type="text" name="NavbarLeftLinkGithub" value="@item.NavbarLeftLinkGithub" class="form-control" />
-            </div>
-
-            <button type="submit" class="btn btn-primary">Güncelle</button>
-        </form>
+        <tr>
+            <td><img src="@item.NavbarLeftImage" width="300" alt="Görsel Yok"/></td>
+            <td>@item.NavbarLefName</td>
+            <td>@item.NavbarLeftText</td>
+            <td>@item.NavbarLeftEmail</td>
+            <td>@item.NavbarLeftPhone</td>
+            <td><a href="~/NavbarLeft/Update/@item.NavbarLeftId" class="btn btn-outline-dark">Güncelle</a></td>
+        </tr>
     }
-</div>
+</table>
