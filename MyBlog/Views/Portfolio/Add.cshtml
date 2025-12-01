@@ -2,42 +2,36 @@
 
 @{
     ViewData["Title"] = "Projelerim";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "_Layout";
 }
 
-<h2 class="mt-4 mb-4" style="margin-left: 12rem">Proje Ekle</h2>
-
-<div class="container">
-    <form method="post" enctype="multipart/form-data" class="mb-4 p-3 border rounded bg-white shadow-sm">
-        
-        <div class="mb-3">
-            <label class="form-label fw-bold">Kategori</label>
-            <input type="text" asp-for="PortfolioCategory" class="form-control" />
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Projeler</h5>
         </div>
-
-        <div class="mb-3">
-            <label class="form-label fw-bold">Proje İsmi</label>
-            <input type="text" asp-for="PortfolioName" class="form-control" />
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label fw-bold">Proje Linki</label>
-            <input type="text" asp-for="PortfolioLink" class="form-control" />
-        </div>
-        
-        <div class="mb-3">
-            <label class="form-label fw-bold">Proje Resim Linki</label>
-            <input type="text" asp-for="PortfolioImage" class="form-control" />
-        </div>
-        
-
-        <div class="mb-3">
-            <label class="form-label fw-bold">Proje Resmi (Opsiyonel)</label>
-            <input type="file" name="PortfolioImageFile" class="form-control" />
-            <small class="text-muted">Resim seçmezseniz boş bırakabilirsiniz.</small>
-        </div>
-
-        <button type="submit" class="btn btn-success">Kaydet</button>
-        <a asp-action="Index" class="btn btn-secondary">İptal</a>
-    </form>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Proje Ekle</li>
+        </ul>
+    </div>
 </div>
+
+<form method="post" class="form-control">
+    <label>Proje Görseli</label>
+    <input type="text" asp-for="PortfolioImage" class="form-control"/>
+    @Html.ValidationMessageFor(x=>x.PortfolioImage)
+    <br/>
+    <label>Proje Adı</label>
+    <input type="text" asp-for="PortfolioName" class="form-control"/>
+    @Html.ValidationMessageFor(x=>x.PortfolioName)
+    <br/>
+    <label>Kategori</label>
+    <input type="text" asp-for="PortfolioCategory" class="form-control"/>
+    @Html.ValidationMessageFor(x=>x.PortfolioCategory)
+    <br/>
+    <label>Proje Linki</label>
+    <input type="text" asp-for="PortfolioLink" class="form-control"/>
+    @Html.ValidationMessageFor(x=>x.PortfolioLink)
+    <br/>
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>

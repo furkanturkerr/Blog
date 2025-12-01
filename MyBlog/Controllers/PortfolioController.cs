@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers
@@ -7,12 +9,10 @@ namespace MyBlog.Controllers
     public class PortfolioController : Controller
     {
         private readonly IPortfolioService _portfolioService;
-        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public PortfolioController(IPortfolioService portfolioService, IWebHostEnvironment webHostEnvironment)
+        public PortfolioController(IPortfolioService portfolioService)
         {
             _portfolioService = portfolioService;
-            _webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -27,74 +27,52 @@ namespace MyBlog.Controllers
         {
             return View();
         }
-
+        
         [HttpPost]
-        public async Task<IActionResult> Add(Portfolio portfolio, IFormFile? PortfolioImageFile)
+        public IActionResult Add(Portfolio portfolio)
         {
-            if (ModelState.IsValid)
+            PortfolioValidation portfolioValidation = new PortfolioValidation();
+            ValidationResult validationResult = portfolioValidation.Validate(portfolio);
+            if (validationResult.IsValid)
             {
-                if (PortfolioImageFile != null && PortfolioImageFile.Length > 0)
-                {
-                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "portfolio");
-                    if (!Directory.Exists(uploadsFolder))
-                    {
-                        Directory.CreateDirectory(uploadsFolder);
-                    }
-
-                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + PortfolioImageFile.FileName;
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await PortfolioImageFile.CopyToAsync(fileStream);
-                    }
-
-                    portfolio.PortfolioImage = "/portfolio/" + uniqueFileName;
-                }
-                else
-                {
-                    if (string.IsNullOrEmpty(portfolio.PortfolioImage))
-                    {
-                        portfolio.PortfolioImage = null; 
-                    }
-                }
-
                 _portfolioService.Insert(portfolio);
                 return RedirectToAction("Index");
             }
-           return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Index(Portfolio portfolio, IFormFile? PortfolioImageFile)
-        {
-            if (PortfolioImageFile != null && PortfolioImageFile.Length > 0)
+            else
             {
-                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "portfolio");
-                if (!Directory.Exists(uploadsFolder))
+                foreach (var item in validationResult.Errors)
                 {
-                    Directory.CreateDirectory(uploadsFolder);
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
-
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + PortfolioImageFile.FileName;
-                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await PortfolioImageFile.CopyToAsync(fileStream);
-                }
-
-                portfolio.PortfolioImage = "/portfolio/" + uniqueFileName;
+            }
+            return View();
+        }
+        
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var values = _portfolioService.GetById(id);
+            return View(values);
+        }
+        
+        [HttpPost]
+        public IActionResult Update(Portfolio portfolio)
+        {
+            PortfolioValidation portfolioValidation = new PortfolioValidation();
+            ValidationResult validationResult = portfolioValidation.Validate(portfolio);
+            if (validationResult.IsValid)
+            {
+                _portfolioService.Update(portfolio);
+                return RedirectToAction("Index");
             }
             else
             {
-                // Eski resmi koru
-                var existing = _portfolioService.GetById(portfolio.PortfolioId);
-                portfolio.PortfolioImage = existing.PortfolioImage;
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
             }
-
-            _portfolioService.Update(portfolio);
-            return RedirectToAction("Index");
+            return View(portfolio);
         }
 
         public IActionResult Delete(int id)

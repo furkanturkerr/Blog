@@ -1,0 +1,38 @@
+@model Entities.Concrate.Portfolio
+
+@{
+    ViewData["Title"] = "Projelerim";
+    Layout = "_Layout";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Projeler</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Proje Güncelle</li>
+        </ul>
+    </div>
+</div>
+
+<form method="post" class="form-control">
+    <input type="hidden" asp-for="PortfolioId"/>
+    <label>Proje Görseli</label>
+    <input type="text" value="@Model.PortfolioImage" asp-for="PortfolioImage" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.PortfolioImage)
+    <br/>
+    <label>Proje Adı</label>
+    <input type="text" value="@Model.PortfolioName" asp-for="PortfolioName" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.PortfolioName)
+    <br/>
+    <label>Kategori</label>
+    <input type="text" value="@Model.PortfolioCategory" asp-for="PortfolioCategory" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.PortfolioCategory)
+    <br/>
+    <label>Proje Linki</label>
+    <input type="text" value="@Model.PortfolioLink" asp-for="PortfolioLink" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.PortfolioLink)
+    <br/>
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>
