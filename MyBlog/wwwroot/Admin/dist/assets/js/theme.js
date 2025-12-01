@@ -12,17 +12,23 @@
 'use strict';
 
 var rtl_flag = false;
-var dark_flag = false;
+var dark_flag = true;
 
 document.addEventListener('DOMContentLoaded', function () {
   if (typeof Storage !== 'undefined') {
-    layout_change(localStorage.getItem('theme'));
+    var layout = localStorage.getItem('theme');
+    // EĞER DAHA ÖNCE TEMA SEÇİLMEMİŞSE VARSAYILAN OLARAK 'dark' YAP
+    if (layout === null) {
+      layout = 'dark';
+      localStorage.setItem('theme', 'dark');
+    }
+    layout_change(layout);
   }
 });
 // Function to change layout dark/light settings
 function layout_change_default() {
   // Determine initial layout based on user's color scheme preference
-  let dark_layout = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  let dark_layout = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark';
 
   // Apply the determined layout
   layout_change(dark_layout);

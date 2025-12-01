@@ -3493,6 +3493,18 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/link.jpeg",
+      "PackagePath": "staticwebassets/img/link.jpeg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/profil.jpeg",
+      "PackagePath": "staticwebassets/img/profil.jpeg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/turker.webp",
+      "PackagePath": "staticwebassets/img/turker.webp"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

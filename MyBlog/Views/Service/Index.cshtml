@@ -20,7 +20,6 @@
     <tr>
         <th>Başlık</th>
         <th>Metin</th>
-        <th>Icon Yolu</th>
         <th>Güncelle</th>
     </tr>
     @foreach (var item in Model)
@@ -28,7 +27,6 @@
         <tr>
             <td>@item.ServiceContent</td>
             <td>@item.ServiceText</td>
-            <td>@item.ServiceIcon</td>
             <td><a href="~/Service/Update/@item.ServiceId" class="btn btn-outline-dark">Güncelle</a></td>
         </tr>
     }

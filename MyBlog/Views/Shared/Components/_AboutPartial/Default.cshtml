@@ -1,4 +1,6 @@
 @model Entities.Concrate.About
 <section class="about-text">
-    @Html.Raw(Model?.AboutContent)          
+    <div style="white-space: pre-wrap;">
+        @Model.AboutContent
+    </div>
 </section>

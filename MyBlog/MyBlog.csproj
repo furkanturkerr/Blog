@@ -39,4 +39,9 @@
       <_ContentIncludedByDefault Remove="Views\ImagePage\Index.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\img\profil.jpeg" />
+      <None Include="wwwroot\img\turker.webp" />
+    </ItemGroup>
+
 </Project>

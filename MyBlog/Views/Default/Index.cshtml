@@ -9,7 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furkan Türker</title>
     <link rel="stylesheet" href="site/style.css">
-    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+        name="description"
+        content="Furkan Türker tarafından geliştirilen modern web projeleri, yazılım eğitim notları ve blog içeriklerinin yer aldığı portföy sitesi. HTML, CSS, JavaScript ve .NET projelerine dair detaylı örnekler."
+    />
+
+    <meta
+        name="keywords"
+        content="Furkan Türker, Web Developer, Yazılım Geliştirici, HTML CSS JS, .NET Core, ASP.NET MVC, portföy sitesi, programlama blogu, yazılım projeleri"
+    />
+
+    <meta name="author" content="Furkan Türker" />
+
+
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="~/img/turker.webp"/>
 </head>
 <body>
     <main>
@@ -18,16 +34,28 @@
         <div class="main-content">
             <nav class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
-                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link="about">Hakkımda</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="resume">Özgeçmiş</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="portfolio">Portfolyo</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="blog">Blog</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link="contact">İletişim</button>
+                    </li>
                 </ul>
             </nav>
-
-            
-            <article class="about active" data-page="about">
+            <article class="about active" data-page="about">  
                 <header>
                     <h2 class="h2 article-title">Hakkımda</h2>
                 </header>
@@ -128,7 +156,7 @@
                 @await Component.InvokeAsync("_ExperincePartial");
 
             </article>
-            <article class="resume " data-page="resume">
+            <article class="resume" data-page="resume">  
                 <header>
                     <h2 class="h2 article-title">Resume</h2>
                 </header>
@@ -165,12 +193,12 @@
                 @await Component.InvokeAsync("_PortfolioPartial");
             </article>
 
-            <article class="blog " data-page="blog">
+            @*  <article class="blog " data-page="blog">
                 <header>
                     <h2 class="h2 article-title">Blog</h2>
                 </header>
 
-                <section class="blog-posts">
+               <section class="blog-posts">
                     <ul class="blog-posts-list">
                         <li class="blog-post-item">
                             <a href="#">
@@ -288,7 +316,7 @@
                         </li>
                     </ul>
                 </section>
-            </article>
+            </article>*@
 
             <article class="contact " data-page="contact">
                 <header>
