@@ -1,0 +1,35 @@
+@model Entities.Concrate.ExperiencePage
+
+@{
+    ViewData["Title"] = "Eğitim Güncelle";
+    Layout = "_Layout";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Özgeçmiş</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Eğitim</li>
+            <li class="breadcrumb-item" aria-current="page">Eğitim Güncelle</li>
+        </ul>
+    </div>
+</div>
+
+<form method="post" class="form-control">
+    <input type="hidden" asp-for="ExperiencePageId"/>
+    <label>Başlık</label>
+    <input type="text" asp-for="ExperiencePageContentlow" value="@Model.ExperiencePageContentlow" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.ExperiencePageContentlow)
+    <br/>
+    <label>Açıklama</label>
+    <input type="text" asp-for="ExperiencePageText" value="@Model.ExperiencePageText" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.ExperiencePageText)
+    <br/>
+    <label>Tarih</label>
+    <input type="text" asp-for="ExperiencePageTime" value="@Model.ExperiencePageTime" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.ExperiencePageTime)
+    <br/>
+    <button class="btn btn-outline-warning">Güncelle</button>
+</form>

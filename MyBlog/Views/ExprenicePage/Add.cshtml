@@ -1,31 +1,34 @@
 @model Entities.Concrate.ExperiencePage
 
 @{
-    ViewData["Title"] = "Özgeçmiş Ekle";
+    ViewData["Title"] = "Eğitim Ekle";
     Layout = "_Layout";
 }
 
-<h2 class="mt-4 mb-4" style="margin-left: 12rem">Özgeçmiş Ekle</h2>
-
-<div class="container">
-    <form method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
-
-        
-        <div class="mb-3">
-            <label class="form-label fw-bold">Alt Başlık</label>
-            <input type="text" asp-for="ExperiencePageContentlow" class="form-control" />
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Özgeçmiş</h5>
         </div>
-
-        <div class="mb-3">
-            <label class="form-label fw-bold">Tarih</label>
-            <input type="text" asp-for="ExperiencePageTime" class="form-control" />
-        </div>
-        
-        <div class="mb-3">
-            <label class="form-label fw-bold">Açıklama</label>
-            <input type="text" asp-for="ExperiencePageText" class="form-control" />
-        </div>
-        
-        <button type="submit" class="btn btn-success">Kaydet</button>
-    </form>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Eğitim</li>
+            <li class="breadcrumb-item" aria-current="page">Eğitim Ekle</li>
+        </ul>
+    </div>
 </div>
+
+<form method="post" class="form-control">
+    <label>Başlık</label>
+    <input type="text" asp-for="ExperiencePageContentlow" class="form-control" />
+    @Html.ValidationMessageFor(x=> x.ExperiencePageContentlow)
+    <br/>
+    <label>Açıklama</label>
+    <input type="text" asp-for="ExperiencePageText" class="form-control" />
+    @Html.ValidationMessageFor(x=> x.ExperiencePageText)
+    <br/>
+    <label>Tarih</label>
+    <input type="text" asp-for="ExperiencePageTime" class="form-control" />
+    @Html.ValidationMessageFor(x=> x.ExperiencePageTime)
+    <br/>
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>

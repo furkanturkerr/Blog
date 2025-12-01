@@ -5,33 +5,36 @@
     Layout = "_Layout";
 }
 
-<h2 class="mt-4 mb-4" style="margin-left: 12rem">Özgeçmiş</h2>
-<a class="btn btn-outline-success" style="margin-left: 12rem; margin-bottom: 5px;" href="/ExprenicePage/Add">Özgeçmiş</a>
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Özgeçmiş</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Eğitim</li>
+        </ul>
+    </div>
+</div>
 
-<div class="container">
+<table class="table table-border">
+    <tr>
+        <th>Başlık</th>
+        <th>Tarih</th>
+        <th>Açıklama</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
     @foreach (var item in Model)
     {
-        <form asp-action="Index" method="post" class="mb-4 p-3 border rounded bg-white shadow-sm">
-            <input type="hidden" name="ExperiencePageId" value="@item.ExperiencePageId" />
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Alt Başlıklar</label>
-                <input type="text" name="ExperiencePageContentlow" value="@item.ExperiencePageContentlow" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Tarih</label>
-                <input type="text" name="ExperiencePageTime" value="@item.ExperiencePageTime" class="form-control" />
-            </div>
-            
-            <div class="mb-3">
-                <label class="form-label fw-bold">Açıklama</label>
-                <input type="text" name="ExperiencePageText" value="@item.ExperiencePageText" class="form-control" />
-            </div>
-
-            <button type="submit" class="btn btn-primary">Güncelle</button>
-            <a asp-controller="Skills" asp-action="Delete" asp-route-id="@item.ExperiencePageId" 
-               class="btn btn-danger">Sil</a>
-        </form>
+        <tr>
+            <td>@item.ExperiencePageContentlow</td>
+            <td>@item.ExperiencePageTime</td>
+            <td>@item.ExperiencePageText</td>
+            <td><a href="~/ExprenicePage/Update/@item.ExperiencePageId" class="btn btn-outline-dark">Güncelle</a></td>
+            <td><a href="~/ExprenicePage/Delete/@item.ExperiencePageId" class="btn btn-outline-dark">Sil</a></td>
+        </tr>
     }
-</div>
+</table>
+
+<a href="~/ExprenicePage/Add" class="btn btn-outline-dark">Yeni Eğitim Ekle</a>
+

@@ -1,5 +1,7 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
@@ -27,24 +29,21 @@ public class ExprenicePageController : Controller
     [HttpPost]
     public IActionResult Add(ExperiencePage experiencePage)
     {
-        if (ModelState.IsValid)
+        ExperincePageValidation experincePageValidation = new ExperincePageValidation();
+        ValidationResult validationResult = experincePageValidation.Validate(experiencePage);
+        if (validationResult.IsValid)
         {
             _experincepageService.Insert(experiencePage);
             return RedirectToAction("Index");
         }
-        return View();   
-    }
-    
-    [HttpPost]
-    public IActionResult Index(ExperiencePage experiencePage)
-    {
-        if (ModelState.IsValid)
+        else
         {
-            _experincepageService.Update(experiencePage);
-            return RedirectToAction("Index"); 
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
         }
-        var services = _experincepageService.GetAll();
-        return View(services);
+        return View();
     }
     
     public IActionResult Delete(int id)
@@ -52,5 +51,32 @@ public class ExprenicePageController : Controller
         var values = _experincepageService.GetById(id);
         _experincepageService.Delete(values);
         return RedirectToAction("Index");   
+    }
+    
+    [HttpGet]
+    public IActionResult Update(int id)
+    {
+        var values = _experincepageService.GetById(id);
+        return View(values);
+    }
+
+    [HttpPost]
+    public IActionResult Update(ExperiencePage experiencePage)
+    {
+        ExperincePageValidation experincePageValidation = new ExperincePageValidation();
+        ValidationResult validationResult = experincePageValidation.Validate(experiencePage);
+        if (validationResult.IsValid)
+        {
+            _experincepageService.Update(experiencePage);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            foreach (var item in validationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        return View(experiencePage);
     }
 }
