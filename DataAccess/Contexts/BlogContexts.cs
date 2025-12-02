@@ -8,7 +8,7 @@ public class BlogContexts :  DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=localhost,56831;Database=Blog;User Id=sa;Password=Furkan12*;TrustServerCertificate=True;");
+            "Server=localhost,59443;Database=Blog;User Id=sa;Password=Furkan12*;TrustServerCertificate=True;");
     }
     
     public DbSet<About> Abouts { get; set; }

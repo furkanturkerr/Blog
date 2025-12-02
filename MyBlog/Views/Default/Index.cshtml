@@ -43,7 +43,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link="portfolio">Portfolyo</button>
+                        <button class="navbar-link" data-nav-link="portfolio">Projeler</button>
                     </li>
 
                     <li class="navbar-item">
@@ -136,10 +136,10 @@
 
                         <div class="modal-img-wrapper">
                             <figure class="modal-avatar-box">
-                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                                @*<img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>*@
                             </figure>
 
-                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                            @*<img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">*@
                         </div>
 
                         <div class="modal-content">
@@ -158,9 +158,20 @@
             </article>
             <article class="resume" data-page="resume">  
                 <header>
-                    <h2 class="h2 article-title">Resume</h2>
+                    <h2 class="h2 article-title">Özgeçmiş</h2>
                 </header>
                 
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Deneyim</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        @await Component.InvokeAsync("_EducationPartial");
+                    </ol>
+                </section>
                 <section class="timeline">
                     <div class="title-wrapper">
                         <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
@@ -173,22 +184,12 @@
                     </ol>
                 </section>
 
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
-                        <h3 class="h3">Deneyim</h3>
-                    </div>
-
-                    <ol class="timeline-list">
-                        @await Component.InvokeAsync("_EducationPartial");
-                    </ol>
-                </section>
                 @await Component.InvokeAsync("_SkillsPartial");
             </article>
             <article class="portfolio " data-page="portfolio">
                 <header>
-                    <h2 class="h2 article-title">Portfolio</h2>
+                    <h2 class="h2 article-title">Projeler</h2>
                 </header>
                 @await Component.InvokeAsync("_PortfolioPartial");
             </article>
