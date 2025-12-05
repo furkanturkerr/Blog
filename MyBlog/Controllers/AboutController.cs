@@ -1,5 +1,7 @@
+using AutoMapper;
 using Business.Abstract;
 using Business.ValidationRules;
+using Dto.AboutDto;
 using Entities.Concrate;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
@@ -9,8 +11,10 @@ namespace MyBlog.Controllers;
 public class AboutController:Controller
 {
     private readonly IAbautService _abautService;
-    public AboutController(IAbautService abautService)
+    private readonly IMapper _mapper;
+    public AboutController(IAbautService abautService , IMapper mapper)
     {
+        _mapper = mapper;
         _abautService = abautService;
     }
     
@@ -18,24 +22,27 @@ public class AboutController:Controller
     public IActionResult Index()
     {
         var values = _abautService.GetAll();
-        return View(values);
+        var dtoList = _mapper.Map<List<ResultAboutDto>>(values);
+        return View(dtoList);
     }
 
     [HttpGet]
     public IActionResult Update(int id)
     {
-        var values = _abautService.GetById(id);
-        return View(values);
+        var value = _abautService.GetById(id);
+        var dto = _mapper.Map<UpdateAboutDto>(value);
+        return View(dto);
     }
     
     [HttpPost]
-    public IActionResult Update(About about)
+    public IActionResult Update(UpdateAboutDto updateAboutDto)
     {
         AboutValidaton aboutValidaton = new AboutValidaton();
-        ValidationResult validationResult = aboutValidaton.Validate(about);
+        ValidationResult validationResult = aboutValidaton.Validate(updateAboutDto);
         if (validationResult.IsValid)
         {
-            _abautService.Update(about);
+            var value = _mapper.Map<About>(updateAboutDto);
+            _abautService.Update(value);
             return RedirectToAction("Index");
         }
         else
@@ -45,6 +52,6 @@ public class AboutController:Controller
                 ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
         }
-        return View(about);
+        return View(updateAboutDto);
     }
 }

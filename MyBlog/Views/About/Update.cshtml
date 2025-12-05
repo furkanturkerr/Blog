@@ -1,4 +1,4 @@
-@model  Entities.Concrate.About
+@model  Dto.AboutDto.UpdateAboutDto
 @{
     Layout = "_Layout";
 }
@@ -19,7 +19,7 @@
     <input type="hidden" asp-for="AboutId" />
     <label>Hakkımda</label>
     <textarea name="AboutContent" class="form-control" rows="8">@Model.AboutContent</textarea>
-    @Html.ValidationMessageFor(x=> x.AboutContent)
+    <span asp-validation-for="AboutContent" class="text-danger"></span>
     <br/>
     <button class="btn btn-outline-warning">Güncelle</button>
 </form>

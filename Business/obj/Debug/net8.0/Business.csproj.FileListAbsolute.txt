@@ -34,3 +34,5 @@ C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Debug/net8.0/Business.csproj.
 /Users/furkanturker/RiderProjects/Blog/Business/obj/Debug/net8.0/refint/Business.dll
 /Users/furkanturker/RiderProjects/Blog/Business/obj/Debug/net8.0/Business.pdb
 /Users/furkanturker/RiderProjects/Blog/Business/obj/Debug/net8.0/ref/Business.dll
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Debug/net8.0/Dto.dll
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Debug/net8.0/Dto.pdb

@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Reflection;
 using Business.Abstract;
 using Business.Concrate;
 using Data_Access_Layer.Abstract;
@@ -27,6 +28,7 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 builder.Services.AddScoped<IAbautService, AbautManager>();
 builder.Services.AddScoped<IAbautDal, EfAbautDal>();
@@ -68,6 +70,8 @@ app.UseRouting();
 // ÖNEMLİ: Bu sıralamayı değiştirmeyin!
 app.UseAuthentication(); // Kimlik doğrulama
 app.UseAuthorization();  // Yetkilendirme
+app.MapControllers();
+
 
 app.MapControllerRoute(
     name: "default",

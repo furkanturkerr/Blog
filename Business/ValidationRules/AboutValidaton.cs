@@ -1,9 +1,10 @@
+using Dto.AboutDto;
 using Entities.Concrate;
 using FluentValidation;
 
 namespace Business.ValidationRules;
 
-public class AboutValidaton : AbstractValidator<About>
+public class AboutValidaton : AbstractValidator<UpdateAboutDto>
 {
     public AboutValidaton()
     {
