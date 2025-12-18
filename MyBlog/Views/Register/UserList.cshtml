@@ -1,0 +1,38 @@
+@model System.Collections.Generic.List<Entities.Concrate.AppUser>
+@{
+    ViewData["Title"] = "Kullanıcı Listesi";
+    Layout = "_Layout";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Kullanıcılar</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Kullanıcı Listesi</li>
+        </ul>
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <tr>
+        <th>İsim Soyisim</th>
+        <th>Kullanıcı Adı</th>
+        <th>Email</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name @item.Surname</td>
+            <td>@item.UserName</td>
+            <td>@item.Email</td>
+            <td><a href="~/Education/Update/@item.UserName" class="btn btn-outline-dark">Güncelle</a></td>
+            <td><a href="~/Education/Delete/@item.UserName" class="btn btn-outline-dark">Sil</a></td>
+        </tr>
+    }
+</table>
+<br/>
+<a href="/Register/Index/" class="btn btn-outline-dark">Kullanıcı Ekle</a>

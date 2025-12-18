@@ -31,4 +31,11 @@ public class LoginController : Controller
 
         return View();
     }
+    
+    [HttpGet]
+    public IActionResult Logout()
+    {
+        _signInManager.SignOutAsync();
+        return RedirectToAction("Index", "Default");
+    }
 }

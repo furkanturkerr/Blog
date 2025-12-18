@@ -37,4 +37,11 @@ public class RegisterController : Controller
         
         return View();
     }
+    
+    [HttpGet]
+    public IActionResult UserList()
+    {
+        var users = _userManager.Users.ToList();
+        return View(users);
+    }
 }
