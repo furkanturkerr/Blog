@@ -1,0 +1,137 @@
+@model Dto.IdentityDtos.RegisterDto
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en" data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" dir="ltr" data-pc-theme="light">
+  <!-- [Head] start -->
+
+  <head>
+    <title>Furkan Türker | Kayıt Ol</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Furkan Türker tarafından geliştirilen modern web projeleri, yazılım eğitim notları ve blog içeriklerinin yer aldığı portföy sitesi. HTML, CSS, JavaScript ve .NET projelerine dair detaylı örnekler."
+    />
+
+    <meta
+      name="keywords"
+      content="Furkan Türker, Web Developer, Yazılım Geliştirici, HTML CSS JS, .NET Core, ASP.NET MVC, portföy sitesi, programlama blogu, yazılım projeleri"
+    />
+
+    <meta name="author" content="Furkan Türker" />
+    <link rel="icon" href="~/img/turker.webp"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Admin/dist/assets/fonts/phosphor/duotone/style.css" />
+    <link rel="stylesheet" href="~/Admin/dist/assets/fonts/tabler-icons.min.css" />
+    <link rel="stylesheet" href="~/Admin/dist/assets/fonts/feather.css" />
+    <link rel="stylesheet" href="~/Admin/dist/assets/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="~/Admin/dist/assets/fonts/material.css" />
+    <link rel="stylesheet" href="~/Admin/dist/assets/css/style.css" id="main-style-link" />
+
+  </head>
+
+  <body>
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg fixed inset-0 bg-white dark:bg-themedark-cardbg z-[1034]">
+      <div class="loader-track h-[5px] w-full inline-block absolute overflow-hidden top-0">
+        <div class="loader-fill w-[300px] h-[5px] bg-primary-500 absolute top-0 left-0 animate-[hitZak_0.6s_ease-in-out_infinite_alternate]"></div>
+      </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+    <div class="auth-main relative">
+      <div class="auth-wrapper v1 flex items-center w-full h-full min-h-screen">
+        <div class="auth-form flex items-center justify-center grow flex-col min-h-screen relative p-6 ">
+          <div class="w-full max-w-[350px] relative">
+            <div class="auth-bg ">
+              <span class="absolute top-[-100px] right-[-100px] w-[300px] h-[300px] block rounded-full bg-theme-bg-1 animate-[floating_7s_infinite]"></span>
+              <span class="absolute top-[150px] right-[-150px] w-5 h-5 block rounded-full bg-primary-500 animate-[floating_9s_infinite]"></span>
+              <span class="absolute left-[-150px] bottom-[150px] w-5 h-5 block rounded-full bg-theme-bg-1 animate-[floating_7s_infinite]"></span>
+              <span class="absolute left-[-100px] bottom-[-100px] w-[300px] h-[300px] block rounded-full bg-theme-bg-2 animate-[floating_9s_infinite]"></span>
+            </div>
+            <div class="card sm:my-12  w-full shadow-none">
+              <div class="card-body !p-10">
+                <h4 class="text-center font-medium mb-4">Kullanıcı Oluştur</h4>
+                <form method="post">
+                    <div class="grid grid-cols-12 gap-3 mb-3">
+                      <div class="col-span-12 sm:col-span-6">
+                        <input type="text" class="form-control" placeholder="İsim" asp-for="Name" required >
+                      </div>
+                      <div class="col-span-12 sm:col-span-6">
+                        <input type="text" class="form-control" placeholder="Soyisim" asp-for="Surname" required >
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Kullanıcı Adı" asp-for="Username"required >
+                    </div>
+                    <div class="mb-3">
+                      <input type="password" class="form-control" placeholder="Şifre" asp-for="Password" required >
+                    </div>
+                  <div class="mt-4 text-center">
+                    <input type="submit" name="register" class="btn btn-primary mx-auto shadow-2xl" value="Kullanıcı Oluştur"/>
+                  </div>
+                </form>
+               
+                <div class="flex justify-between items-end flex-wrap mt-4">
+                  <a href="/Login/Index/" class="text-primary-500">Giriş Yapma Sayfası</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    <!-- Required Js -->
+    <script src="~/Admin/dist/assets/js/plugins/simplebar.min.js"></script>
+    <script src="~/Admin/dist/assets/js/plugins/popper.min.js"></script>
+    <script src="~/Admin/dist/assets/js/icon/custom-icon.js"></script>
+    <script src="~/Admin/dist/assets/js/plugins/feather.min.js"></script>
+    <script src="~/Admin/dist/assets/js/component.js"></script>
+    <script src="~/Admin/dist/assets/js/theme.js"></script>
+    <script src="~/Admin/dist/assets/js/script.js"></script>
+
+    <div class="floting-button fixed bottom-[50px] right-[30px] z-[1030]">
+    </div>
+
+    
+    <script>
+      layout_change('false');
+    </script>
+     
+    
+    <script>
+      layout_theme_sidebar_change('dark');
+    </script>
+    
+     
+    <script>
+      change_box_container('false');
+    </script>
+     
+    <script>
+      layout_caption_change('true');
+    </script>
+     
+    <script>
+      layout_rtl_change('false');
+    </script>
+     
+    <script>
+      preset_change('preset-1');
+    </script>
+     
+    <script>
+      main_layout_change('vertical');
+    </script>
+    
+ 
+  </body>
+  <!-- [Body] end -->
+</html>

@@ -17,6 +17,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<BlogContexts>();
 
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<BlogContexts>();
+builder.Services.AddHttpClient();
+builder.Services.AddControllersWithViews();
 
 // ÖNEMLİ: Cookie ayarları
 builder.Services.ConfigureApplicationCookie(options =>

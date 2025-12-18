@@ -22,3 +22,4 @@ C:/Users/Furkan/Proje ve Dersler/Blog/Entities/obj/Debug/net8.0/ref/Entities.dll
 /Users/furkanturker/RiderProjects/Blog/Entities/obj/Debug/net8.0/refint/Entities.dll
 /Users/furkanturker/RiderProjects/Blog/Entities/obj/Debug/net8.0/Entities.pdb
 /Users/furkanturker/RiderProjects/Blog/Entities/obj/Debug/net8.0/ref/Entities.dll
+/Users/furkanturker/RiderProjects/Blog/Entities/obj/Debug/net8.0/Entities.csproj.AssemblyReference.cache

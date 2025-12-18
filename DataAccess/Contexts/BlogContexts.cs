@@ -1,9 +1,10 @@
 using Entities.Concrate;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Data_Access_Layer.Contexts;
 
-public class BlogContexts :  DbContext
+public class BlogContexts :  IdentityDbContext<AppUser, AppRole, int>
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

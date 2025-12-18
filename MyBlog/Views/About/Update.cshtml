@@ -18,7 +18,7 @@
 <form method="post" class="form-control">
     <input type="hidden" asp-for="AboutId" />
     <label>Hakkımda</label>
-    <textarea name="AboutContent" class="form-control" rows="8">@Model.AboutContent</textarea>
+    <textarea name="AboutContent" class="form-control" rows="14">@Model.AboutContent</textarea>
     <span asp-validation-for="AboutContent" class="text-danger"></span>
     <br/>
     <button class="btn btn-outline-warning">Güncelle</button>

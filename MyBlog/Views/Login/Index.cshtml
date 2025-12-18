@@ -1,180 +1,131 @@
-@model LoginViewModel
+@model Dto.IdentityDtos.LoginDto
 @{
 ViewData["Title"] = "Giriş";
 Layout = null;
 }
 
-<!DOCTYPE html>
-<html lang="tr">
-<head>
+<!doctype html>
+<html lang="en" data-pc-preset="preset-1" data-pc-sidebar-caption="true" data-pc-direction="ltr" dir="ltr" data-pc-theme="light">
+  <!-- [Head] start -->
+
+  <head>
+    <title>Furkan Türker | Giriş Yap</title>
+    <!-- [Meta] -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Giriş ‹ Site — WordPress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Furkan Türker tarafından geliştirilen modern web projeleri, yazılım eğitim notları ve blog içeriklerinin yer aldığı portföy sitesi. HTML, CSS, JavaScript ve .NET projelerine dair detaylı örnekler."
+    />
 
-    <style>
+    <meta
+      name="keywords"
+      content="Furkan Türker, Web Developer, Yazılım Geliştirici, HTML CSS JS, .NET Core, ASP.NET MVC, portföy sitesi, programlama blogu, yazılım projeleri"
+    />
+
+    <meta name="author" content="Furkan Türker" />
+    <link rel="icon" href="~/img/turker.webp"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="~/Admin/dist/assets/fonts/phosphor/duotone/style.css" />
+<link rel="stylesheet" href="~/Admin/dist/assets/fonts/tabler-icons.min.css" />
+<link rel="stylesheet" href="~/Admin/dist/assets/fonts/feather.css" />
+<link rel="stylesheet" href="~/Admin/dist/assets/fonts/fontawesome.css" />
+<link rel="stylesheet" href="~/Admin/dist/assets/fonts/material.css" />
+<link rel="stylesheet" href="~/Admin/dist/assets/css/style.css" id="main-style-link" />
+
+  </head>
+  <!-- [Head] end -->
+  <!-- [Body] Start -->
+
+  <body>
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg fixed inset-0 bg-white dark:bg-themedark-cardbg z-[1034]">
+      <div class="loader-track h-[5px] w-full inline-block absolute overflow-hidden top-0">
+        <div class="loader-fill w-[300px] h-[5px] bg-primary-500 absolute top-0 left-0 animate-[hitZak_0.6s_ease-in-out_infinite_alternate]"></div>
+      </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+
+    <div class="auth-main relative">
+      <div class="auth-wrapper v1 flex items-center w-full h-full min-h-screen">
+        <div class="auth-form flex items-center justify-center grow flex-col min-h-screen relative p-6 ">
+          <div class="w-full max-w-[350px] relative">
+            <div class="auth-bg ">
+              <span class="absolute top-[-100px] right-[-100px] w-[300px] h-[300px] block rounded-full bg-theme-bg-1 animate-[floating_7s_infinite]"></span>
+              <span class="absolute top-[150px] right-[-150px] w-5 h-5 block rounded-full bg-primary-500 animate-[floating_9s_infinite]"></span>
+              <span class="absolute left-[-150px] bottom-[150px] w-5 h-5 block rounded-full bg-theme-bg-1 animate-[floating_7s_infinite]"></span>
+              <span class="absolute left-[-100px] bottom-[-100px] w-[300px] h-[300px] block rounded-full bg-theme-bg-2 animate-[floating_9s_infinite]"></span>
+            </div>
+            <div class="card sm:my-12  w-full shadow-none">
+              <div class="card-body !p-10">
+                <h4 class="text-center font-medium mb-4">Giriş Yap</h4>
+                <form method="post">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Kullanıcı Adı" asp-for="UserName" required />
+                  </div>
+                  <div class="mb-4">
+                    <input type="password" class="form-control"  placeholder="Şifre" asp-for="Password" required />
+                  </div>
+                  <div class="mt-4 text-center">
+                    <input type="submit" name="login" class="btn btn-primary mx-auto shadow-2xl" value="Giriş Yap"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    <!-- Required Js -->
+    <script src="~/Admin/dist/assets/js/plugins/simplebar.min.js"></script>
+    <script src="~/Admin/dist/assets/js/plugins/popper.min.js"></script>
+    <script src="~/Admin/dist/assets/js/icon/custom-icon.js"></script>
+    <script src="~/Admin/dist/assets/js/plugins/feather.min.js"></script>
+    <script src="~/Admin/dist/assets/js/component.js"></script>
+    <script src="~/Admin/dist/assets/js/theme.js"></script>
+    <script src="~/Admin/dist/assets/js/script.js"></script>
+
+    <div class="floting-button fixed bottom-[50px] right-[30px] z-[1030]">
+    </div>
+
+    
+    <script>
+      layout_change('false');
+    </script>
      
-
-        html,body{ height:100%; }
-        
-        body.login.wp-core-ui{
-            background: #f0f0f1;
-            color: #3c434a;
-            font: 400 14px / 1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            width: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .login{
-            width:100%;
-            max-width:360px;
-            margin:8vh auto 4vh;
-            padding:0 24px;
-            box-sizing:border-box;
-        }
-
-        #login h1{ text-align:center; margin:0 0 24px; }
-        #login h1 a{ display:inline-block; width:84px; height:84px; text-decoration:none; }
-        .wp-logo{ width:84px; height:84px; display:block; }
-
-        .login form{
-            background:#ffffff;              /* var(--wp-input-bg) yerine */
-            border:1px solid #c3c4c7;        /* var(--wp-border) yerine */
-            box-shadow:0 1px 3px rgba(0,0,0,.04);
-            padding:26px 24px 24px;
-            margin:0 0 16px;
-            border-radius:4px;
-        }
-        .login form h2{
-            margin:0 0 18px;
-            font-size:18px;
-            font-weight:600;
-            text-align:center;
-            color:#1d2327;
-        }
-
-        .login form p{ margin:0 0 14px; }
-        .login label{ font-size:14px; display:block; margin:0 0 4px; }
-
-        .login .input,
-        .login input[type="text"],
-        .login input[type="email"],
-        .login input[type="password"]{
-            width:100%;
-            padding:8px 10px;
-            font-size:14px;
-            line-height:1.4;
-            color:#3c434a;                   /* var(--wp-text) yerine */
-            background:#ffffff;              /* var(--wp-input-bg) yerine */
-            border:1px solid #c3c4c7;        /* var(--wp-border) yerine */
-            border-radius:3px;
-            box-sizing:border-box;
-        }
-        .login .input:focus{
-            outline:2px solid transparent;
-            border-color:#2271b1;            /* var(--wp-blue) yerine */
-            box-shadow:0 0 0 1px #2271b1;    /* var(--wp-blue) yerine */
-            background:#ffffff;
-        }
-
-        .forgetmenot{
-            display:flex;
-            align-items:center;
-            gap:8px;
-            margin:8px 0 0;
-        }
-        .forgetmenot label{ margin:0; font-size:13px; }
-
-        /* Birincil buton */
-        .button-primary{
-            width:100%;
-            display:inline-block;
-            text-align:center;
-            background:#2271b1;              /* var(--wp-blue) yerine */
-            color:#fff;
-            border:1px solid #2271b1;        /* var(--wp-blue) yerine */
-            border-radius:3px;
-            padding:6px 12px;
-            line-height:28px;
-            height:40px;
-            font-weight:600;
-            cursor:pointer;
-            transition:background .15s ease,border-color .15s ease,transform .02s ease;
-        }
-        .button-primary:hover{
-            background:#1d5f95;              /* var(--wp-blue-700) yerine */
-            border-color:#1d5f95;            /* var(--wp-blue-700) yerine */
-        }
-        .button-primary:active{ transform:translateY(1px); }
-
-        /* Uyarılar / validasyon */
-        .notice, .message{
-            background:#f6f7f7;
-            border:1px solid #c3c4c7;
-            padding:12px 14px;
-            margin:0 0 16px;
-            border-radius:3px;
-            font-size:13px;
-        }
-        .alert-success{ background:#edf7ed; border-color:#b7dfb9; color:#135e14; }
-        .text-danger{ color:#b32d2e; font-size:13px; }
-        .validation-summary-errors ul{ margin:0 0 0 18px; }
-
-        /* Alt linkler */
-        #nav, #backtoblog{ text-align:center; margin:12px 0 0; font-size:13px; }
-        #nav a, #backtoblog a{ color:#2271b1; text-decoration:none; } /* var(--wp-blue) yerine */
-        #nav a:hover, #backtoblog a:hover{ text-decoration:underline; }
-
-         
-    </style>
-</head>
-<body class="login wp-core-ui">
-<div id="login" class="login">
-
-
-    @if (TempData["Success"] != null)
-    {
-    <div class="notice alert-success">@TempData["Success"]</div>
-    }
-
-    <div asp-validation-summary="All" class="validation-summary-errors text-danger"></div>
-
-    <form asp-action="Index" method="post" novalidate>
-        @Html.AntiForgeryToken()
-        <h2>Giriş Yap</h2>
-
-        <p>
-            <label for="user_login">E-posta adresi</label>
-            <input asp-for="Email" type="email" class="input" id="user_login" autocomplete="username" />
-            <span asp-validation-for="Email" class="text-danger"></span>
-        </p>
-
-        <p>
-            <label for="user_pass">Parola</label>
-            <input asp-for="Password" type="password" class="input" id="user_pass" autocomplete="current-password" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </p>
-
-        <p class="forgetmenot">
-            <input asp-for="RememberMe" type="checkbox" id="rememberme" />
-            <label for="rememberme">Beni hatırla</label>
-        </p>
-
-        <p class="submit">
-            <button type="submit" class="button-primary">Giriş Yap</button>
-        </p>
-    </form>
-
-    <p id="nav">
-        <a href="@Url.Action("ForgotPassword","Account")">Şifrenizi mi unuttunuz?</a>
-    </p>
-    <p id="backtoblog">
-        <a href="/">← Siteye geri dön</a>
-    </p>
-</div>
-</body>
+    
+    <script>
+      layout_theme_sidebar_change('dark');
+    </script>
+    
+     
+    <script>
+      change_box_container('false');
+    </script>
+     
+    <script>
+      layout_caption_change('true');
+    </script>
+     
+    <script>
+      layout_rtl_change('false');
+    </script>
+     
+    <script>
+      preset_change('preset-1');
+    </script>
+     
+    <script>
+      main_layout_change('vertical');
+    </script>
+    
+ 
+  </body>
+  <!-- [Body] end -->
 </html>
+
+
+
