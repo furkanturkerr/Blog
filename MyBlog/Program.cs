@@ -7,11 +7,15 @@ using Data_Access_Layer.Concrate.EntityFramework;
 using Data_Access_Layer.Contexts;
 using Entities.Concrate;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+var requireAuthorizationPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
 
 builder.Services.AddControllersWithViews();
 
@@ -20,6 +24,16 @@ builder.Services.AddDbContext<BlogContexts>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<BlogContexts>();
 builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add(new AuthorizeFilter(requireAuthorizationPolicy));
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login/Index";
+});
 
 // ÖNEMLİ: Cookie ayarları
 builder.Services.ConfigureApplicationCookie(options =>

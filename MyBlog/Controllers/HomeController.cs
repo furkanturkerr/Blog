@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using MyBlog.Models;
 
 namespace MyBlog.Controllers;
-[AllowAnonymous] 
 
 public class HomeController : Controller
 {

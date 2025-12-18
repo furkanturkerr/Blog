@@ -5,7 +5,6 @@ using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
-
 public class ServiceController:Controller
 {
     private readonly IServiceService _serviceService;

@@ -1,10 +1,11 @@
 using Dto.IdentityDtos;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 
 namespace MyBlog.Controllers;
-
+[AllowAnonymous]
 public class LoginController : Controller
 {
     private readonly SignInManager<AppUser> _signInManager;
