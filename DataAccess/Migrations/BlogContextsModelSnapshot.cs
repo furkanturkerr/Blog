@@ -270,6 +270,23 @@ namespace Data_Access_Layer.Migrations
                     b.ToTable("ExperiencePages");
                 });
 
+            modelBuilder.Entity("Entities.Concrate.Google", b =>
+                {
+                    b.Property<int>("GoogleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GoogleId"));
+
+                    b.Property<string>("Googletag")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GoogleId");
+
+                    b.ToTable("Googles");
+                });
+
             modelBuilder.Entity("Entities.Concrate.NavbarLeft", b =>
                 {
                     b.Property<int>("NavbarLeftId")

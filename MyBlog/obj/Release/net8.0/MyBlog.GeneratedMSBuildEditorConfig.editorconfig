@@ -9,173 +9,191 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyBlog
 build_property.RootNamespace = MyBlog
-build_property.ProjectDir = C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog\
+build_property.ProjectDir = /Users/furkanturker/RiderProjects/Blog/MyBlog/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Furkan\Proje ve Dersler\Blog\MyBlog
+build_property.MSBuildProjectDirectory = /Users/furkanturker/RiderProjects/Blog/MyBlog
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/ImagePage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = 
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VQYWdlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/About/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/About/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/AdminPartial/PartialContent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYXJ0aWFsXFBhcnRpYWxDb250ZW50LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Ib21lL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/AdminPartial/PartialHead.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYXJ0aWFsXFBhcnRpYWxIZWFkLmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialContent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxDb250ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/AdminPartial/PartialHeadNav.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYXJ0aWFsXFBhcnRpYWxIZWFkTmF2LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialHead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxIZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/AdminPartial/PartialNavbar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYXJ0aWFsXFBhcnRpYWxOYXZiYXIuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialHeadNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxIZWFkTmF2LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/AdminPartial/PartialScript.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYXJ0aWFsXFBhcnRpYWxTY3JpcHQuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxOYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Default/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialScript.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxTY3JpcHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Education/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uXEFkZC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Education/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWR1Y2F0aW9uXEluZGV4LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Education/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRWR1Y2F0aW9uL0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Experince/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpbmNlXEFkZC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Education/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRWR1Y2F0aW9uL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Experince/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpbmNlXEluZGV4LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Education/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRWR1Y2F0aW9uL1VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/ExprenicePage/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwcmVuaWNlUGFnZVxBZGQuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Error/NotFount404Page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXJyb3IvTm90Rm91bnQ0MDRQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/ExprenicePage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwcmVuaWNlUGFnZVxJbmRleC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Experince/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZXJpbmNlL0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Experince/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZXJpbmNlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/ExprenicePage/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwcmVuaWNlUGFnZS9BZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/ImagePage/AddImage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VQYWdlXEFkZEltYWdlLmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/ExprenicePage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwcmVuaWNlUGFnZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/ExprenicePage/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwcmVuaWNlUGFnZS9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/NavbarLeft/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF2YmFyTGVmdFxJbmRleC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Portfolio/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEFkZC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Portfolio/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEluZGV4LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Register/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcQWRkLmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/NavbarLeft/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmF2YmFyTGVmdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Register/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/NavbarLeft/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmF2YmFyTGVmdC9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Service/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Portfolio/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9ydGZvbGlvL0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_AboutPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Fib3V0UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Portfolio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9ydGZvbGlvL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_EducationPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0VkdWNhdGlvblBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Portfolio/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9ydGZvbGlvL1VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_ExperincePagePartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0V4cGVyaW5jZVBhZ2VQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_ExperincePartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0V4cGVyaW5jZVBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Register/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_NavbarLeftPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX05hdmJhckxlZnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmljZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_PortfolioPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1BvcnRmb2xpb1BhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Service/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmljZS9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_ServicePartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NlcnZpY2VQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_AboutPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Fib3V0UGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Components/_SkillsPartial/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NraWxsc1BhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_EducationPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0VkdWNhdGlvblBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_ExperincePagePartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0V4cGVyaW5jZVBhZ2VQYXJ0aWFsL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/_AdminLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_ExperincePartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0V4cGVyaW5jZVBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_NavbarLeftPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX05hdmJhckxlZnRQYXJ0aWFsL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Skills/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tpbGxzXEFkZC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_PortfolioPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1BvcnRmb2xpb1BhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Skills/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tpbGxzXEluZGV4LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_ServicePartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1NlcnZpY2VQYXJ0aWFsL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_SkillsPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1NraWxsc1BhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-6dy5deaphu
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Skills/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2tpbGxzL0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Skills/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2tpbGxzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Skills/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2tpbGxzL1VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,25 @@
+@model Dto.GoogleDtos.CreateGoogleAnalyticsDto
+
+@{
+    ViewData["Title"] = "Google Etiketi Ekle";
+    Layout = "_Layout";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Google</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Google Analytics</li>
+            <li class="breadcrumb-item" aria-current="page">Google Analytics Ekle</li>
+        </ul>
+    </div>
+</div>
+
+<form method="post" class="form-control">
+    <label>Kod</label>
+    <textarea rows="10" asp-for="Googletag" class="form-control" required></textarea>
+    <br/>
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>

@@ -1,18 +1,38 @@
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\bin\Release\net8.0\Business.deps.json
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\bin\Release\net8.0\Business.dll
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\bin\Release\net8.0\Business.pdb
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\bin\Release\net8.0\DataAccess.dll
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\bin\Release\net8.0\Entities.dll
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\bin\Release\net8.0\DataAccess.pdb
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\bin\Release\net8.0\Entities.pdb
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.csproj.AssemblyReference.cache
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.AssemblyInfoInputs.cache
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.AssemblyInfo.cs
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.csproj.CoreCompileInputs.cache
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.sourcelink.json
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.csproj.Up2Date
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.dll
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\refint\Business.dll
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\Business.pdb
-C:\Users\Furkan\Proje ve Dersler\Blog\Business\obj\Release\net8.0\ref\Business.dll
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/bin/Release/net8.0/Business.deps.json
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/bin/Release/net8.0/Business.dll
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/bin/Release/net8.0/Business.pdb
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/bin/Release/net8.0/DataAccess.dll
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/bin/Release/net8.0/Entities.dll
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/bin/Release/net8.0/DataAccess.pdb
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/bin/Release/net8.0/Entities.pdb
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.csproj.AssemblyReference.cache
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.AssemblyInfoInputs.cache
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.AssemblyInfo.cs
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.csproj.CoreCompileInputs.cache
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.sourcelink.json
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.csproj.Up2Date
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.dll
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/refint/Business.dll
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/Business.pdb
+C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/ref/Business.dll
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Business.deps.json
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Business.dll
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Business.pdb
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/DataAccess.dll
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Dto.dll
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Entities.dll
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/DataAccess.pdb
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Dto.pdb
+/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Entities.pdb
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.csproj.AssemblyReference.cache
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.AssemblyInfoInputs.cache
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.AssemblyInfo.cs
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.csproj.CoreCompileInputs.cache
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.sourcelink.json
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.csproj.Up2Date
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.dll
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/refint/Business.dll
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.pdb
+/Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/ref/Business.dll

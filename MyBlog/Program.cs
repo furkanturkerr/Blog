@@ -63,6 +63,8 @@ builder.Services.AddScoped<IEducationService, EducationManager>();
 builder.Services.AddScoped<IEducationDal, EfEducationDal>();
 builder.Services.AddScoped<IPortfolioService, PortfolioManager>();
 builder.Services.AddScoped<IPortfolioDal, EfPortfolioDal>();
+builder.Services.AddScoped<IGoogleService, GoogleManager>();
+builder.Services.AddScoped<IGoogleDal, EfGoogleDal>();
 
 
 var app = builder.Build();
