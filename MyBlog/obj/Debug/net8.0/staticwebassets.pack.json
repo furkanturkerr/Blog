@@ -1,6 +1,22 @@
 {
   "Files": [
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/404-page-not-found/LICENSE.txt",
+      "PackagePath": "staticwebassets/404-page-not-found/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/404-page-not-found/README.md",
+      "PackagePath": "staticwebassets/404-page-not-found/README.md"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/404-page-not-found/dist/index.html",
+      "PackagePath": "staticwebassets/404-page-not-found/dist/index.html"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/404-page-not-found/src/index.html",
+      "PackagePath": "staticwebassets/404-page-not-found/src/index.html"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/Admin/.gitignore",
       "PackagePath": "staticwebassets/Admin/.gitignore"
     },

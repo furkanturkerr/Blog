@@ -60,6 +60,14 @@ app.UseRequestLocalization(new RequestLocalizationOptions{
     SupportedUICultures = cultures
 });
 
+app.UseStatusCodePages(async x =>
+{
+    if (x.HttpContext.Response.StatusCode == 404)
+    {
+        x.HttpContext.Response.Redirect("/Error/Notfount404page");
+    }
+});
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
