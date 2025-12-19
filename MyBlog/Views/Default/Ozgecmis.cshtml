@@ -5,30 +5,31 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     @await Component.InvokeAsync("_GooglePartial")
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furkan Türker</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-    <meta
-        name="description"
-        content="Furkan Türker tarafından geliştirilen modern web projeleri, yazılım eğitim notları ve blog içeriklerinin yer aldığı portföy sitesi. HTML, CSS, JavaScript ve .NET projelerine dair detaylı örnekler."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-        name="keywords"
-        content="Furkan Türker, Web Developer, Yazılım Geliştirici, HTML CSS JS, .NET Core, ASP.NET MVC, portföy sitesi, programlama blogu, yazılım projeleri"/>
+    <title>Özgeçmiş | Furkan Türker</title>
 
-    <meta name="author" content="Furkan Türker"/>
-    
+    <meta name="description"
+          content="Furkan Türker’in yazılım deneyimleri, aldığı eğitimler ve .NET, ASP.NET, SQL gibi teknik yetkinlikleri." />
 
-    <!-- [Favicon] icon -->
-    <link rel="icon" href="~/img/turker.webp"/>
-    
-    
-    <link rel="stylesheet" href="~/site/style.css">
+    <meta name="keywords"
+          content="Furkan Türker CV, .NET Developer CV, yazılım geliştirici özgeçmiş" />
 
+    <link rel="canonical" href="https://furkanturker.com/ozgecmis" />
+
+    <meta property="og:title" content="Özgeçmiş | Furkan Türker" />
+    <meta property="og:description" content="Deneyim, eğitim ve teknik yetenekler" />
+    <meta property="og:image" content="https://furkanturker.com/img/og-cv.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/img/turker.webp" />
+    <link rel="stylesheet" href="/site/style.css" />
 </head>
+
 <body>
 <main>
     @await Component.InvokeAsync("_NavbarLeftPartial");
@@ -59,14 +60,14 @@
         </nav>
         <article class="resume active" data-page="resume">  
             <header>
-                <h2 class="h2 article-title">Özgeçmiş</h2>
+                <h1 class="h2 article-title">Özgeçmiş</h1>
             </header>
                 
             <section class="timeline">
                 <div class="title-wrapper">
                     <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
-                    <h3 class="h3">Deneyim</h3>
+                    <h2 class="h3">Deneyim</h2>
                 </div>
 
                 <ol class="timeline-list">
@@ -77,7 +78,7 @@
                 <div class="title-wrapper">
                     <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
-                    <h3 class="h3">Eğitim</h3>
+                    <h2 class="h3">Eğitim</h2>
                 </div>
                     
                 <ol class="timeline-list">

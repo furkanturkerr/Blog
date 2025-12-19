@@ -20,7 +20,7 @@ public class DefaultController:Controller
         return View();
     }
     
-    public IActionResult BLog()
+    public IActionResult Blog()
     {
         return View();
     }
