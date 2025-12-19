@@ -13,7 +13,7 @@ public class _PortfolioPartial:ViewComponent
     public IViewComponentResult Invoke()
     {
         var values = _portfolioService.GetAll();
-        
-        return View(values);
+        var sortedValues = values.OrderByDescending(x => x.PortfolioId).ToList();
+        return View(sortedValues);
     }
 }
