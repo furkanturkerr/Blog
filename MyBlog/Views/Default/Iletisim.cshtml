@@ -1,0 +1,106 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    @await Component.InvokeAsync("_GooglePartial")
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Türker</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta
+        name="description"
+        content="Furkan Türker tarafından geliştirilen modern web projeleri, yazılım eğitim notları ve blog içeriklerinin yer aldığı portföy sitesi. HTML, CSS, JavaScript ve .NET projelerine dair detaylı örnekler."/>
+
+    <meta
+        name="keywords"
+        content="Furkan Türker, Web Developer, Yazılım Geliştirici, HTML CSS JS, .NET Core, ASP.NET MVC, portföy sitesi, programlama blogu, yazılım projeleri"/>
+
+    <meta name="author" content="Furkan Türker"/>
+    
+
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="~/img/turker.webp"/>
+    
+    
+    <link rel="stylesheet" href="/site/style.css">
+
+</head>
+<body>
+<main>
+    @await Component.InvokeAsync("_NavbarLeftPartial");
+
+    <div class="main-content">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="/Anasayfa" class="navbar-link">Hakkımda</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="/Ozgecmis" class="navbar-link">Özgeçmiş</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="/Projeler" class="navbar-link">Projeler</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="/Blog" class="navbar-link">Blog</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="/Iletisim" class="navbar-link active">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+        <article class="contact active" data-page="contact">
+            <header>
+                <h2 class="h2 article-title">İletişim</h2>
+            </header>
+
+            <section class="mapbox" data-mapbox>
+                <figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47964.745887426536!2d36.272499025651165!3d41.291530646736184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408877e97607d663%3A0xb939cc265fdeb52!2sSamsun!5e0!3m2!1str!2str!4v1738968112065!5m2!1str!2str" 
+                            width="600" height="450" style="border:0;" 
+                            allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </figure>
+            </section>
+
+
+            <section class="contact-form">
+                <h3 class="h3 form-title">İletişim Formu</h3>
+
+                <form action="#" class="form" data-form>
+                    <div class="input-wrapper">
+                        <input type="text" name="fullname" class="form-input" placeholder="İsim Soyisim" required data-form-input>
+                        <input type="email" name="email" class="form-input" placeholder="Email Adresi" required data-form-input>
+                    </div>
+
+                    <textarea name="message" class="form-input" placeholder="Mesajın" required data-form-input=""></textarea>
+
+                    <button class="form-btn" type="submit" disabled data-form-btn>
+                        <ion-icon name="paper-plane"></ion-icon>
+                        <span>Mesajı Gönder</span>
+                    </button>
+                </form>
+            </section>
+        </article>
+    </div>
+</main>
+
+<script src="/site/main.js"></script>
+
+<script type="module" src="/https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="/https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

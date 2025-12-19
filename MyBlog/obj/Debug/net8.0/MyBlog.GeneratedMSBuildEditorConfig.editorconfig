@@ -50,8 +50,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxTY3JpcHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Default/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9JbmRleC5jc2h0bWw=
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Default/Anasayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9BbmFzYXlmYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Default/BLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9CTG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Default/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9JbGV0aXNpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Default/Ozgecmis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9PemdlY21pcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Default/Projeler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVmYXVsdC9Qcm9qZWxlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Education/Add.cshtml]
@@ -184,6 +200,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_SkillsPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1NraWxsc1BhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_ThemaNavbarPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1RoZW1hTmF2YmFyUGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/_AdminLayout.cshtml]

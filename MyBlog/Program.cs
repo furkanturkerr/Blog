@@ -99,9 +99,33 @@ app.UseAuthentication(); // Kimlik doğrulama
 app.UseAuthorization();  // Yetkilendirme
 app.MapControllers();
 
+app.MapControllerRoute(
+    name: "projeler",
+    pattern: "Projeler",
+    defaults: new { controller = "Default", action = "Projeler" });
+
+app.MapControllerRoute(
+    name: "ozgecmis",
+    pattern: "Ozgecmis",
+    defaults: new { controller = "Default", action = "Ozgecmis" });
+
+app.MapControllerRoute(
+    name: "blog",
+    pattern: "Blog",
+    defaults: new { controller = "Default", action = "Blog" });
+
+app.MapControllerRoute(
+    name: "iletisim",
+    pattern: "Iletisim",
+    defaults: new { controller = "Default", action = "Iletisim" });
+
+app.MapControllerRoute(
+    name: "anasayfa",
+    pattern: "anasayfa",
+    defaults: new { controller = "Default", action = "Anasayfa" });
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Default}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Anasayfa}/{id?}");
 
 app.Run();
