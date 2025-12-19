@@ -1,3 +1,4 @@
+@model Dto.Contact.CreateContactDto
 @{
     Layout = null;
 }
@@ -74,15 +75,15 @@
             <section class="contact-form">
                 <h2 class="h3 form-title">İletişim Formu</h2>
 
-                <form action="#" class="form" data-form>
+                <form method="post" class="form" data-form>
                     <div class="input-wrapper">
-                        <input type="text" name="fullname" class="form-input" placeholder="İsim Soyisim" required data-form-input>
-                        <input type="email" name="email" class="form-input" placeholder="Email Adresi" required data-form-input>
+                        <input type="text"  asp-for="Name" class="form-input" placeholder="İsim Soyisim" required data-form-input>
+                        <input type="email" asp-for="Email" class="form-input" placeholder="Email Adresi" required data-form-input>
                     </div>
 
-                    <textarea name="message" class="form-input" placeholder="Mesajın" required data-form-input=""></textarea>
+                    <textarea class="form-input" asp-for="Message" placeholder="Mesajın" required data-form-input=""></textarea>
 
-                    <button class="form-btn" type="submit" disabled data-form-btn>
+                    <button class="form-btn" type="submit"  data-form-btn>
                         <ion-icon name="paper-plane"></ion-icon>
                         <span>Mesajı Gönder</span>
                     </button>
@@ -91,6 +92,28 @@
         </article>
     </div>
 </main>
+@if (TempData["Basarili"] != null)
+{
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+
+        Toast.fire({
+            icon: "success",
+            title: "@TempData["Basarili"]"
+        });
+    </script>
+}
 
 <script src="/site/main.js"></script>
 

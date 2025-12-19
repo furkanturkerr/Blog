@@ -65,6 +65,8 @@ builder.Services.AddScoped<IPortfolioService, PortfolioManager>();
 builder.Services.AddScoped<IPortfolioDal, EfPortfolioDal>();
 builder.Services.AddScoped<IGoogleService, GoogleManager>();
 builder.Services.AddScoped<IGoogleDal, EfGoogleDal>();
+builder.Services.AddScoped<IContactService, ContactManager>();
+builder.Services.AddScoped<IContactDal, EfContactDal>();
 
 
 var app = builder.Build();

@@ -1,8 +1,8 @@
-namespace Entities.Concrate;
+namespace Dto.Contact;
 
-public class Contact
+public class CreateContactDto
 {
-    public int ContactId { get; set; }
+    public string ContactMap { get; set; }
     public string Email { get; set; }
     public string Name { get; set; }
     public string Message { get; set; }
