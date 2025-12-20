@@ -30,15 +30,10 @@ builder.Services.AddControllersWithViews(options =>
     options.Filters.Add(new AuthorizeFilter(requireAuthorizationPolicy));
 });
 
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Login/Index";
-});
-
 // ÖNEMLİ: Cookie ayarları
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.LoginPath = "/Login"; 
+    options.LoginPath = "/Login/Index"; 
     options.LogoutPath = "/Login/Logout";
     options.AccessDeniedPath = "/Login";
     options.ExpireTimeSpan = TimeSpan.FromHours(1); 

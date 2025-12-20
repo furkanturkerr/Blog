@@ -55,7 +55,7 @@
 </head>
 <body>
     <main>
-        @await Component.InvokeAsync("_NavbarLeftPartial");
+        @await Component.InvokeAsync("_NavbarLeftPartial")
 
         <div class="main-content">
             <nav class="navbar">
@@ -86,10 +86,10 @@
                     <h1 class="h2 article-title">Hakkımda</h1>
                 </header>
 
-                @await Component.InvokeAsync("_AboutPartial");
+                @await Component.InvokeAsync("_AboutPartial")
                 
 
-                @await Component.InvokeAsync("_ServicePartial");
+                @await Component.InvokeAsync("_ServicePartial")
                 
 
                 <!--<section class="testimonials">
@@ -179,7 +179,7 @@
                     </section>
                 </div>
 
-                @await Component.InvokeAsync("_ExperincePartial");
+                @await Component.InvokeAsync("_ExperincePartial")
 
             </article>
         </div>
