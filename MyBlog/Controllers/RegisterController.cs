@@ -1,10 +1,11 @@
 using Dto.IdentityDtos;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
-
+[Authorize]
 public class RegisterController : Controller
 {
     private readonly UserManager<AppUser> _userManager;

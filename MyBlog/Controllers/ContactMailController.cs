@@ -2,10 +2,11 @@ using AutoMapper;
 using Business.Abstract;
 using Dto.Contact;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
-
+[Authorize]
 public class ContactMailController : Controller
 {
     private readonly IContactService  _contactService;

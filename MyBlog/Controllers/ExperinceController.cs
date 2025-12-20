@@ -2,11 +2,12 @@ using Business.Abstract;
 using Business.ValidationRules;
 using Entities.Concrate;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MyBlog.Models;
 
 namespace MyBlog.Controllers;
-
+[Authorize]
 public class ExperinceController:Controller
 {
     private IExperinceService _experinceService;

@@ -2,10 +2,12 @@ using Business.Abstract;
 using Business.ValidationRules;
 using Entities.Concrate;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers
 {
+    [Authorize]
     public class PortfolioController : Controller
     {
         private readonly IPortfolioService _portfolioService;

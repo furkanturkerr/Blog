@@ -2,10 +2,11 @@ using AutoMapper;
 using Business.Abstract;
 using Dto.GoogleDtos;
 using Entities.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
-
+[Authorize]
 public class GoogleController : Controller
 {
     private readonly IGoogleService _googleService;

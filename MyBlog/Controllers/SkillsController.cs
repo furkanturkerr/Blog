@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
-
+[Authorize]
 public class SkillsController:Controller
 {
     private readonly ISkillsService _skillsService;
