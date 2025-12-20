@@ -8,11 +8,11 @@ public class BlogContexts :  IdentityDbContext<AppUser, AppRole, int>
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        //optionsBuilder.UseSqlServer(
-            //"Server=localhost,1995;Database=Blog;User Id=sa;Password=Furkan12*;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer(
+            "Server=localhost,1995;Database=Blog;User Id=sa;Password=Furkan12*;TrustServerCertificate=True;");
             
-           optionsBuilder.UseSqlServer(
-              "Server=.\\MSSQLSERVER2019;Database=furk8287_site;User Id=furk8287_site;Password=Furkan123*;TrustServerCertificate=True;");
+           //optionsBuilder.UseSqlServer(
+             // "Server=.\\MSSQLSERVER2019;Database=furk8287_site;User Id=furk8287_site;Password=Furkan123*;TrustServerCertificate=True;");
 
 
     }

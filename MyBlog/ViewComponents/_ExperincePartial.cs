@@ -13,6 +13,7 @@ public class _ExperincePartial:ViewComponent
     public IViewComponentResult Invoke()
     {
         var values = _experinceService.GetAll();
-        return View(values);
+        var sortedValues = values.OrderByDescending(x => x.ExperienceId).ToList();
+        return View(sortedValues);
     }
 }

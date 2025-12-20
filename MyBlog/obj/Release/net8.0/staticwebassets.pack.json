@@ -3517,6 +3517,18 @@
       "PackagePath": "staticwebassets/img/profil.jpeg"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/sertfika-furkan-turker.jpg",
+      "PackagePath": "staticwebassets/img/sertfika-furkan-turker.jpg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/sertifika-1-furkan-turker.jpg",
+      "PackagePath": "staticwebassets/img/sertifika-1-furkan-turker.jpg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/sertifika-3-furkanturker.jpg",
+      "PackagePath": "staticwebassets/img/sertifika-3-furkanturker.jpg"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/turker.webp",
       "PackagePath": "staticwebassets/img/turker.webp"
     },

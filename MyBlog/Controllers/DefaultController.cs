@@ -34,6 +34,7 @@ public class DefaultController:Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Iletisim(CreateContactDto createContactDto)
     {
         var value = _mapper.Map<Contact>(createContactDto);

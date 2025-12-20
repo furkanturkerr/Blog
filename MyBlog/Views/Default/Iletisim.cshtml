@@ -75,7 +75,10 @@
             <section class="contact-form">
                 <h2 class="h3 form-title">İletişim Formu</h2>
 
-                <form method="post" class="form" data-form>
+                <form asp-controller="Default" asp-action="Iletisim" method="post">
+
+                    @Html.AntiForgeryToken()
+                    
                     <div class="input-wrapper">
                         <input type="text"  asp-for="Name" class="form-input" placeholder="İsim Soyisim" required data-form-input>
                         <input type="email" asp-for="Email" class="form-input" placeholder="Email Adresi" required data-form-input>
