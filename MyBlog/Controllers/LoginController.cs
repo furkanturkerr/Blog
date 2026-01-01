@@ -37,6 +37,6 @@ public class LoginController : Controller
     public IActionResult Logout()
     {
         _signInManager.SignOutAsync();
-        return RedirectToAction("Index", "Default");
+        return RedirectToAction("Anasayfa", "Default");
     }
 }

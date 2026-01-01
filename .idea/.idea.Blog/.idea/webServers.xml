@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ca2eeb8d-2353-44f4-8db3-4d84e95dc69c" name="hh" url="https://mt-power-win.guzelhosting.com:8445/login_up.php">
+        <fileTransfer rootFolder="/httpdocs" host="104.247.161.58 " port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

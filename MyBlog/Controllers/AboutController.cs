@@ -4,11 +4,10 @@ using Business.ValidationRules;
 using Dto.AboutDto;
 using Entities.Concrate;
 using FluentValidation.Results;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
-[Authorize]
+
 public class AboutController:Controller
 {
     private readonly IAbautService _abautService;

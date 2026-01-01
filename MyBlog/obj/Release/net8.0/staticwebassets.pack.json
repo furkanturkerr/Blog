@@ -3509,12 +3509,80 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/favicon_io/android-chrome-192x192.png",
+      "PackagePath": "staticwebassets/favicon_io/android-chrome-192x192.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/favicon_io/android-chrome-512x512.png",
+      "PackagePath": "staticwebassets/favicon_io/android-chrome-512x512.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/favicon_io/apple-touch-icon.png",
+      "PackagePath": "staticwebassets/favicon_io/apple-touch-icon.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/favicon_io/favicon-16x16.png",
+      "PackagePath": "staticwebassets/favicon_io/favicon-16x16.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/favicon_io/favicon-32x32.png",
+      "PackagePath": "staticwebassets/favicon_io/favicon-32x32.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/favicon_io/favicon.ico",
+      "PackagePath": "staticwebassets/favicon_io/favicon.ico"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/favicon_io/site.webmanifest",
+      "PackagePath": "staticwebassets/favicon_io/site.webmanifest"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/anasayfa-furkan-turker.webp",
+      "PackagePath": "staticwebassets/img/anasayfa-furkan-turker.webp"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/apple-touch-icon.png",
+      "PackagePath": "staticwebassets/img/apple-touch-icon.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/blog-furkan-turker.webp",
+      "PackagePath": "staticwebassets/img/blog-furkan-turker.webp"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/favicon-32x32.png",
+      "PackagePath": "staticwebassets/img/favicon-32x32.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/favicon-96x96.png",
+      "PackagePath": "staticwebassets/img/favicon-96x96.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/favicon.png",
+      "PackagePath": "staticwebassets/img/favicon.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/favicon.svg",
+      "PackagePath": "staticwebassets/img/favicon.svg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/iletisim-furkan-turker.webp",
+      "PackagePath": "staticwebassets/img/iletisim-furkan-turker.webp"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/link.jpeg",
       "PackagePath": "staticwebassets/img/link.jpeg"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/ozgecmis-furkan-turker.webp",
+      "PackagePath": "staticwebassets/img/ozgecmis-furkan-turker.webp"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/profil.jpeg",
       "PackagePath": "staticwebassets/img/profil.jpeg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/projeler-furkan-turker.webp",
+      "PackagePath": "staticwebassets/img/projeler-furkan-turker.webp"
     },
     {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/sertfika-furkan-turker.jpg",
@@ -3529,8 +3597,20 @@
       "PackagePath": "staticwebassets/img/sertifika-3-furkanturker.jpg"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/site.webmanifest",
+      "PackagePath": "staticwebassets/img/site.webmanifest"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/turker.webp",
       "PackagePath": "staticwebassets/img/turker.webp"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/web-app-manifest-192x192.png",
+      "PackagePath": "staticwebassets/img/web-app-manifest-192x192.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/web-app-manifest-512x512.png",
+      "PackagePath": "staticwebassets/img/web-app-manifest-512x512.png"
     },
     {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/js/site.js",
@@ -3763,6 +3843,10 @@
     {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/robots.txt",
+      "PackagePath": "staticwebassets/robots.txt"
     },
     {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/site/images/furkan.webp",

@@ -2,11 +2,10 @@ using AutoMapper;
 using Business.Abstract;
 using Dto.Contact;
 using Entities.Concrate;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
-[Authorize]
+
 public class ContactMailController : Controller
 {
     private readonly IContactService  _contactService;
@@ -20,7 +19,14 @@ public class ContactMailController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        var values = _mapper.Map<List<ResultContactDto>>(_contactService.GetAll());
-        return View(values);
+        var values = _contactService.GetAll();
+
+        var sortedValues = values
+            .OrderByDescending(x => x.ContactId)
+            .ToList();
+
+        var dtoList = _mapper.Map<List<ResultContactDto>>(sortedValues);
+
+        return View(dtoList);
     }
 }

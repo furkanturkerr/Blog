@@ -25,6 +25,11 @@ builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<BlogCo
 builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add(new AuthorizeFilter(requireAuthorizationPolicy));
+});
+
 
 // ÖNEMLİ: Cookie ayarları
 builder.Services.ConfigureApplicationCookie(options =>

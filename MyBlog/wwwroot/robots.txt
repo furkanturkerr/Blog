@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /Admin/
+Disallow: /AdminHome/
+Disallow: /AdminPartial/
+
+Sitemap: https://furkanturker.com/sitemap.xml
