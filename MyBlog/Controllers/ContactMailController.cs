@@ -29,4 +29,50 @@ public class ContactMailController : Controller
 
         return View(dtoList);
     }
+    
+    [HttpGet]
+    public IActionResult Detail(int id)
+    {
+        var values = _contactService.GetById(id);
+        return View(_mapper.Map<ResultContactDto>(values));
+    }
+    
+    [HttpGet]
+    public IActionResult Unread(int id)
+    {
+        var values = _contactService.TListFalse();
+        var sortedValues = values
+            .OrderByDescending(x => x.ContactId)
+            .ToList();
+        return View(_mapper.Map<List<ResultContactDto>>(sortedValues));
+    }
+    
+    [HttpGet]
+    public IActionResult Read(int id)
+    {
+        var values = _contactService.TListTrue();
+        var sortedValues = values
+            .OrderByDescending(x => x.ContactId)
+            .ToList();
+        return View(_mapper.Map<List<ResultContactDto>>(sortedValues));
+    }
+
+    public IActionResult ChangeStatusTrue(int id)
+    {
+        _contactService.TChageStatusWithTrue(id);
+        return RedirectToAction("Unread");
+    }
+    
+    public IActionResult ChangeStatusFalse(int id)
+    {
+        _contactService.TChageStatusWithFalse(id);
+        return RedirectToAction("Read");
+    }
+    
+    public IActionResult Delete(int id)
+    {
+        var values = _contactService.GetById(id);
+        _contactService.Delete(values);
+        return RedirectToAction("Unread");   
+    }
 }

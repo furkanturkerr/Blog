@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -66,6 +67,13 @@ builder.Services.AddScoped<IContactDal, EfContactDal>();
 
 
 var app = builder.Build();
+
+// Otomatik migration çalıştır
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<BlogContexts>();
+    db.Database.Migrate();
+}
 
 var cultures = new[] { new CultureInfo("tr-TR") };
 app.UseRequestLocalization(new RequestLocalizationOptions{

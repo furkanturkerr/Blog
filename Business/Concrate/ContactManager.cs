@@ -35,4 +35,24 @@ public class ContactManager : IContactService
     {
         return _contactDal.GetById(id);
     }
+
+    public List<Contact> TListTrue()
+    {
+        return _contactDal.ListTrue();
+    }
+
+    public List<Contact> TListFalse()
+    {
+        return _contactDal.ListFalse();
+    }
+
+    public void TChageStatusWithTrue(int id)
+    {
+        _contactDal.ChageStatusWithTrue(id);
+    }
+
+    public void TChageStatusWithFalse(int id)
+    {
+        _contactDal.ChageStatusWithFalse(id);
+    }
 }
