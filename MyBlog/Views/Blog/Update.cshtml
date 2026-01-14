@@ -1,0 +1,41 @@
+@model Entities.Concrate.Blog
+
+@{
+    ViewBag.Title = "Blog Güncelle";
+    Layout = "_Layout";
+}
+@*Bu sayfa düzenlenicek - en alta seo kısmı gelicek*@
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Blog</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Blog Güncelle</li>
+        </ul>
+    </div>
+</div>
+
+<form method="post" class="form-control">
+    <input type="hidden" asp-for="BlogId"/>
+    <input type="hidden" asp-for="BlogStatus"/>
+    <input type="hidden" asp-for="BlogDate"/>
+    <input type="hidden" asp-for="BlogAuthor"/>
+    <label>Başlık</label>
+    <input type="text" asp-for="BlogTitle" class="form-control"/>
+    @*@Html.ValidationMessageFor(x=> x.EducationContentlow)*@
+    <br/>
+    <label>Açıklama</label>
+    <textarea asp-for="BlogText"  rows="10" class="form-control"></textarea>
+    <br/>
+    <label>Kategori Adı</label>
+    <input type="text" asp-for="BlogCategory" class="form-control"/>
+    <br/>
+    <label>Görsel</label>
+    <input type="text" asp-for="BlogImage" class="form-control"/>
+    <br/>
+    <label>Yazı Kısa Adı</label>
+    <input type="text" asp-for="BlogSlug" class="form-control"/>
+    <br/>
+    <button class="btn btn-outline-warning">Güncelle</button>
+</form>

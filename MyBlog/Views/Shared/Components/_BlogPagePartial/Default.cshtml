@@ -1,0 +1,27 @@
+@model List<Entities.Concrate.Blog>
+
+<section class="blog-posts">
+    <ul class="blog-posts-list">
+        @foreach (var item in Model)
+        {
+            <li class="blog-post-item">
+                <a href="#">
+                    <figure class="blog-banner-box">
+                        <img src="@item.BlogImage" alt="@item.BlogTitle" loading="lazy">
+                    </figure>
+
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">@item.BlogCategory</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">@item.BlogDate</time>
+                        </div>
+
+                        <h3 class="h3 blog-item-title">@item.BlogTitle</h3>
+                        <p class="blog-text">@item.BlogText</p>
+                    </div>
+                </a>
+            </li>
+        }
+    </ul>
+</section>

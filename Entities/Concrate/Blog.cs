@@ -9,5 +9,6 @@ public class Blog
     public string BlogDate { get; set; }
     public string BlogCategory { get; set; }
     public string BlogAuthor { get; set; }
-    public string BlogStatus { get; set; }
+    public bool BlogStatus { get; set; }
+    public string BlogSlug { get; set; }
 }

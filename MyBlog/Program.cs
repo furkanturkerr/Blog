@@ -64,6 +64,8 @@ builder.Services.AddScoped<IGoogleService, GoogleManager>();
 builder.Services.AddScoped<IGoogleDal, EfGoogleDal>();
 builder.Services.AddScoped<IContactService, ContactManager>();
 builder.Services.AddScoped<IContactDal, EfContactDal>();
+builder.Services.AddScoped<IBlogService, BlogManager>();
+builder.Services.AddScoped<IBlogDal, EfBlogDal>();
 
 
 var app = builder.Build();
