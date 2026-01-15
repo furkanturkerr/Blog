@@ -3849,6 +3849,10 @@
       "PackagePath": "staticwebassets/robots.txt"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/site/blog.html",
+      "PackagePath": "staticwebassets/site/blog.html"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/site/images/furkan.webp",
       "PackagePath": "staticwebassets/site/images/furkan.webp"
     },

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detay - Furkan Türker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png">
+
+    <style>
+        /* ================= BLOG ANA ================= */
+        .blog.active{
+            background:rgba(255,255,255,.03);
+            backdrop-filter:blur(14px);
+            border-radius:24px;
+            padding:30px;
+        }
+
+        /* ================= ANA GÖRSEL ================= */
+        .blog-posts > .blog-banner-box{
+            height:380px; /* 1920x1080 için ideal */
+            border-radius:22px;
+            overflow:hidden;
+            position:relative;
+            margin-bottom:26px;
+        }
+
+        .blog-posts > .blog-banner-box img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:center;
+            transition:.6s ease;
+        }
+
+        .blog-posts > .blog-banner-box::after{
+            content:"";
+            position:absolute;
+            inset:0;
+            background:linear-gradient(
+                    to bottom,
+                    rgba(0,0,0,.15),
+                    rgba(0,0,0,.35)
+            );
+        }
+
+        .blog-posts > .blog-banner-box:hover img{
+            transform:scale(1.04);
+        }
+
+        /* ================= YAZI ================= */
+        .about-text{
+            max-width:780px;
+        }
+
+        .about-text p{
+            font-size:16px;
+            line-height:1.9;
+            margin-bottom:18px;
+        }
+
+        /* ================= ALINTI ================= */
+        .testimonials{
+            margin:32px 0;
+        }
+
+        .testimonials .content-card{
+            background:rgba(255,255,255,.06);
+            backdrop-filter:blur(10px);
+            border-left:4px solid hsl(220,80%,66%);
+            padding:18px 22px;
+            border-radius:14px;
+            color: white;
+        }
+        .blog-posts-list{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+
+        .blog-post-item a{
+            display:flex;
+            gap:10px;
+            align-items:center;
+            padding:8px;
+            border-radius:12px;
+            transition:.25s ease;
+        }
+
+        .blog-post-item a:hover{
+            background:rgba(255,255,255,.06);
+        }
+
+        .blog-post-item .blog-banner-box{
+            width:56px;
+            height:56px;
+            border-radius:10px;
+            overflow:hidden;
+            flex-shrink:0;
+        }
+
+        .blog-post-item img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .blog-post-item h3{
+            font-size:13px;
+            line-height:1.35;
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+    <aside class="sidebar " data-sidebar>
+        <div class="sidebar-info">
+            <figure class="avatar-box">
+                <img src="images/turker.webp" alt="avatar" width="80">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Richard Hanrick">Furkan Türker</h1>
+                <p class="title">Software Developer</p>
+            </div>
+
+            <button class="info-more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+        </div>
+
+        <div class="sidebar-info-more">
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+                <li class="contact-item">
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Email</p>
+
+                        <a href="mailto:richard@example.com" class="contact-link">furkanturker.dev@gmail.com</a>
+                    </div>
+                </li>
+
+                <li class="contact-item">
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Telefon</p>
+
+                        <a href="tel:+905050507428" class="contact-link">+90 (505) 050 7428</a>
+                    </div>
+                </li>
+
+                <li class="contact-item">
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Doğum Günüm</p>
+
+                        <time datetime="1982-06-23">Ekim 3, 2005</time>
+                    </div>
+                </li>
+
+                <li class="contact-item">
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Konum</p>
+
+                        <address>Türkiye</address>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+                <li class="social-item"><a href="https://www.linkedin.com/in/furkanturker/" target="_blank" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li class="social-item"><a href="https://github.com/furkanturkerr" target="_blank"  class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <div class="main-content">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+            </ul>
+        </nav>
+        <article class="blog active">
+
+            <header>
+                <h2 class="h2 article-title">Design conferences in 2024</h2>
+            </header>
+
+            <section class="blog-posts">
+
+                <figure class="blog-banner-box">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/1008/989/161/2018-dag-do%C4%9Fa-girl-wallpaper-preview.jpg">
+                </figure>
+
+                <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time>Feb 23, 2024</time>
+                </div>
+
+                <div class="about-text">
+                    <p>In 2024, the design community is buzzing with anticipation for exciting conferences.</p>
+                    <p>These events bring professionals together to share ideas shaping the future.</p>
+                </div>
+
+                <div class="testimonials">
+                    <div class="content-card">
+                        <p><i>“The best way to predict the future of design is to create it together.”</i></p>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <p>Beyond formal sessions, conferences provide spontaneous inspiration.</p>
+                </div>
+
+            </section>
+        </article>
+    </div>
+
+</main>
+<script src="main.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
