@@ -29,4 +29,5 @@ public class BlogContexts :  IdentityDbContext<AppUser, AppRole, int>
     public DbSet<Education> Educations { get; set; }
     public DbSet<Portfolio> Portfolios { get; set; }
     public DbSet<Google> Googles { get; set; }
+    public DbSet<Images> Images { get; set; }
 }

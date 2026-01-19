@@ -301,6 +301,23 @@ namespace Data_Access_Layer.Migrations
                     b.ToTable("Googles");
                 });
 
+            modelBuilder.Entity("Entities.Concrate.Images", b =>
+                {
+                    b.Property<int>("ImagesId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ImagesId"));
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ImagesId");
+
+                    b.ToTable("Images");
+                });
+
             modelBuilder.Entity("Entities.Concrate.NavbarLeft", b =>
                 {
                     b.Property<int>("NavbarLeftId")

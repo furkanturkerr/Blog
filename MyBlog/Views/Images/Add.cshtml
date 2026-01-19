@@ -1,0 +1,44 @@
+@model ImagesViewModel
+
+@{
+    ViewData["Title"] = "Görsel Ekle";
+    Layout = "_Layout";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Görseller</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Görsel Ekle</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+            
+            <div class="mb-3">
+                <label class="form-label">Dosyadan Yükle</label>
+                <input type="file" 
+                       asp-for="Image" 
+                       class="form-control" 
+                       accept="image/*"
+                       required/>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <button type="submit" class="btn btn-outline-warning">
+                    <i class="fas fa-save"></i> Kaydet
+                </button>
+                <a href="~/Images/Index" class="btn btn-outline-secondary">
+                    <i class="fas fa-times"></i> İptal
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

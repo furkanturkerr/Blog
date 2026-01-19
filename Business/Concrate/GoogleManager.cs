@@ -1,6 +1,5 @@
 using Business.Abstract;
 using Data_Access_Layer.Abstract;
-using Dto.Portfolio;
 using Entities.Concrate;
 
 namespace Business.Concrate;

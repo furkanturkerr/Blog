@@ -66,6 +66,8 @@ builder.Services.AddScoped<IContactService, ContactManager>();
 builder.Services.AddScoped<IContactDal, EfContactDal>();
 builder.Services.AddScoped<IBlogService, BlogManager>();
 builder.Services.AddScoped<IBlogDal, EfBlogDal>();
+builder.Services.AddScoped<IImagesDal, EfImagesDal>();
+builder.Services.AddScoped<IImagesService, ImagesManager>();
 
 
 var app = builder.Build();

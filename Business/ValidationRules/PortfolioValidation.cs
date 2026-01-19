@@ -1,12 +1,11 @@
-using Dto.Portfolio;
 using Entities.Concrate;
 using FluentValidation;
 
 namespace Business.ValidationRules;
 
-public class CreatePortfolioValidation : AbstractValidator<CreatePortfolioDto>
+public class PortfolioValidation : AbstractValidator<Portfolio>
 {
-    public CreatePortfolioValidation()
+    public PortfolioValidation()
     {
         RuleFor(x=>x.PortfolioCategory).NotEmpty().WithMessage("Kategori zorunlu alan");
         RuleFor(x=>x.PortfolioImage).NotNull().WithMessage("Görsel zorunlu alan");

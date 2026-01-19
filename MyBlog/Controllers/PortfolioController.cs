@@ -1,7 +1,6 @@
 using AutoMapper;
 using Business.Abstract;
 using Business.ValidationRules;
-using Dto.Portfolio;
 using Entities.Concrate;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
@@ -34,30 +33,13 @@ namespace MyBlog.Controllers
         }
         
         [HttpPost]
-        public IActionResult Add(CreatePortfolioDto createPortfolioDto)
+        public IActionResult Add(Portfolio portfolio)
         {
-            if (createPortfolioDto == null)
-            {
-                return View();
-            }
-
-            CreatePortfolioValidation createPortfolioValidation = new CreatePortfolioValidation();
-            ValidationResult validationResult = createPortfolioValidation.Validate(createPortfolioDto);
+            PortfolioValidation portfolioValidation = new PortfolioValidation();
+            ValidationResult validationResult = portfolioValidation.Validate(portfolio);
             if (validationResult.IsValid)
             {
-                if (createPortfolioDto.PortfolioImage != null)
-                {
-                    var extension = Path.GetExtension(createPortfolioDto.PortfolioImage.FileName);
-                    var imageName = Guid.NewGuid().ToString() + extension;
-                    var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/upload", imageName);
-
-                    using var stream = new FileStream(location, FileMode.Create);
-                    createPortfolioDto.PortfolioImage.CopyTo(stream);
-
-                    createPortfolioDto.PortfolioImagePath = "/img/upload/" + imageName;
-                }
-                var value = _mapper.Map<Portfolio>(createPortfolioDto);
-                _portfolioService.Insert(value);
+                _portfolioService.Insert(portfolio);
                 return RedirectToAction("Index");
             }
             else
@@ -67,53 +49,24 @@ namespace MyBlog.Controllers
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
-
             return View();
         }
-
-
         
         [HttpGet]
         public IActionResult Update(int id)
         {
             var values = _portfolioService.GetById(id);
-            if (values == null)
-            {
-                return RedirectToAction("Index");
-            }
-
-            var dto = _mapper.Map<UpdatePortfolioDto>(values);
-            return View(dto);
+            return View(values);
         }
-        
+
         [HttpPost]
-        public IActionResult Update(UpdatePortfolioDto updatePortfolioDto)
+        public IActionResult Update(Portfolio portfolio)
         {
-            if (updatePortfolioDto == null)
-            {
-                return View();
-            }
-            
-            UpdatePortfolioValidation updatePortfolioValidation = new UpdatePortfolioValidation();
-            ValidationResult validationResult = updatePortfolioValidation.Validate(updatePortfolioDto);
+            PortfolioValidation portfolioValidation = new PortfolioValidation();
+            ValidationResult validationResult = portfolioValidation.Validate(portfolio);
             if (validationResult.IsValid)
             {
-                // Yeni görsel yüklendiyse işle
-                if (updatePortfolioDto.PortfolioImage != null)
-                {
-                    var extension = Path.GetExtension(updatePortfolioDto.PortfolioImage.FileName);
-                    var imageName = Guid.NewGuid().ToString() + extension;
-                    var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/upload", imageName);
-
-                    using var stream = new FileStream(location, FileMode.Create);
-                    updatePortfolioDto.PortfolioImage.CopyTo(stream);
-
-                    updatePortfolioDto.PortfolioImagePath = "/img/upload/" + imageName;
-                }
-                // Yeni görsel yoksa, eski görseli koru (PortfolioImagePath zaten dolu gelir)
-
-                var value = _mapper.Map<Portfolio>(updatePortfolioDto);
-                _portfolioService.Update(value);
+                _portfolioService.Update(portfolio);
                 return RedirectToAction("Index");
             }
             else
@@ -123,8 +76,7 @@ namespace MyBlog.Controllers
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
-
-            return View();
+            return View(portfolio);
         }
 
         public IActionResult Delete(int id)

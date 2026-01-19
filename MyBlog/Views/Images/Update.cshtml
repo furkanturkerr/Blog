@@ -1,0 +1,27 @@
+@model ImagesViewModel
+
+@{
+    ViewData["Title"] = "Projelerim";
+    Layout = "_Layout";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Görseller</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Görsel Güncelle</li>
+        </ul>
+    </div>
+</div>
+
+<form method="post" enctype="multipart/form-data">
+    <img src="@Model.ImagePath" width="200" height="100"/>
+    <label>Dosyadan Yükle</label>
+    <br/>
+    <input type="file" asp-for="Image" class="form-control" required="required"/>
+    <br/>
+    <button class="btn btn-outline-warning">Güncelle</button>
+    <a href="~/Images/Index" class="btn btn-outline-dark">İptal</a>
+</form>

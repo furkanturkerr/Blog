@@ -1,0 +1,85 @@
+@model List<Entities.Concrate.Images>
+
+@{
+ViewData["Title"] = "Görseller";
+Layout = "_Layout";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Görseller</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Görsel Yolları (Kopyalamk için tıkla.)</li>
+        </ul>
+    </div>
+</div>
+
+<a href="~/Images/Add" class="btn btn-primary btn-sm mb-3">
+    <i class="fas fa-plus"></i> Ekle
+</a>
+
+<div class="container-fluid py-3">
+    @if (Model == null || !Model.Any())
+    {
+    <div class="alert alert-info">Henüz görsel bulunmamaktadır.</div>
+    }
+    else
+    {
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        @foreach (var item in Model)
+        {
+        <div style="width: 250px; height: 160px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; position: relative;">
+            <img src="@item.Image"
+                 style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+                 onclick="copyPath('@item.Image')"
+                 title="@item.Image"
+                 alt="Görsel"/>
+
+            <!-- Düzenle ve Sil Butonları -->
+            <div style="position: absolute; top: 5px; right: 5px; z-index: 10; display: flex; gap: 3px;">
+                <a href="~/Images/Update/@item.ImagesId"
+                   class="btn btn-warning btn-sm"
+                   style="padding: 3px 8px; font-size: 11px;"
+                   onclick="event.stopPropagation()">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <a href="~/Images/Delete/@item.ImagesId"
+                   class="btn btn-danger btn-sm"
+                   style="padding: 3px 8px; font-size: 11px;"
+                   onclick="event.stopPropagation(); return confirm('Bu görseli silmek istediğinizden emin misiniz?');">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </div>
+
+            <!-- Yol Bilgisi -->
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.6); color: white; font-size: 10px; padding: 3px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                @item.Image
+            </div>
+        </div>
+        }
+    </div>
+    }
+</div>
+
+<div id="copyNotification"
+     style="position: fixed; top: 20px; right: 20px; z-index: 9999; display: none;"
+     class="alert alert-success shadow">
+    <strong>✓ Kopyalandı!</strong><br/>
+    <small id="copiedPath" style="font-size: 0.8rem;"></small>
+</div>
+
+<script>
+    function copyPath(path) {
+        navigator.clipboard.writeText(path).then(() => {
+            const notification = document.getElementById('copyNotification');
+            const pathDisplay = document.getElementById('copiedPath');
+            pathDisplay.textContent = path;
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 2000);
+        });
+    }
+</script>
