@@ -10,3 +10,4 @@
 /Users/furkanturker/RiderProjects/Blog/Dto/obj/Debug/net8.0/refint/Dto.dll
 /Users/furkanturker/RiderProjects/Blog/Dto/obj/Debug/net8.0/Dto.pdb
 /Users/furkanturker/RiderProjects/Blog/Dto/obj/Debug/net8.0/ref/Dto.dll
+/Users/furkanturker/RiderProjects/Blog/Dto/obj/Debug/net8.0/Dto.csproj.AssemblyReference.cache

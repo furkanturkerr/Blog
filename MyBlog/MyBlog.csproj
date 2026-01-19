@@ -35,6 +35,7 @@
       <Folder Include="Pages\" />
       <Folder Include="wwwroot\images\experiences\" />
       <Folder Include="wwwroot\images\navbarleft\" />
+      <Folder Include="wwwroot\img\upload\" />
     </ItemGroup>
 
     <ItemGroup>

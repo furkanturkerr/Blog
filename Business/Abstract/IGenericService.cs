@@ -1,3 +1,6 @@
+using Dto.Portfolio;
+using Entities.Concrate;
+
 namespace Business.Abstract;
 
 public interface IGenericService <T> where T : class

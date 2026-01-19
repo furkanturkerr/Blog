@@ -1,4 +1,4 @@
-@model Entities.Concrate.Portfolio
+@model Dto.Portfolio.CreatePortfolioDto
 
 @{
     ViewData["Title"] = "Projelerim";
@@ -16,9 +16,9 @@
     </div>
 </div>
 
-<form method="post" class="form-control">
+<form method="post" enctype="multipart/form-data">
     <label>Proje Görseli</label>
-    <input type="text" asp-for="PortfolioImage" class="form-control"/>
+    <input type="file" asp-for="PortfolioImage" class="form-control"/>
     @Html.ValidationMessageFor(x=>x.PortfolioImage)
     <br/>
     <label>Proje Adı</label>

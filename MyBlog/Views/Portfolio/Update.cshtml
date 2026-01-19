@@ -1,8 +1,14 @@
-@model Entities.Concrate.Portfolio
+@model Dto.Portfolio.UpdatePortfolioDto
 
 @{
     ViewData["Title"] = "Projelerim";
     Layout = "_Layout";
+}
+
+@if (Model == null)
+{
+    <p>Portfolio bulunamadı</p>
+    return;
 }
 
 <div class="page-header">
@@ -16,10 +22,24 @@
     </div>
 </div>
 
-<form method="post" class="form-control">
+<form method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="PortfolioId"/>
-    <label>Proje Görseli</label>
-    <input type="text" value="@Model.PortfolioImage" asp-for="PortfolioImage" class="form-control"/>
+    <input type="hidden" asp-for="PortfolioImagePath"/>
+
+    <label>Mevcut Görsel</label>
+    <br/>
+    @if (!string.IsNullOrEmpty(Model.PortfolioImagePath))
+    {
+        <img src="@Model.PortfolioImagePath" width="200" height="100" alt="Portfolio Image"/>
+    }
+    else
+    {
+        <p class="text-muted">Görsel yok</p>
+    }
+    <br/>
+
+    <label>Yeni Görsel Yükle (opsiyonel)</label>
+    <input type="file" asp-for="PortfolioImage" class="form-control"/>
     @Html.ValidationMessageFor(x => x.PortfolioImage)
     <br/>
     <label>Proje Adı</label>

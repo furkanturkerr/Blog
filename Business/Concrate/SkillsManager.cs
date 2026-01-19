@@ -1,5 +1,6 @@
 using Business.Abstract;
 using Data_Access_Layer.Abstract;
+using Dto.Portfolio;
 using Entities.Concrate;
 
 namespace Business.Concrate;
@@ -13,7 +14,7 @@ public class SkillsManager:ISkillsService
     }
     public void Insert(Skills t)
     {
-        _skillsDal.Insert(t);   
+        _skillsDal.Insert(t);
     }
 
     public void Update(Skills t)
