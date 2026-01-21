@@ -1,6 +1,5 @@
 using AutoMapper;
 using Business.Abstract;
-using Dto.GoogleDtos;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,7 +19,7 @@ public class GoogleController : Controller
     public IActionResult GoogleAnalytics()
     {
         var values = _googleService.GetAll();
-        return View(_mapper.Map<List<ResultGoogleAnalyticsDto>>(values));
+        return View(values);
     }
     
     [HttpGet]
@@ -30,10 +29,9 @@ public class GoogleController : Controller
     }
 
     [HttpPost]
-    public IActionResult GoogleAnalyticsAdd(CreateGoogleAnalyticsDto createGoogleAnalyticsDto)
+    public IActionResult GoogleAnalyticsAdd(Google google)
     {
-        var value = _mapper.Map<Google>(createGoogleAnalyticsDto);
-        _googleService.Insert(value);
+        _googleService.Insert(google);
         return RedirectToAction("GoogleAnalytics");
     }
 
@@ -41,14 +39,13 @@ public class GoogleController : Controller
     public IActionResult GoogleAnalyticsUpdate(int id)
     {
         var value = _googleService.GetById(id);
-        return View(_mapper.Map<UpdateGoogleAnalyticsDto>(value));
+        return View(value);
     }
     
     [HttpPost]
-    public IActionResult GoogleAnalyticsUpdate(UpdateGoogleAnalyticsDto updateGoogleAnalyticsDto)
+    public IActionResult GoogleAnalyticsUpdate(Google google)
     {
-        var value = _mapper.Map<Google>(updateGoogleAnalyticsDto);
-        _googleService.Update(value);
+        _googleService.Update(google);
         return RedirectToAction("GoogleAnalytics");
     }
 

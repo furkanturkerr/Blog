@@ -918,6 +918,9 @@
         }
       },
       "Dto/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.3.0"
+        },
         "runtime": {
           "Dto.dll": {
             "assemblyVersion": "1.0.0",

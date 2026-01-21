@@ -1,7 +1,6 @@
 using AutoMapper;
 using Business.Abstract;
 using Business.ValidationRules;
-using Dto.AboutDto;
 using Entities.Concrate;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
@@ -22,27 +21,24 @@ public class AboutController:Controller
     public IActionResult Index()
     {
         var values = _abautService.GetAll();
-        var dtoList = _mapper.Map<List<ResultAboutDto>>(values);
-        return View(dtoList);
+        return View(values);
     }
 
     [HttpGet]
     public IActionResult Update(int id)
     {
         var value = _abautService.GetById(id);
-        var dto = _mapper.Map<UpdateAboutDto>(value);
-        return View(dto);
+        return View(value);
     }
     
     [HttpPost]
-    public IActionResult Update(UpdateAboutDto updateAboutDto)
+    public IActionResult Update(About about)
     {
         AboutValidaton aboutValidaton = new AboutValidaton();
-        ValidationResult validationResult = aboutValidaton.Validate(updateAboutDto);
+        ValidationResult validationResult = aboutValidaton.Validate(about);
         if (validationResult.IsValid)
         {
-            var value = _mapper.Map<About>(updateAboutDto);
-            _abautService.Update(value);
+            _abautService.Update(about);
             return RedirectToAction("Index");
         }
         else
@@ -52,6 +48,6 @@ public class AboutController:Controller
                 ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
         }
-        return View(updateAboutDto);
+        return View(about);
     }
 }

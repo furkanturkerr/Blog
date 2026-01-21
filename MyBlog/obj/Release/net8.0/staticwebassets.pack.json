@@ -3605,6 +3605,38 @@
       "PackagePath": "staticwebassets/img/turker.webp"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/178786120.png",
+      "PackagePath": "staticwebassets/img/upload/178786120.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/31c6f958-7c53-4691-96e5-28c74007084f.mov",
+      "PackagePath": "staticwebassets/img/upload/31c6f958-7c53-4691-96e5-28c74007084f.mov"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/a7e84b1c-a17e-4abe-aa02-6bb1f5744242.jpeg",
+      "PackagePath": "staticwebassets/img/upload/a7e84b1c-a17e-4abe-aa02-6bb1f5744242.jpeg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/b0016a7c-7bb5-4bd1-8ea3-479cb1b20a18.jpeg",
+      "PackagePath": "staticwebassets/img/upload/b0016a7c-7bb5-4bd1-8ea3-479cb1b20a18.jpeg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/b523f112-50fd-4acd-b9af-e068bf81602d.png",
+      "PackagePath": "staticwebassets/img/upload/b523f112-50fd-4acd-b9af-e068bf81602d.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/c23e0ae6-c569-4e37-ad5d-284cd5430cef.png",
+      "PackagePath": "staticwebassets/img/upload/c23e0ae6-c569-4e37-ad5d-284cd5430cef.png"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/furkanturker.jpeg",
+      "PackagePath": "staticwebassets/img/upload/furkanturker.jpeg"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/upload/furkanturker_1.jpeg",
+      "PackagePath": "staticwebassets/img/upload/furkanturker_1.jpeg"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/img/web-app-manifest-192x192.png",
       "PackagePath": "staticwebassets/img/web-app-manifest-192x192.png"
     },
@@ -3847,6 +3879,10 @@
     {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/robots.txt",
       "PackagePath": "staticwebassets/robots.txt"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/site/blog.html",
+      "PackagePath": "staticwebassets/site/blog.html"
     },
     {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/site/images/furkan.webp",

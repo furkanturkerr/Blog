@@ -1,6 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
 using AutoMapper;
 using Business.Abstract;
-using Dto.Contact;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,16 +26,14 @@ public class ContactMailController : Controller
             .OrderByDescending(x => x.ContactId)
             .ToList();
 
-        var dtoList = _mapper.Map<List<ResultContactDto>>(sortedValues);
-
-        return View(dtoList);
+        return View(sortedValues);
     }
     
     [HttpGet]
     public IActionResult Detail(int id)
     {
         var values = _contactService.GetById(id);
-        return View(_mapper.Map<ResultContactDto>(values));
+        return View(values);
     }
     
     [HttpGet]
@@ -44,7 +43,7 @@ public class ContactMailController : Controller
         var sortedValues = values
             .OrderByDescending(x => x.ContactId)
             .ToList();
-        return View(_mapper.Map<List<ResultContactDto>>(sortedValues));
+        return View(sortedValues);
     }
     
     [HttpGet]
@@ -54,7 +53,7 @@ public class ContactMailController : Controller
         var sortedValues = values
             .OrderByDescending(x => x.ContactId)
             .ToList();
-        return View(_mapper.Map<List<ResultContactDto>>(sortedValues));
+        return View(sortedValues);
     }
 
     public IActionResult ChangeStatusTrue(int id)

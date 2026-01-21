@@ -1,6 +1,5 @@
 using AutoMapper;
 using Business.Abstract;
-using Dto.Contact;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -35,10 +34,9 @@ public class DefaultController:Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Iletisim(CreateContactDto createContactDto)
+    public IActionResult Iletisim(Contact contact)
     {
-        var value = _mapper.Map<Contact>(createContactDto);
-        _contactService.Insert(value);
+        _contactService.Insert(contact);
         TempData["Basarili"] = "Mesajınız alındı, teşekkürler!";
         return RedirectToAction("Iletisim");
     }
