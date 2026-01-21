@@ -11,12 +11,10 @@ namespace MyBlog.Controllers
     public class PortfolioController : Controller
     {
         private readonly IPortfolioService _portfolioService;
-        private readonly IMapper _mapper;
 
-        public PortfolioController(IPortfolioService portfolioService, IMapper mapper)
+        public PortfolioController(IPortfolioService portfolioService)
         {
             _portfolioService = portfolioService;
-            _mapper = mapper;
         }
 
         [HttpGet]
@@ -83,6 +81,12 @@ namespace MyBlog.Controllers
         {
             var values = _portfolioService.GetById(id);
             _portfolioService.Delete(values);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ChangeStatus(int id)
+        {
+            _portfolioService.TChageStatus(id);
             return RedirectToAction("Index");
         }
     }

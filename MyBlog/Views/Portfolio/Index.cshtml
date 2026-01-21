@@ -30,7 +30,16 @@
             <td>@item.PortfolioName</td>
             <td>@item.PortfolioCategory</td>
             <td>@item.PortfolioLink</td>
-            <td><a href="~/Portfolio/Delete/@item.PortfolioId" class="btn btn-outline-dark">Sil</a></td>
+            <td>
+                @if (item.Status == true)
+                {
+                    <a href="~/Portfolio/ChangeStatus/@item.PortfolioId" class="btn btn-outline-info">Pasif Yap</a>
+                }
+                else
+                {
+                    <a href="~/Portfolio/ChangeStatus/@item.PortfolioId" class="btn btn-outline-dark">Aktif Yap</a>
+                }
+            </td>
             <td><a href="~/Portfolio/Update/@item.PortfolioId" class="btn btn-outline-dark">Güncelle</a></td>
         </tr>
     }

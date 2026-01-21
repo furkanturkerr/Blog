@@ -35,4 +35,14 @@ public class PortfolioManager:IPortfolioService
     {
         return _portfolioDal.GetById(id);
     }
+
+    public void TChageStatus(int id)
+    {
+        _portfolioDal.ChageStatus(id);
+    }
+
+    public List<Portfolio> TListStatusTrue()
+    {
+        return _portfolioDal.ListStatusTrue();
+    }
 }

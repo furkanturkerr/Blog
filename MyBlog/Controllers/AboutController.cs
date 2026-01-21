@@ -10,10 +10,8 @@ namespace MyBlog.Controllers;
 public class AboutController:Controller
 {
     private readonly IAbautService _abautService;
-    private readonly IMapper _mapper;
-    public AboutController(IAbautService abautService , IMapper mapper)
+    public AboutController(IAbautService abautService)
     {
-        _mapper = mapper;
         _abautService = abautService;
     }
     

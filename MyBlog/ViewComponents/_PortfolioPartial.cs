@@ -1,3 +1,4 @@
+using System.Linq;
 using Business.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,7 +13,7 @@ public class _PortfolioPartial:ViewComponent
     }
     public IViewComponentResult Invoke()
     {
-        var values = _portfolioService.GetAll();
+        var values = _portfolioService.TListStatusTrue();
         var sortedValues = values.OrderByDescending(x => x.PortfolioId).ToList();
         return View(sortedValues);
     }

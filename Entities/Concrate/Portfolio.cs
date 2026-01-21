@@ -7,4 +7,5 @@ public class Portfolio
     public string PortfolioLink { get; set; }
     public string PortfolioName { get; set; }
     public string PortfolioCategory { get; set; }
+    public bool Status { get; set; }
 }
