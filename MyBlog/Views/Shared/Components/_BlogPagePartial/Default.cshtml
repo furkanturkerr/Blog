@@ -4,7 +4,7 @@
     <ul class="blog-posts-list">
         @foreach (var item in Model)
         {
-            <li class="blog-post-item">
+            <li class="blog-post-item active" data-category="@item.Category.CategorySlug">
                 <a href="/blog/@item.BlogSlug">
                     <figure class="blog-banner-box">
                         <img src="@item.BlogImage" alt="@item.BlogTitle" loading="lazy">
@@ -12,11 +12,10 @@
 
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <p class="blog-category">@item.BlogCategory</p>
+                            <p class="blog-category">@item.Category.CategoryName</p>
                             <span class="dot"></span>
-                            <time datetime="2024-02-23">@item.BlogDate</time>
+                            <time>@DateTime.Parse(@item.BlogDate).ToString("dd.MM.yyyy")</time>
                         </div>
-
                         <h3 class="h3 blog-item-title">@item.BlogTitle</h3>
                     </div>
                 </a>

@@ -63,28 +63,7 @@
             </ul>
         </nav>
          <article class="blog active" data-page="blog">
-                <header>
-                    <h2 class="h2 article-title">Blog</h2>
-                </header>
-                <ul class="filter-list">
-                    <li class="filter-item"><button class="active" data-filter-btn>Tümü</button></li>
-                    <li class="filter-item"><button class="" data-filter-btn>Proje Yazıları</button></li>
-                </ul>
-
-                <div class="filter-select-box">
-                    <button class="filter-select" data-select>
-                        <div class="select-value" data-select-value>Kategori Seç</div>
-
-                        <div class="select-icon">
-                            <ion-icon name="chevron-down"></ion-icon>
-                        </div>
-                    </button>
-
-                    <ul class="select-list">
-                        <li class="select-item"><button data-select-item>Tümü</button></li>
-                        <li class="select-item"><button data-select-item>Proje Yazıları</button></li>
-                    </ul>
-                </div>
+                @await Component.InvokeAsync("_BlogCategoryComponentPartial")
                 @await Component.InvokeAsync("_BlogPagePartial")
             </article>
     </div>
@@ -98,5 +77,60 @@
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('[data-filter-btn]');
+    const selectItems = document.querySelectorAll('[data-select-item]');
+    const blogItems = document.querySelectorAll('.blog-post-item');
+    const select = document.querySelector('[data-select]');
+    const selectValue = document.querySelector('[data-select-value]');
+    const selectBox = document.querySelector('.filter-select-box');
+
+    // Dropdown aç/kapa
+    if(select) {
+        select.addEventListener('click', function(e) {
+            e.preventDefault();
+            selectBox.classList.toggle('active');
+            console.log('Dropdown clicked', selectBox.classList);
+        });
+    }
+
+    function filterBlogs(category) {
+        blogItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            
+            if (category === 'all' || itemCategory === category) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    // Üst butonlar için
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const category = this.getAttribute('data-category');
+            filterBlogs(category);
+        });
+    });
+
+    // Mobil select için
+    selectItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const category = this.getAttribute('data-category');
+            const categoryText = this.textContent.trim();
+            
+            selectValue.textContent = categoryText;
+            selectBox.classList.remove('active');
+            filterBlogs(category);
+        });
+    });
+});
+</script>
 </body>
 </html>

@@ -74,6 +74,8 @@ builder.Services.AddScoped<IImagesDal, EfImagesDal>();
 builder.Services.AddScoped<IImagesService, ImagesManager>();
 builder.Services.AddScoped<IMapService, MapManager>();
 builder.Services.AddScoped<IMapDal, EfMapDal>();
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
 
 
 var app = builder.Build();

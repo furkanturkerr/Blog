@@ -165,9 +165,10 @@
                 </figure>
 
                 <div class="blog-meta">
-                    <p class="blog-category">@Model.BlogCategory</p>
+                    <p class="blog-category">@Model.Category.CategoryName</p>
                     <span class="dot"></span>
-                    <time>@Model.BlogDate</time>
+                    <time>@DateTime.Parse(Model.BlogDate).ToString("dd.MM.yyyy")</time>
+
                 </div>
                 
                 <div class="about-text">
@@ -180,10 +181,14 @@
     </div>
 
 </main>
-<script src="main.js"></script>
+<script src="~/site/main.js"></script>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script type="module" src="/https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="/https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

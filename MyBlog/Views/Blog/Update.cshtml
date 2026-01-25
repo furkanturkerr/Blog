@@ -66,10 +66,12 @@
                 <div class="card shadow-sm mb-3">
                     <div class="card-body">
                         <label class="fw-semibold mb-1">Kategori</label>
-                        <input type="text"
-                               asp-for="BlogCategory"
-                               class="form-control"
-                               placeholder="Kategori gir" />
+                        <select
+                            asp-for="CategoryId"
+                            asp-items="ViewBag.Categories"
+                            class="form-control">
+                            <option value="">Kategori Seçiniz</option>
+                        </select>
                     </div>
                 </div>
 

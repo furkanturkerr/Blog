@@ -35,4 +35,9 @@ public class BlogManager : IBlogService
     {
         return _blogDal.GetById(id);
     }
+
+    public List<Blog> TGetListWithCategory()
+    {
+        return _blogDal.GetListWithCategory();
+    }
 }

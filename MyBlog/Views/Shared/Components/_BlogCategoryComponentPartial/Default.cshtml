@@ -1,0 +1,58 @@
+@model List<Entities.Concrate.Category>
+
+<header>
+    <h2 class="h2 article-title">Blog</h2>
+</header>
+
+<ul class="filter-list">
+
+    <li class="filter-item">
+        <button class="active"
+                data-filter-btn
+                data-category="all">
+            Tümü
+        </button>
+    </li>
+
+    @foreach (var item in Model)
+    {
+        <li class="filter-item">
+            <button data-filter-btn
+                    data-category="@item.CategorySlug">
+                @item.CategoryName
+            </button>
+        </li>
+    }
+</ul>
+
+<!-- MOBİL SELECT -->
+<div class="filter-select-box">
+
+    <button class="filter-select" data-select>
+        <div class="select-value" data-select-value>Kategori Seç</div>
+
+        <div class="select-icon">
+            <ion-icon name="chevron-down"></ion-icon>
+        </div>
+    </button>
+
+    <ul class="select-list">
+
+        <li class="select-item">
+            <button data-select-item
+                    data-category="all">
+                Tümü
+            </button>
+        </li>
+
+        @foreach (var item in Model)
+        {
+            <li class="select-item">
+                <button data-select-item
+                        data-category="@item.CategorySlug">
+                    @item.CategoryName
+                </button>
+            </li>
+        }
+    </ul>
+</div>

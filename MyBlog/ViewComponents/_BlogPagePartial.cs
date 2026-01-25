@@ -14,7 +14,7 @@ public class _BlogPagePartial : ViewComponent
     
     public IViewComponentResult Invoke()
     {
-        var values = _blogService.GetAll();
+        var values = _blogService.TGetListWithCategory();
         return View(values);
     }
 }

@@ -3,23 +3,26 @@ using Data_Access_Layer.Contexts;
 using Entities.Concrate;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MyBlog.Controllers;
 
 public class BlogController : Controller
 {
     private readonly IBlogService _blogService;
+    private readonly ICategoryService _categoryService;
 
-    public BlogController(IBlogService blogService)
+    public BlogController(IBlogService blogService, ICategoryService categoryService)
     {
         _blogService = blogService;
+        _categoryService = categoryService;
     }
 
     [HttpGet]
     [Route("Blog/Index")]
     public IActionResult Index()
     {
-        var values = _blogService.GetAll();
+        var values = _blogService.TGetListWithCategory();
         return View(values);
     }
     
@@ -29,7 +32,7 @@ public class BlogController : Controller
     public IActionResult BlogDetail(string blogSlug)
     {
         var value = _blogService
-            .GetAll()
+            .TGetListWithCategory()
             .FirstOrDefault(x => x.BlogSlug == blogSlug);
 
         if (value == null)
@@ -42,6 +45,11 @@ public class BlogController : Controller
     [Route("Blog/Add")]
     public IActionResult Add()
     {
+        ViewBag.Categories = new SelectList(
+            _categoryService.GetAll(),
+            "CategoryId",
+            "CategoryName"
+        );
         return View();
     }
     
@@ -68,6 +76,12 @@ public class BlogController : Controller
     public IActionResult Update(int id)
     {
         var values = _blogService.GetById(id);
+        ViewBag.Categories = new SelectList(
+            _categoryService.GetAll(),
+            "CategoryId",
+            "CategoryName",
+            values.CategoryId
+        );
         return View(values);
     }
     
@@ -79,7 +93,7 @@ public class BlogController : Controller
         value.BlogTitle    = blog.BlogTitle;
         value.BlogText     = blog.BlogText;
         value.BlogImage    = blog.BlogImage;
-        value.BlogCategory = blog.BlogCategory;
+        value.CategoryId = blog.CategoryId;
         value.BlogSlug     = blog.BlogSlug;
         
         _blogService.Update(value);

@@ -727,7 +727,7 @@ article { display: none; }
 
 .filter-list { display: none; }
 
-.filter-select-box { 
+.filter-select-box {
     position: relative;
     margin-bottom: 25px;
 }
@@ -746,7 +746,9 @@ article { display: none; }
     font-weight: var(--fw300);
 }
 
-    .filter-select.active .select-icon { transform: rotate(0.5turn); }
+.filter-select-box.active .select-icon {
+    transform: rotate(0.5turn);
+}
 
 .select-list {
     background: var(--eerie-black2);
@@ -757,16 +759,17 @@ article { display: none; }
     border: 1px solid var(--jet);
     border-radius: 14px;
     z-index: 2;
+    opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: .5s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
-    .filter-select.active + .select-list {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: all;
-    }
+.filter-select-box.active .select-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
 
 .select-item button {
     background: var(--eerie-black2);
@@ -777,6 +780,7 @@ article { display: none; }
     width: 100%;
     padding: 8px 10px;
     border-radius: 8px;
+    transition: 0.25s ease;
 }
 
     .select-item button:hover { --eerie-black2: hsl(240, 2%, 20%); }
