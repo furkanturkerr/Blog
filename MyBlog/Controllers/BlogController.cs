@@ -1,6 +1,8 @@
 using Business.Abstract;
+using Business.ValidationRules;
 using Data_Access_Layer.Contexts;
 using Entities.Concrate;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -56,12 +58,30 @@ public class BlogController : Controller
     [HttpPost]
     public IActionResult Add(Blog blog)
     {
-        blog.BlogDate = DateTime.Now.ToString();
-        blog.BlogAuthor = "Furkan Türker";
-        blog.BlogStatus = true;
+        BlogValidation blogValidation = new BlogValidation();
+        ValidationResult blogValidationResult = blogValidation.Validate(blog);
+        if (blogValidationResult.IsValid)
+        {
+            blog.BlogDate = DateTime.Now.ToString();
+            blog.BlogAuthor = "Furkan Türker";
+            blog.BlogStatus = true;
 
-        _blogService.Insert(blog);
-        return RedirectToAction("Index");
+            _blogService.Insert(blog);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            foreach (var item in blogValidationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        ViewBag.Categories = new SelectList(
+            _categoryService.GetAll(),
+            "CategoryId",
+            "CategoryName"
+        );
+        return View();
     }
 
     public IActionResult Delete(int id)
@@ -88,15 +108,33 @@ public class BlogController : Controller
     [HttpPost]
     public IActionResult Update(Blog blog)
     {
-        var value = _blogService.GetById(blog.BlogId);
+        BlogValidation blogValidation = new BlogValidation();
+        ValidationResult blogValidationResult = blogValidation.Validate(blog);
+        if (blogValidationResult.IsValid)
+        {
+            var value = _blogService.GetById(blog.BlogId);
         
-        value.BlogTitle    = blog.BlogTitle;
-        value.BlogText     = blog.BlogText;
-        value.BlogImage    = blog.BlogImage;
-        value.CategoryId = blog.CategoryId;
-        value.BlogSlug     = blog.BlogSlug;
+            value.BlogTitle    = blog.BlogTitle;
+            value.BlogText     = blog.BlogText;
+            value.BlogImage    = blog.BlogImage;
+            value.CategoryId = blog.CategoryId;
+            value.BlogSlug     = blog.BlogSlug;
         
-        _blogService.Update(value);
-        return RedirectToAction("Index");
+            _blogService.Update(value);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            foreach (var item in blogValidationResult.Errors)
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+        }
+        ViewBag.Categories = new SelectList(
+            _categoryService.GetAll(),
+            "CategoryId",
+            "CategoryName"
+        );
+        return View();
     }
 }
