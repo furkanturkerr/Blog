@@ -1,0 +1,41 @@
+@model System.Collections.Generic.List<Entities.Concrate.Category>
+
+@{
+    ViewData["Title"] = "Kategoriler";
+    Layout = "~/Views/Admin/Index.cshtml";
+    int s = 0;
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Kategoriler</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Kategori Listesi</li>
+        </ul>
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Kategori</th>
+        <th>Kısa Adı</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        s++;
+        <tr>
+            <td>@s</td>
+            <td>@item.CategoryName</td>
+            <td>@item.CategorySlug</td>
+            <td><a href="~/Category/EditCategory/@item.CategoryId" class="btn btn-outline-dark">Güncelle</a></td>
+            <td><a href="~/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-dark">Sil</a></td>
+        </tr>
+    }
+</table>
+
+<a href="~/Category/CreateCategory" class="btn btn-outline-dark">Yeni Kategori Ekle</a>

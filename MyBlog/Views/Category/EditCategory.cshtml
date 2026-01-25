@@ -1,0 +1,31 @@
+@model Entities.Concrate.Category
+
+@{
+    ViewData["Title"] = "Kategori Güncelle";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Kategori</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Kategori</li>
+            <li class="breadcrumb-item" aria-current="page">Kategori Güncelle</li>
+        </ul>
+    </div>
+</div>
+
+<form method="post" class="form-control">
+    <input type="hidden" asp-for="CategoryId"/>
+    <label>Kategori Adı</label>
+    <input type="text" asp-for="CategoryName" class="form-control"/>
+    @Html.ValidationMessageFor(x=> x.CategoryName)
+    <br/>
+    <label>Kısa Adı</label>
+    <input type="text" asp-for="CategorySlug" class="form-control"/>
+    @Html.ValidationMessageFor(x=> x.CategorySlug)
+    <br/>
+    <button class="btn btn-outline-warning">Kaydet</button>
+</form>
