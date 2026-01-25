@@ -20,6 +20,8 @@
         <th>Başlık</th>
         <th>Tarih</th>
         <th>Kategori</th>
+        <th>Durum</th>
+        <th>İşlem</th>
         <th>Güncelle</th>
         <th>Sil</th>
     </tr>
@@ -29,6 +31,28 @@
             <td>@item.BlogTitle</td>
             <td>@item.BlogDate</td>
             <td>@item.Category.CategoryName</td>
+            <td class="text-center">
+                @if (item.BlogStatus)
+                {
+                    <span class="badge bg-light text-info border">
+                        Aktif
+                    </span>
+                }
+                else
+                {
+                    <span class="badge bg-light text-secondary border">
+                        Pasif
+                    </span>
+                }
+            </td>
+            @if (@item.BlogStatus == true)
+            {
+                <td><a href="~/Blog/ChangeStatus/@item.BlogId" class="btn btn-outline-dark">Taslak</a></td>
+            }
+            else
+            {
+                <td><a href="~/Blog/ChangeStatus/@item.BlogId" class="btn btn-outline-info">Yayınla</a></td>
+            }
             <td><a href="~/Blog/Update/@item.BlogId" class="btn btn-outline-dark">Güncelle</a></td>
             <td><a href="~/Blog/Delete/@item.BlogId" class="btn btn-outline-dark">Sil</a></td>
         </tr>

@@ -40,4 +40,14 @@ public class BlogManager : IBlogService
     {
         return _blogDal.GetListWithCategory();
     }
+
+    public void TChangeStatus(int id)
+    {
+        _blogDal.ChangeStatus(id);
+    }
+
+    public List<Blog> TGetListWithStatus()
+    {
+        return _blogDal.GetListWithStatus();
+    }
 }

@@ -34,7 +34,7 @@ public class BlogController : Controller
     public IActionResult BlogDetail(string blogSlug)
     {
         var value = _blogService
-            .TGetListWithCategory()
+            .TGetListWithStatus()
             .FirstOrDefault(x => x.BlogSlug == blogSlug);
 
         if (value == null)
@@ -136,5 +136,11 @@ public class BlogController : Controller
             "CategoryName"
         );
         return View();
+    }
+
+    public IActionResult ChangeStatus(int id)
+    {
+        _blogService.TChangeStatus(id);
+        return RedirectToAction("Index");
     }
 }
