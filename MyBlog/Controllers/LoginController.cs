@@ -28,7 +28,7 @@ public class LoginController : Controller
         var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
         if (!result.Succeeded)
         {
-            return RedirectToAction("Index", "AdminHome");
+            return RedirectToAction("Index", "Admin");
         }
 
         return View();

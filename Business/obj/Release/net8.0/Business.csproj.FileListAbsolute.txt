@@ -20,10 +20,8 @@ C:/Users/Furkan/Proje ve Dersler/Blog/Business/obj/Release/net8.0/ref/Business.d
 /Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Business.dll
 /Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Business.pdb
 /Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/DataAccess.dll
-/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Dto.dll
 /Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Entities.dll
 /Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/DataAccess.pdb
-/Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Dto.pdb
 /Users/furkanturker/RiderProjects/Blog/Business/bin/Release/net8.0/Entities.pdb
 /Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.csproj.AssemblyReference.cache
 /Users/furkanturker/RiderProjects/Blog/Business/obj/Release/net8.0/Business.GeneratedMSBuildEditorConfig.editorconfig

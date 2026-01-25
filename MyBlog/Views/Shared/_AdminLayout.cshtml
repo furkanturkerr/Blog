@@ -3,21 +3,4 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
-<html lang="en">
-@await Html.PartialAsync("~/Views/AdminPartial/PartialHead.cshtml")
-<body class="sb-nav-fixed">
-@await Html.PartialAsync("~/Views/AdminPartial/PartialHeadNav.cshtml")
-<div id="layoutSidenav">
-    @await Html.PartialAsync("~/Views/AdminPartial/PartialNavbar.cshtml")
-    <div id="layoutSidenav_content">
-        <main>
-            @RenderBody()
-        </main>
-    </div>
-</div>
-@await Html.PartialAsync("~/Views/AdminPartial/PartialScript.cshtml")
-</body>
-</html>
-<script src="https://cdn.ckeditor.com/ckeditor5/38.0.0/classic/ckeditor.js"></script>
 

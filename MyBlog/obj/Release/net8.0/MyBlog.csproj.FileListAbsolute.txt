@@ -214,10 +214,8 @@ C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/obj/Release/net8.0/ref/MyBlog.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Business.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/DataAccess.dll
-/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Dto.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Entities.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Business.pdb
-/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Dto.pdb
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/DataAccess.pdb
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Entities.pdb
 /Users/furkanturker/RiderProjects/Blog/MyBlog/obj/Release/net8.0/MyBlog.csproj.AssemblyReference.cache

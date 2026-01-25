@@ -58,10 +58,8 @@
 /Users/furkanturker/Desktop/ss/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /Users/furkanturker/Desktop/ss/Business.dll
 /Users/furkanturker/Desktop/ss/DataAccess.dll
-/Users/furkanturker/Desktop/ss/Dto.dll
 /Users/furkanturker/Desktop/ss/Entities.dll
 /Users/furkanturker/Desktop/ss/Business.pdb
-/Users/furkanturker/Desktop/ss/Dto.pdb
 /Users/furkanturker/Desktop/ss/DataAccess.pdb
 /Users/furkanturker/Desktop/ss/Entities.pdb
 /Users/furkanturker/Desktop/ss/MyBlog.deps.json

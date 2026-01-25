@@ -26,32 +26,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminHome/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Ib21lL0luZGV4LmNzaHRtbA==
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Admin/Anasayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQW5hc2F5ZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialContent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxDb250ZW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialHead.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxIZWFkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialHeadNav.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxIZWFkTmF2LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialNavbar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxOYXZiYXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/AdminPartial/PartialScript.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5QYXJ0aWFsL1BhcnRpYWxTY3JpcHQuY3NodG1s
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Blog/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZy9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Blog/BlogDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZy9CbG9nRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Blog/Index.cshtml]
@@ -142,14 +130,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZ2xlL0dvb2dsZUFuYWx5dGljc1VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Images/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW1hZ2VzL0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -164,6 +144,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Map/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFwL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Map/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFwL1VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/NavbarLeft/Index.cshtml]
@@ -210,6 +198,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Fib3V0UGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_AdminHeadComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluSGVhZENvbXBvbmVudFBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_AdminHeaderComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluSGVhZGVyQ29tcG9uZW50UGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_AdminScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluU2NyaXB0Q29tcG9uZW50UGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_AdminSidebarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluU2lkZWJhckNvbXBvbmVudFBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_BlogPagePartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Jsb2dQYWdlUGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -228,6 +232,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_GooglePartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0dvb2dsZVBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_MapComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX01hcENvbXBvbmVudFBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Shared/Components/_NavbarLeftPartial/Default.cshtml]

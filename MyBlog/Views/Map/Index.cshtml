@@ -1,0 +1,22 @@
+@model Entities.Concrate.Map
+@{
+    ViewData["Title"] = "İletişim - Map";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">İletişim</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Map</li>
+        </ul>
+    </div>
+</div>
+
+<br/>
+@Html.Raw(Model.MapUrl)
+<br/>
+
+<a class="btn btn-outline-dark" href="~/Map/Update/@Model.MapId">Güncelle</a>

@@ -1,37 +1,109 @@
 @model Entities.Concrate.Blog
 
 @{
-    ViewBag.Title = "Blog Ekle";
-    Layout = "_Layout";
+    ViewBag.Title = "Yeni Blog Yazısı";
+    Layout = "~/Views/Admin/Index.cshtml";
 }
-@*Bu sayfa düzenlenicek - en alta seo kısmı gelicek*@
-<div class="page-header">
-    <div class="page-block">
-        <div class="page-header-title">
-            <h5 class="mb-0 font-medium">Blog</h5>
+<style>
+    .page-header {
+        width: 100%;
+        overflow: hidden; /* float temizleme */
+    }
+
+    .page-left {
+        float: left;
+    }
+
+    .page-right {
+        float: right;
+    }
+
+    .page-left h5 {
+        margin: 0 0 4px 0;
+    }
+
+    .page-left ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+</style>
+
+
+<div class="container-fluid">
+    <form method="post">
+       
+        <div class="page-header">
+            <div class="page-left">
+                <h5>Anasayfa</h5>
+                <ul>
+                    <li>Blog Yazısı Ekle</li>
+                </ul>
+            </div>
+
+            <div class="page-right">
+                <button class="btn btn-outline-dark" type="submit">Yayınla</button>
+            </div>
         </div>
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item" aria-current="page">Blog Ekle</li>
-        </ul>
-    </div>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <input type="text"
+                               asp-for="BlogTitle"
+                               class="form-control form-control-lg mb-3"
+                               placeholder="Başlık ekle..." />
+
+                        <textarea id="editor"
+                                  asp-for="BlogText"
+                                  rows="80"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <label class="fw-semibold mb-1">Kategori</label>
+                        <input type="text"
+                               asp-for="BlogCategory"
+                               class="form-control"
+                               placeholder="Kategori gir" />
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <label class="fw-semibold mb-1">Görsel URL</label>
+                        <input type="text"
+                               asp-for="BlogImage"
+                               class="form-control"
+                               placeholder="https://..." />
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <label class="fw-semibold mb-1">Slug</label>
+                        <input type="text"
+                               asp-for="BlogSlug"
+                               class="form-control"
+                               placeholder="yazi-kisa-adi" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
 </div>
 
-<form method="post" class="form-control">
-    <label>Başlık</label>
-    <input type="text" asp-for="BlogTitle" class="form-control" />
-    @*@Html.ValidationMessageFor(x=> x.EducationContentlow)*@
-    <br/>
-    <label>Açıklama</label>
-    <textarea asp-for="BlogText" rows="10" class="form-control"></textarea>
-    <br/>
-    <label>Kategori Adı</label>
-    <input type="text" asp-for="BlogCategory" class="form-control" />
-    <br/>
-    <label>Görsel</label>
-    <input type="text" asp-for="BlogImage" class="form-control" />
-    <br/>
-    <label>Yazı Kısa Adı</label>
-    <input type="text" asp-for="BlogSlug" class="form-control" />
-    <br/>
-    <button class="btn btn-outline-warning">Kaydet</button>
-</form>
+<script src="https://cdn.ckeditor.com/4.22.1/full/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('editor', {
+        height: 1200,
+        removeButtons: 'About',
+        enterMode: CKEDITOR.ENTER_P,
+        shiftEnterMode: CKEDITOR.ENTER_BR
+    });
+</script>

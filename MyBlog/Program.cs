@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using System.Reflection;
 using Business.Abstract;
@@ -8,10 +9,13 @@ using Data_Access_Layer.Contexts;
 using Entities.Concrate;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -68,6 +72,8 @@ builder.Services.AddScoped<IBlogService, BlogManager>();
 builder.Services.AddScoped<IBlogDal, EfBlogDal>();
 builder.Services.AddScoped<IImagesDal, EfImagesDal>();
 builder.Services.AddScoped<IImagesService, ImagesManager>();
+builder.Services.AddScoped<IMapService, MapManager>();
+builder.Services.AddScoped<IMapDal, EfMapDal>();
 
 
 var app = builder.Build();

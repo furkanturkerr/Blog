@@ -11,7 +11,6 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Business": "1.0.0",
-          "Dto": "1.0.0",
           "FluentValidation": "12.0.0",
           "Microsoft.AspNetCore.Authorization": "8.0.0",
           "Microsoft.AspNetCore.Identity": "2.3.1",
@@ -891,7 +890,6 @@
       "Business/1.0.0": {
         "dependencies": {
           "DataAccess": "1.0.0",
-          "Dto": "1.0.0",
           "Entities": "1.0.0",
           "FluentValidation": "12.0.0"
         },
@@ -912,17 +910,6 @@
         },
         "runtime": {
           "DataAccess.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Dto/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.3.0"
-        },
-        "runtime": {
-          "Dto.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1717,11 +1704,6 @@
       "sha512": ""
     },
     "DataAccess/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

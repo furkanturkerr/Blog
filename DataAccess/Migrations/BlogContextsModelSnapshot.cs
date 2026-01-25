@@ -318,6 +318,23 @@ namespace Data_Access_Layer.Migrations
                     b.ToTable("Images");
                 });
 
+            modelBuilder.Entity("Entities.Concrate.Map", b =>
+                {
+                    b.Property<int>("MapId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MapId"));
+
+                    b.Property<string>("MapUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MapId");
+
+                    b.ToTable("Maps");
+                });
+
             modelBuilder.Entity("Entities.Concrate.NavbarLeft", b =>
                 {
                     b.Property<int>("NavbarLeftId")

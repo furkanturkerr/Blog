@@ -9,10 +9,8 @@ namespace MyBlog.Controllers;
 public class DefaultController:Controller
 {
     private readonly IContactService _contactService;
-    private readonly IMapper _mapper;
-    public DefaultController(IContactService contactService , IMapper mapper)
+    public DefaultController(IContactService contactService)
     {
-        _mapper = mapper;
         _contactService = contactService;
     }
     

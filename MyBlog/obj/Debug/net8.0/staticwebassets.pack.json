@@ -3829,6 +3829,1834 @@
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/README.md",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/README.md"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/LICENSE-ckeditor5-premium-features.md",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/LICENSE-ckeditor5-premium-features.md"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features-content.css",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features-content.css"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features-editor.css",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features-editor.css"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features.css",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features.css"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/ckeditor5-premium-features.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/af.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/af.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/af.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/af.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/af.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/af.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ar.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ar.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ar.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ar.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ar.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ar.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ast.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ast.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ast.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ast.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ast.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ast.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/az.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/az.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/az.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/az.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/az.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/az.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/be.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/be.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/be.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/be.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/be.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/be.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bg.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bg.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bg.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bg.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bg.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bg.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bs.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bs.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bs.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bs.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bs.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/bs.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ca.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ca.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ca.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ca.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ca.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ca.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/cs.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/cs.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/cs.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/cs.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/cs.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/cs.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/da.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/da.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/da.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/da.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/da.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/da.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de-ch.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de-ch.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de-ch.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de-ch.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de-ch.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de-ch.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/de.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/el.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/el.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/el.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/el.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/el.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/el.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-au.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-au.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-au.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-au.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-au.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-au.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-gb.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-gb.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-gb.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-gb.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-gb.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en-gb.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/en.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eo.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eo.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eo.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eo.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eo.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eo.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es-co.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es-co.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es-co.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es-co.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es-co.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es-co.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/es.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/et.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/et.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/et.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/et.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/et.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/et.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eu.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eu.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eu.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eu.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eu.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/eu.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fa.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fa.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fa.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fa.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fa.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fa.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fi.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fi.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fi.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fi.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fi.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fi.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/fr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gu.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gu.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gu.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gu.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gu.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/gu.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/he.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/he.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/he.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/he.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/he.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/he.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hi.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hi.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hi.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hi.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hi.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hi.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hu.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hu.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hu.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hu.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hu.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hu.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hy.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hy.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hy.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hy.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hy.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/hy.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/id.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/id.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/id.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/id.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/id.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/id.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/it.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/it.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/it.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/it.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/it.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/it.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ja.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ja.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ja.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ja.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ja.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ja.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/jv.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/jv.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/jv.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/jv.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/jv.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/jv.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/km.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/km.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/km.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/km.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/km.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/km.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/kn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ko.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ko.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ko.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ko.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ko.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ko.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ku.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ku.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ku.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ku.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ku.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ku.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lt.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lt.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lt.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lt.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lt.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lt.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lv.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lv.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lv.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lv.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lv.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/lv.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ms.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ms.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ms.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ms.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ms.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ms.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nb.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nb.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nb.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nb.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nb.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nb.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ne.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ne.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ne.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ne.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ne.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ne.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/nl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/no.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/no.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/no.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/no.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/no.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/no.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/oc.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/oc.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/oc.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/oc.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/oc.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/oc.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt-br.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt-br.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt-br.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt-br.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt-br.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt-br.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/pt.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ro.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ro.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ro.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ro.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ro.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ro.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ru.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ru.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ru.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ru.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ru.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ru.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/si.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/si.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/si.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/si.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/si.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/si.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sq.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sq.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sq.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sq.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sq.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sq.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr-latn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr-latn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr-latn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr-latn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr-latn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr-latn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sv.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sv.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sv.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sv.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sv.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/sv.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/th.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/th.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/th.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/th.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/th.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/th.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ti.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ti.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ti.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ti.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ti.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ti.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tt.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tt.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tt.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tt.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tt.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/tt.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ug.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ug.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ug.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ug.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ug.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ug.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ur.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ur.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ur.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ur.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ur.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/ur.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uz.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uz.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uz.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uz.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uz.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/uz.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/vi.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/vi.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/vi.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/vi.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/vi.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/vi.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh-cn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh-cn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh-cn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh-cn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh-cn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh-cn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5-premium-features/translations/zh.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/LICENSE-ckeditor5.md",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/LICENSE-ckeditor5.md"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5-content.css",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5-content.css"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5-editor.css",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5-editor.css"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.css",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.css"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.css.map",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.css.map"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.js.map",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.js.map"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.umd.js.map",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/ckeditor5.umd.js.map"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/af.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/af.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/af.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/af.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/af.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/af.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ar.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ar.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ar.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ar.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ar.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ar.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ast.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ast.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ast.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ast.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ast.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ast.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/az.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/az.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/az.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/az.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/az.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/az.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/be.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/be.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/be.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/be.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/be.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/be.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bg.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bg.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bg.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bg.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bg.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bg.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bs.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bs.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bs.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bs.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bs.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/bs.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ca.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ca.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ca.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ca.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ca.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ca.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/cs.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/cs.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/cs.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/cs.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/cs.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/cs.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/da.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/da.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/da.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/da.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/da.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/da.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de-ch.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de-ch.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de-ch.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de-ch.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de-ch.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de-ch.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/de.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/el.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/el.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/el.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/el.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/el.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/el.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-au.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-au.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-au.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-au.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-au.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-au.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-gb.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-gb.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-gb.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-gb.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-gb.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en-gb.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/en.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eo.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eo.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eo.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eo.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eo.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eo.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es-co.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es-co.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es-co.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es-co.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es-co.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es-co.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/es.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/et.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/et.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/et.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/et.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/et.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/et.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eu.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eu.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eu.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eu.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eu.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/eu.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fa.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fa.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fa.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fa.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fa.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fa.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fi.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fi.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fi.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fi.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fi.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fi.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/fr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gu.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gu.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gu.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gu.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gu.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/gu.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/he.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/he.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/he.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/he.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/he.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/he.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hi.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hi.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hi.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hi.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hi.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hi.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hu.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hu.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hu.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hu.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hu.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hu.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hy.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hy.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hy.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hy.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hy.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/hy.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/id.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/id.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/id.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/id.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/id.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/id.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/it.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/it.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/it.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/it.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/it.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/it.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ja.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ja.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ja.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ja.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ja.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ja.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/jv.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/jv.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/jv.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/jv.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/jv.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/jv.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/km.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/km.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/km.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/km.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/km.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/km.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/kn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ko.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ko.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ko.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ko.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ko.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ko.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ku.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ku.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ku.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ku.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ku.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ku.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lt.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lt.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lt.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lt.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lt.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lt.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lv.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lv.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lv.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lv.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lv.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/lv.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ms.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ms.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ms.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ms.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ms.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ms.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nb.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nb.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nb.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nb.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nb.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nb.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ne.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ne.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ne.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ne.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ne.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ne.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/nl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/no.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/no.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/no.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/no.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/no.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/no.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/oc.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/oc.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/oc.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/oc.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/oc.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/oc.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt-br.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt-br.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt-br.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt-br.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt-br.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt-br.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/pt.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ro.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ro.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ro.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ro.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ro.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ro.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ru.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ru.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ru.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ru.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ru.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ru.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/si.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/si.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/si.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/si.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/si.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/si.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sl.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sl.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sl.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sl.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sl.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sl.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sq.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sq.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sq.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sq.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sq.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sq.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr-latn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr-latn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr-latn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr-latn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr-latn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr-latn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sv.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sv.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sv.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sv.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sv.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/sv.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/th.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/th.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/th.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/th.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/th.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/th.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ti.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ti.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ti.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ti.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ti.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ti.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tr.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tr.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tr.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tr.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tr.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tr.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tt.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tt.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tt.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tt.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tt.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/tt.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ug.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ug.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ug.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ug.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ug.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ug.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uk.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uk.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uk.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uk.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uk.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uk.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ur.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ur.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ur.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ur.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ur.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/ur.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uz.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uz.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uz.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uz.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uz.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/uz.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/vi.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/vi.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/vi.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/vi.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/vi.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/vi.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh-cn.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh-cn.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh-cn.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh-cn.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh-cn.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh-cn.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh.d.ts",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh.d.ts"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh.umd.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/ckeditor5/translations/zh.umd.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/index.html",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/index.html"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/main.js",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/main.js"
+    },
+    {
+      "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/ckeditor5-builder-47.4.0/style.css",
+      "PackagePath": "staticwebassets/lib/ckeditor5-builder-47.4.0/style.css"
+    },
+    {
       "Id": "/Users/furkanturker/RiderProjects/Blog/MyBlog/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },

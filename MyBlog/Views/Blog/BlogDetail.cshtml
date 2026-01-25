@@ -1,0 +1,189 @@
+@model Entities.Concrate.Blog
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    @await Component.InvokeAsync("_GooglePartial")
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog | Furkan Türker</title>
+
+    <meta name="description"
+          content=".NET, yazılım mimarisi ve web geliştirme üzerine teknik blog yazıları." />
+
+    <link rel="canonical" href="https://furkanturker.com/blog" />
+
+    <meta property="og:title" content="Yazılım Blogu | Furkan Türker" />
+    <meta property="og:description" content="Teknik yazılar ve yazılım notları" />
+    <meta property="og:image" content="https://furkanturker.com/img/blog-furkan-turker.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="https://furkanturker.com/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="https://furkanturker.com/img/favicon.svg" />
+    <link rel="shortcut icon" href="https://furkanturker.com/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://furkanturker.com/img/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Furkan" />
+    <link rel="manifest" href="https://furkanturker.com/img/site.webmanifest" />
+
+    <link rel="stylesheet" href="~/site/style.css" />
+
+    <style>
+        /* ================= BLOG ANA ================= */
+        .blog.active{
+            background:rgba(255,255,255,.03);
+            backdrop-filter:blur(14px);
+            border-radius:24px;
+            padding:30px;
+        }
+
+        /* ================= ANA GÖRSEL ================= */
+        .blog-posts > .blog-banner-box{
+            height:380px; /* 1920x1080 için ideal */
+            border-radius:22px;
+            overflow:hidden;
+            position:relative;
+            margin-bottom:26px;
+        }
+
+        .blog-posts > .blog-banner-box img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:center;
+            transition:.6s ease;
+        }
+
+        .blog-posts > .blog-banner-box::after{
+            content:"";
+            position:absolute;
+            inset:0;
+            background:linear-gradient(
+                    to bottom,
+                    rgba(0,0,0,.15),
+                    rgba(0,0,0,.35)
+            );
+        }
+
+        .blog-posts > .blog-banner-box:hover img{
+            transform:scale(1.04);
+        }
+
+        /* ================= YAZI ================= */
+        .about-text{
+            max-width:780px;
+        }
+
+        .about-text p{
+            font-size:16px;
+            line-height:1.9;
+            margin-bottom:18px;
+        }
+
+        /* ================= ALINTI ================= */
+        .testimonials{
+            margin:32px 0;
+        }
+
+        .testimonials .content-card{
+            background:rgba(255,255,255,.06);
+            backdrop-filter:blur(10px);
+            border-left:4px solid hsl(220,80%,66%);
+            padding:18px 22px;
+            border-radius:14px;
+            color: white;
+        }
+        .blog-posts-list{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+
+        .blog-post-item a{
+            display:flex;
+            gap:10px;
+            align-items:center;
+            padding:8px;
+            border-radius:12px;
+            transition:.25s ease;
+        }
+
+        .blog-post-item a:hover{
+            background:rgba(255,255,255,.06);
+        }
+
+        .blog-post-item .blog-banner-box{
+            width:56px;
+            height:56px;
+            border-radius:10px;
+            overflow:hidden;
+            flex-shrink:0;
+        }
+
+        .blog-post-item img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .blog-post-item h3{
+            font-size:13px;
+            line-height:1.35;
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+    @await Component.InvokeAsync("_NavbarLeftPartial")
+
+    <!-- ============ MAIN ============ -->
+    <div class="main-content">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a asp-controller="Default" asp-action="Blog" class="navbar-link" data-nav-link>Blog</a></li>
+            </ul>
+        </nav>
+        <article class="blog active">
+
+            <header>
+                <h2 class="h2 article-title">@Model.BlogTitle</h2>
+            </header>
+
+            <section class="blog-posts">
+
+                <figure class="blog-banner-box">
+                    <img src="@Model.BlogImage">
+                </figure>
+
+                <div class="blog-meta">
+                    <p class="blog-category">@Model.BlogCategory</p>
+                    <span class="dot"></span>
+                    <time>@Model.BlogDate</time>
+                </div>
+                
+                <div class="about-text">
+                    @Html.Raw(Model.BlogText)
+                </div>
+
+
+            </section>
+        </article>
+    </div>
+
+</main>
+<script src="main.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
