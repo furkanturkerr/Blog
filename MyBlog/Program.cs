@@ -16,9 +16,22 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MyBlog.Hubs;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolicy", builder =>
+    {
+        builder.AllowAnyHeader()
+            .AllowAnyMethod()
+            .SetIsOriginAllowed((host) => true)
+            .AllowCredentials();
+    });
+});
+builder.Services.AddSignalR();
 
 var requireAuthorizationPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
 
@@ -108,6 +121,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseCors("CorsPolicy");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
@@ -116,6 +131,8 @@ app.UseRouting();
 app.UseAuthentication(); // Kimlik doğrulama
 app.UseAuthorization();  // Yetkilendirme
 app.MapControllers();
+
+app.MapHub<SignalRHub>("/signalrhub");
 
 app.MapControllerRoute(
     name: "projeler",

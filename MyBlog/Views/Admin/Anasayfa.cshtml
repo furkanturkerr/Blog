@@ -1,259 +1,244 @@
-
 @{
   Layout = "~/Views/Admin/Index.cshtml";
 }
         <div class="grid grid-cols-12 gap-x-6">
+          <!-- Blog Statistics Cards -->
           <div class="col-span-12 xl:col-span-4 md:col-span-6">
             <div class="card">
               <div class="card-header !pb-0 !border-b-0">
-                <h5>Daily Sales</h5>
+                <h5>Günlük Görüntülenme</h5>
               </div>
               <div class="card-body">
                 <div class="flex items-center justify-between gap-3 flex-wrap">
                   <h3 class="font-light flex items-center mb-0">
-                    <i class="feather icon-arrow-up text-success-500 text-[30px] mr-1.5"></i>
-                    $ 249.95
+                    <i class="feather icon-eye text-primary-500 text-[30px] mr-1.5"></i>
+                    1,234
                   </h3>
-                  <p class="mb-0">67%</p>
+                  <p class="mb-0 text-success-500">+12%</p>
                 </div>
                 <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mt-6 dark:bg-themedark-bodybg">
-                  <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
+                  <div class="bg-primary-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
                     style="width: 75%"></div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-span-12 xl:col-span-4 md:col-span-6">
             <div class="card">
               <div class="card-header !pb-0 !border-b-0">
-                <h5>Monthly Sales</h5>
+                <h5>Toplam Blog Yazısı</h5>
               </div>
               <div class="card-body">
                 <div class="flex items-center justify-between gap-3 flex-wrap">
                   <h3 class="font-light flex items-center mb-0">
-                    <i class="feather icon-arrow-down text-danger-500 text-[30px] mr-1.5"></i>
-                    $ 2.942.32
+                    <i class="feather icon-file-text text-success-500 text-[30px] mr-1.5"></i>
+                    47
                   </h3>
-                  <p class="mb-0">36%</p>
+                  <p class="mb-0 text-primary-500">+3 yeni</p>
                 </div>
                 <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mt-6 dark:bg-themedark-bodybg">
-                  <div class="bg-theme-bg-2 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
-                    style="width: 35%"></div>
+                  <div class="bg-success-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
+                    style="width: 85%"></div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-span-12 xl:col-span-4">
             <div class="card">
               <div class="card-header !pb-0 !border-b-0">
-                <h5>Yearly Sales</h5>
+                <h5>Toplam Yorum</h5>
               </div>
               <div class="card-body">
                 <div class="flex items-center justify-between gap-3 flex-wrap">
                   <h3 class="font-light flex items-center mb-0">
-                    <i class="feather icon-arrow-up text-success-500 text-[30px] mr-1.5"></i>
-                    $8.638.32
+                    <i class="feather icon-message-circle text-warning-500 text-[30px] mr-1.5"></i>
+                    326
                   </h3>
-                  <p class="mb-0">80%</p>
+                  <p class="mb-0 text-success-500">+18</p>
                 </div>
                 <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mt-6 dark:bg-themedark-bodybg">
-                  <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
-                    style="width: 80%"></div>
+                  <div class="bg-warning-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar"
+                    style="width: 65%"></div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Popular Posts Card -->
           <div class="col-span-12 xl:col-span-4">
-            <div class="card card-social">
-              <div class="card-body border-b border-theme-border dark:border-themedark-border">
-                <div class="flex items-center justify-center">
-                  <div class="shrink-0">
-                    <i class="fab fa-facebook-f text-primary-500 text-[36px]"></i>
-                  </div>
-                  <div class="grow ltr:text-right rtl:text-left">
-                    <h3 class="mb-2">12,281</h3>
-                    <h5 class="text-success-500 mb-0">+7.2% <span class="text-muted">Total Likes</span></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="grid grid-cols-12 gap-x-6">
-                  <div class="col-span-6">
-                    <h6 class="text-center mb-2.5"><span class="text-muted m-r-5">Target:</span>35,098</h6>
-                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
-                      <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 60%"></div>
-                    </div>
-                  </div>
-                  <div class="col-span-6">
-                    <h6 class="text-center mb-2.5"><span class="text-muted m-r-5">Duration:</span>350</h6>
-                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
-                      <div class="bg-theme-bg-2 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 45%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-12 xl:col-span-4 md:col-span-6">
-            <div class="card card-social">
-              <div class="card-body border-b border-theme-border dark:border-themedark-border">
-                <div class="flex items-center justify-center">
-                  <div class="shrink-0">
-                    <i class="fab fa-twitter text-primary-500 text-[36px]"></i>
-                  </div>
-                  <div class="grow ltr:text-right rtl:text-left">
-                    <h3 class="mb-2">11,200</h3>
-                    <h5 class="text-purple-500 mb-0">+6.2% <span class="text-muted">Total Likes</span></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="grid grid-cols-12 gap-x-6">
-                  <div class="col-span-6">
-                    <h6 class="text-center mb-2.5"><span class="text-muted m-r-5">Target:</span>34,185</h6>
-                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
-                      <div class="bg-success-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 40%"></div>
-                    </div>
-                  </div>
-                  <div class="col-span-6">
-                    <h6 class="text-center mb-2.5"><span class="text-muted m-r-5">Duration:</span>800</h6>
-                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
-                      <div class="bg-primary-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 70%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-12 xl:col-span-4 md:col-span-6">
-            <div class="card card-social">
-              <div class="card-body border-b border-theme-border dark:border-themedark-border">
-                <div class="flex items-center justify-center">
-                  <div class="shrink-0">
-                    <i class="fab fa-google-plus-g text-danger-500 text-[36px]"></i>
-                  </div>
-                  <div class="grow ltr:text-right rtl:text-left">
-                    <h3 class="mb-2">10,500</h3>
-                    <h5 class="text-purple-500 mb-0">+5.9% <span class="text-muted">Total Likes</span></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="grid grid-cols-12 gap-x-6">
-                  <div class="col-span-6">
-                    <h6 class="text-center mb-2.5"><span class="text-muted m-r-5">Target:</span>25,998</h6>
-                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
-                      <div class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 80%"></div>
-                    </div>
-                  </div>
-                  <div class="col-span-6">
-                    <h6 class="text-center mb-2.5"><span class="text-muted m-r-5">Duration:</span>900</h6>
-                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
-                      <div class="bg-theme-bg-2 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 50%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-span-12 xl:col-span-4 md:col-span-6">
-            <div class="card user-list">
+            <div class="card">
               <div class="card-header">
-                <h5>Rating</h5>
+                <h5>Popüler Yazılar</h5>
               </div>
               <div class="card-body">
-                <div class="flex items-center justify-between gap-1 mb-5">
-                  <h2 class="font-light flex items-center m-0">
-                    4.7
-                    <i class="fas fa-star text-[10px] ml-2.5 text-warning-500"></i>
-                  </h2>
-                  <h6 class="flex items-center m-0">
-                    0.4
-                    <i class="fas fa-caret-up text-success text-[22px] ml-2.5"></i>
-                  </h6>
-                </div>
-
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <h6 class="flex items-center gap-1">
-                    <i class="fas fa-star text-[10px] mr-2.5 text-warning-500"></i>
-                    5
-                  </h6>
-                  <h6>384</h6>
-                </div>
-                <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 mt-3 dark:bg-themedark-bodybg">
-                  <div
-                    class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
-                    role="progressbar"
-                    style="width: 70%"
-                  ></div>
-                </div>
-
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <h6 class="flex items-center gap-1">
-                    <i class="fas fa-star text-[10px] mr-2.5 text-warning-500"></i>
-                    4
-                  </h6>
-                  <h6>145</h6>
-                </div>
-                <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 mt-3 dark:bg-themedark-bodybg">
-                  <div
-                    class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
-                    role="progressbar"
-                    style="width: 35%"
-                  ></div>
-                </div>
-
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <h6 class="flex items-center gap-1">
-                    <i class="fas fa-star text-[10px] mr-2.5 text-warning-500"></i>
-                    3
-                  </h6>
-                  <h6>24</h6>
-                </div>
-                <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 mt-3 dark:bg-themedark-bodybg">
-                  <div
-                    class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
-                    role="progressbar"
-                    style="width: 25%"
-                  ></div>
-                </div>
-
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <h6 class="flex items-center gap-1">
-                    <i class="fas fa-star text-[10px] mr-2.5 text-warning-500"></i>
-                    2
-                  </h6>
-                  <h6>1</h6>
-                </div>
-                <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mb-6 mt-3 dark:bg-themedark-bodybg">
-                  <div
-                    class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
-                    role="progressbar"
-                    style="width: 10%"
-                  ></div>
-                </div>
-
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <h6 class="flex items-center gap-1">
-                    <i class="fas fa-star text-[10px] mr-2.5 text-warning-500"></i>
-                    1
-                  </h6>
-                  <h6>0</h6>
-                </div>
-                <div class="w-full bg-theme-bodybg rounded-lg h-1.5 mt-4 dark:bg-themedark-bodybg">
-                  <div
-                    class="bg-theme-bg-1 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]"
-                    role="progressbar"
-                    style="width: 0%"
-                  ></div>
+                <div class="space-y-4">
+                  <div class="flex items-center justify-between gap-3 pb-3 border-b border-theme-border dark:border-themedark-border">
+                    <div class="flex-1">
+                      <h6 class="mb-1 text-sm">React ile Modern Web Geliştirme</h6>
+                      <p class="text-xs text-muted m-0">2,341 görüntülenme</p>
+                    </div>
+                    <div class="shrink-0">
+                      <i class="feather icon-trending-up text-success-500 text-xl"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center justify-between gap-3 pb-3 border-b border-theme-border dark:border-themedark-border">
+                    <div class="flex-1">
+                      <h6 class="mb-1 text-sm">JavaScript ES6+ Özellikleri</h6>
+                      <p class="text-xs text-muted m-0">1,892 görüntülenme</p>
+                    </div>
+                    <div class="shrink-0">
+                      <i class="feather icon-trending-up text-success-500 text-xl"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center justify-between gap-3 pb-3 border-b border-theme-border dark:border-themedark-border">
+                    <div class="flex-1">
+                      <h6 class="mb-1 text-sm">CSS Grid ve Flexbox Kullanımı</h6>
+                      <p class="text-xs text-muted m-0">1,567 görüntülenme</p>
+                    </div>
+                    <div class="shrink-0">
+                      <i class="feather icon-trending-up text-primary-500 text-xl"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center justify-between gap-3">
+                    <div class="flex-1">
+                      <h6 class="mb-1 text-sm">Node.js ile Backend Geliştirme</h6>
+                      <p class="text-xs text-muted m-0">1,234 görüntülenme</p>
+                    </div>
+                    <div class="shrink-0">
+                      <i class="feather icon-trending-up text-primary-500 text-xl"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-span-12 xl:col-span-8 md:col-span-6">
+
+          <!-- Categories Stats Card -->
+          <div class="col-span-12 xl:col-span-4">
+            <div class="card">
+              <div class="card-header">
+                <h5>Kategori İstatistikleri</h5>
+              </div>
+              <div class="card-body">
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <h6 class="text-sm m-0">Web Geliştirme</h6>
+                      <span class="text-xs text-muted">18 yazı</span>
+                    </div>
+                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
+                      <div class="bg-primary-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 75%"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <h6 class="text-sm m-0">JavaScript</h6>
+                      <span class="text-xs text-muted">15 yazı</span>
+                    </div>
+                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
+                      <div class="bg-success-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 65%"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <h6 class="text-sm m-0">CSS & Design</h6>
+                      <span class="text-xs text-muted">10 yazı</span>
+                    </div>
+                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
+                      <div class="bg-warning-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 45%"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <h6 class="text-sm m-0">Backend</h6>
+                      <span class="text-xs text-muted">4 yazı</span>
+                    </div>
+                    <div class="w-full bg-theme-bodybg rounded-lg h-1.5 dark:bg-themedark-bodybg">
+                      <div class="bg-danger-500 h-full rounded-lg shadow-[0_10px_20px_0_rgba(0,0,0,0.3)]" role="progressbar" style="width: 20%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Monthly Activity Card -->
+          <div class="col-span-12 xl:col-span-4">
+            <div class="card">
+              <div class="card-header">
+                <h5>Aylık Aktivite</h5>
+              </div>
+              <div class="card-body">
+                <div class="space-y-4">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-full bg-primary-500/10 flex items-center justify-center">
+                        <i class="feather icon-edit text-primary-500"></i>
+                      </div>
+                      <div>
+                        <h6 class="text-sm m-0">Yeni Yazılar</h6>
+                        <p class="text-xs text-muted m-0">Bu ay</p>
+                      </div>
+                    </div>
+                    <h4 class="m-0">8</h4>
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-full bg-success-500/10 flex items-center justify-center">
+                        <i class="feather icon-message-square text-success-500"></i>
+                      </div>
+                      <div>
+                        <h6 class="text-sm m-0">Yeni Yorumlar</h6>
+                        <p class="text-xs text-muted m-0">Bu ay</p>
+                      </div>
+                    </div>
+                    <h4 class="m-0">64</h4>
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-full bg-warning-500/10 flex items-center justify-center">
+                        <i class="feather icon-users text-warning-500"></i>
+                      </div>
+                      <div>
+                        <h6 class="text-sm m-0">Benzersiz Ziyaretçi</h6>
+                        <p class="text-xs text-muted m-0">Bu ay</p>
+                      </div>
+                    </div>
+                    <h4 class="m-0">2.4k</h4>
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-full bg-danger-500/10 flex items-center justify-center">
+                        <i class="feather icon-heart text-danger-500"></i>
+                      </div>
+                      <div>
+                        <h6 class="text-sm m-0">Beğeniler</h6>
+                        <p class="text-xs text-muted m-0">Bu ay</p>
+                      </div>
+                    </div>
+                    <h4 class="m-0">187</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Messages Table -->
+          <div class="col-span-12">
             <div class="card table-card">
               <div class="card-header">
-                <h5>Recent Users</h5>
+                <h5>Son Mesajlar</h5>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -264,18 +249,18 @@
                           <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
                         </td>
                         <td>
-                          <h6 class="mb-1">Isabella Christensen</h6>
-                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                          <h6 class="mb-1">Ahmet Yılmaz</h6>
+                          <p class="m-0">React yazınız çok faydalı oldu, teşekkürler...</p>
                         </td>
                         <td>
                           <h6 class="text-muted">
                             <i class="fas fa-circle text-success text-[10px] ltr:mr-4 rtl:ml-4"></i>
-                            11 MAY 12:56
+                            25 Oca 19:12
                           </h6>
                         </td>
                         <td>
-                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
-                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reddet</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Onayla</a>
                         </td>
                       </tr>
                       <tr class="unread">
@@ -283,18 +268,18 @@
                           <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
                         </td>
                         <td>
-                          <h6 class="mb-1">Mathilde Andersen</h6>
-                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                          <h6 class="mb-1">Zeynep Kaya</h6>
+                          <p class="m-0">CSS Grid konusunda ek kaynak önerebilir misiniz?</p>
                         </td>
                         <td>
                           <h6 class="text-muted">
-                            <i class="fas fa-circle text-danger text-[10px] ltr:mr-4 rtl:ml-4"></i>
-                            11 MAY 10:35
+                            <i class="fas fa-circle text-success text-[10px] ltr:mr-4 rtl:ml-4"></i>
+                            25 Oca 17:45
                           </h6>
                         </td>
                         <td>
-                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
-                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reddet</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Onayla</a>
                         </td>
                       </tr>
                       <tr class="unread">
@@ -302,18 +287,18 @@
                           <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="activity-user" />
                         </td>
                         <td>
-                          <h6 class="mb-1">Karla Sorensen</h6>
-                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                          <h6 class="mb-1">Mehmet Demir</h6>
+                          <p class="m-0">JavaScript ES6 yazınızı okuyorum, harika...</p>
                         </td>
                         <td>
                           <h6 class="text-muted">
-                            <i class="fas fa-circle text-success text-[10px] ltr:mr-4 rtl:ml-4"></i>
-                            9 MAY 17:38
+                            <i class="fas fa-circle text-warning text-[10px] ltr:mr-4 rtl:ml-4"></i>
+                            25 Oca 14:23
                           </h6>
                         </td>
                         <td>
-                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
-                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reddet</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Onayla</a>
                         </td>
                       </tr>
                       <tr class="unread">
@@ -321,18 +306,18 @@
                           <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="activity-user" />
                         </td>
                         <td>
-                          <h6 class="mb-1">Ida Jorgensen</h6>
-                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                          <h6 class="mb-1">Ayşe Şahin</h6>
+                          <p class="m-0">Backend yazılarınızı ne zaman paylaşacaksınız?</p>
                         </td>
                         <td>
                           <h6 class="text-muted f-w-300">
                             <i class="fas fa-circle text-danger text-[10px] ltr:mr-4 rtl:ml-4"></i>
-                            19 MAY 12:56
+                            24 Oca 21:15
                           </h6>
                         </td>
                         <td>
-                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
-                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reddet</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Onayla</a>
                         </td>
                       </tr>
                       <tr class="unread">
@@ -340,18 +325,18 @@
                           <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="activity-user" />
                         </td>
                         <td>
-                          <h6 class="mb-1">Albert Andersen</h6>
-                          <p class="m-0">Lorem Ipsum is simply dummy text of…</p>
+                          <h6 class="mb-1">Can Öztürk</h6>
+                          <p class="m-0">Web siteniz çok güzel tasarlanmış, tebrikler!</p>
                         </td>
                         <td>
                           <h6 class="text-muted">
                             <i class="fas fa-circle text-success text-[10px] ltr:mr-4 rtl:ml-4"></i>
-                            21 July 12:56
+                            24 Oca 18:42
                           </h6>
                         </td>
                         <td>
-                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reject</a>
-                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Approve</a>
+                          <a href="#!" class="badge bg-theme-bg-2 text-white text-[12px] mx-2">Reddet</a>
+                          <a href="#!" class="badge bg-theme-bg-1 text-white text-[12px]">Onayla</a>
                         </td>
                       </tr>
                     </tbody>
