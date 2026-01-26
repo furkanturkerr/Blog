@@ -242,3 +242,12 @@ C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/bin/Debug/net8.0/FluentValidation.d
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/System.Net.WebSockets.WebSocketProtocol.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.AspNetCore.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Extensions.Hosting.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Extensions.Logging.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Formatting.Compact.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Settings.Configuration.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Sinks.Console.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Sinks.File.dll

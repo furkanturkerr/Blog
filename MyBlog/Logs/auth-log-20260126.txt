@@ -1,0 +1,7 @@
+22:46 | WRN | Failed to determine the https port for redirect.
+22:47 | INF | ÇIKIŞ YAPILDI | Kullanıcı: admin | IP: ::1
+22:47 | INF | BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1
+22:48 | WRN | Failed to determine the https port for redirect.
+22:49 | WRN | Failed to determine the https port for redirect.
+22:49 | WRN | Failed to determine the https port for redirect.
+22:49 | INF | BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1

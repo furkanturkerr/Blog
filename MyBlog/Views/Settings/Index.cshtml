@@ -1,0 +1,31 @@
+@model List<string>
+
+@{
+    ViewData["Title"] = "Giriş Çıkış Kayıtları";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="page-header">
+    <div class="page-block">
+        <div class="page-header-title">
+            <h5 class="mb-0 font-medium">Ayarlar</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">Giriş / Çıkış Kayıtları</li>
+        </ul>
+    </div>
+</div>
+
+@if (!Model.Any())
+{
+    <p>Kayıt bulunamadı.</p>
+}
+else
+{
+    @foreach (var log in Model)
+    {
+        <div class="mb-2 p-2 border rounded">
+            <small>@log</small>
+        </div>
+    }
+}

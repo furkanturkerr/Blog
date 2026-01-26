@@ -17,9 +17,24 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyBlog.Hubs;
+using Serilog;
+using Serilog.Events;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Fatal)
+    .MinimumLevel.Override("System", LogEventLevel.Fatal)
+    .MinimumLevel.Override("Microsoft.AspNetCore.HttpsPolicy", LogEventLevel.Fatal)
+    .WriteTo.File("Logs/auth-log.txt", shared: true)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
+
+
+builder.Host.UseSerilog();
 
 builder.Services.AddCors(opt =>
 {
