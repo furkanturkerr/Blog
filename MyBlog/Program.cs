@@ -74,8 +74,6 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-
 builder.Services.AddScoped<IAbautService, AbautManager>();
 builder.Services.AddScoped<IAbautDal, EfAbautDal>();
 builder.Services.AddScoped<IServiceService, ServiceManager>();
