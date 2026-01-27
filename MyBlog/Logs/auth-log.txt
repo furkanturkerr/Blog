@@ -3,3 +3,6 @@
 2026-01-27 15:31:29.693 +03:00 [INF] BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1
 2026-01-27 15:33:15.260 +03:00 [INF] ÇIKIŞ YAPILDI | Kullanıcı: admin | IP: ::1
 2026-01-27 22:19:01.022 +03:00 [INF] BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1
+2026-01-27 23:26:55.036 +03:00 [INF] ÇIKIŞ YAPILDI | Kullanıcı: admin | IP: ::1
+2026-01-27 23:27:04.732 +03:00 [WRN] BAŞARISIZ GİRİŞ | Kullanıcı: admin | IP: ::1
+2026-01-27 23:27:08.550 +03:00 [INF] BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1

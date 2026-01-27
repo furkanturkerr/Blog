@@ -1,16 +1,55 @@
+@model List<Entities.Concrate.Contact>
+
 @{
   Layout = "~/Views/Admin/Index.cshtml";
 }
 
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+
+<script type="text/ecmascript">
+  $(document).ready(() => {
+
+    var connection = new signalR.HubConnectionBuilder().withUrl("/SignalRHub")
+      .build();
+
+    $("#constatus").text(connection.state);
+    connection.start().then(() => {
+      $("#connstatus").text(connection.state);
+      setInterval(() => {
+        connection.invoke("SendStatistic");
+      }, 1000);
+    }).catch((err) => {console.log(err)});
+
+    connection.on("MessageWithTrueCount", (value1) => {
+      $("#message").text(value1);
+    })
+
+    connection.on("BlogCount", (value1) => {
+      $("#blog").text(value1);
+    })
+
+    connection.on("ImageCount", (value1) => {
+      $("#image").text(value1);
+    })
+
+    connection.on("ProjeCount", (value1) => {
+      $("#proje").text(value1);
+    })
+  });
+</script>
+
+
 <div class="grid grid-cols-12 gap-x-6">
-  <!-- İstatistik Kartları -->
   <div class="col-span-12 xl:col-span-3 md:col-span-6">
     <div class="card">
       <div class="card-body">
         <div class="flex items-center justify-between">
           <div>
             <p class="text-muted mb-2">Okunmamış Mesaj</p>
-            <h3 class="mb-0 font-light">24</h3>
+            <h3 class="mb-0 font-light" id="message"></h3>
           </div>
           <div class="shrink-0">
             <div class="w-14 h-14 rounded-full bg-primary-500/10 flex items-center justify-center">
@@ -28,8 +67,8 @@
       <div class="card-body">
         <div class="flex items-center justify-between">
           <div>
-            <p class="text-muted mb-2">Blog Yazısı</p>
-            <h3 class="mb-0 font-light">156</h3>
+            <p class="text-muted mb-2">Yayındaki Blog Yazısı</p>
+            <h3 class="mb-0 font-light" id="blog"></h3>
           </div>
           <div class="shrink-0">
             <div class="w-14 h-14 rounded-full bg-success-500/10 flex items-center justify-center">
@@ -48,7 +87,7 @@
         <div class="flex items-center justify-between">
           <div>
             <p class="text-muted mb-2">Toplam Görsel</p>
-            <h3 class="mb-0 font-light">842</h3>
+            <h3 class="mb-0 font-light" id="image"></h3>
           </div>
           <div class="shrink-0">
             <div class="w-14 h-14 rounded-full bg-warning-500/10 flex items-center justify-center">
@@ -66,8 +105,8 @@
       <div class="card-body">
         <div class="flex items-center justify-between">
           <div>
-            <p class="text-muted mb-2">Toplam Proje</p>
-            <h3 class="mb-0 font-light">48</h3>
+            <p class="text-muted mb-2">Yayındaki Toplam Proje</p>
+            <h3 class="mb-0 font-light" id="proje"></h3>
           </div>
           <div class="shrink-0">
             <div class="w-14 h-14 rounded-full bg-danger-500/10 flex items-center justify-center">
@@ -80,183 +119,95 @@
     </div>
   </div>
 
-
-
-  <!-- Son Mesajlar -->
+  
   <div class="col-span-12">
     <div class="card table-card">
       <div class="card-header flex items-center justify-between">
         <h5>Son Mesajlar</h5>
-        <a href="#" class="btn btn-sm btn-primary">Tümünü Gör</a>
+        <a href="~/ContactMail/Unread" class="btn btn-sm btn-primary">Tümünü Gör</a>
       </div>
       <div class="card-body">
         <div class="table-responsive">
           <table class="table table-hover">
             <thead>
-              <tr>
-                <th>Gönderen</th>
-                <th>Konu</th>
-                <th>Tarih</th>
-                <th>Durum</th>
-                <th>İşlemler</th>
-              </tr>
+            <tr>
+              <th>Gönderen</th>
+              <th>Konu</th>
+              <th>Tarih</th>
+              <th>Durum</th>
+              <th>İşlemler</th>
+            </tr>
             </thead>
             <tbody>
-              <tr class="unread">
-                <td>
-                  <div class="flex items-center gap-3">
-                    <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-1.jpg" alt="user" />
-                    <div>
-                      <h6 class="mb-0">Ahmet Yılmaz</h6>
-                      <p class="text-muted text-sm mb-0">ahmet@example.com</p>
+            @foreach (var item in Model)
+            {
+              if (item.Status == false)
+              {
+                <tr>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <h6 class="mb-0">@item.Name</h6>
+                        <p class="text-muted text-sm mb-0">@item.Email</p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <h6 class="mb-0">Web Tasarım Teklifi</h6>
-                </td>
-                <td>
-                  <h6 class="text-muted mb-0">26 Ocak 14:30</h6>
-                </td>
-                <td>
-                  <span class="badge bg-danger-500 text-white text-xs">Okunmadı</span>
-                </td>
-                <td>
-                  <a href="#!" class="text-primary-500 hover:text-primary-600 mx-1" title="Detay">
-                    <i class="fas fa-eye"></i>
-                  </a>
-                  <a href="#!" class="text-success-500 hover:text-success-600 mx-1" title="Okundu İşaretle">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#!" class="text-danger-500 hover:text-danger-600 mx-1" title="Sil">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-3">
-                    <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-2.jpg" alt="user" />
-                    <div>
-                      <h6 class="mb-0">Elif Demir</h6>
-                      <p class="text-muted text-sm mb-0">elif@example.com</p>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">@item.Subject</h6>
+                  </td>
+                  <td>
+                    <h6 class="text-muted mb-0">@item.CreatedDate</h6>
+                  </td>
+                  <td>
+                    <span class="badge bg-danger-500 text-white text-xs">Okunmadı</span>
+                  </td>
+                  <td>
+                    <a href="~/ContactMail/Detail/@item.ContactId" class="text-primary-500 hover:text-primary-600 mx-1" title="Detay">
+                      <i class="fas fa-eye"></i>
+                    </a>
+                    <a href="~/ContactMail/ChangeStatusTrue/@item.ContactId" class="text-success-500 hover:text-success-600 mx-1" title="Okundu İşaretle">
+                      <i class="fas fa-check"></i>
+                    </a>
+                    <a href="~/ContactMail/Delete/@item.ContactId" class="text-danger-500 hover:text-danger-600 mx-1" title="Sil">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+              }
+              else
+              {
+                <tr class="unread">
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <h6 class="mb-0">@item.Name</h6>
+                        <p class="text-muted text-sm mb-0">@item.Email</p>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  <h6 class="mb-0">Logo Tasarımı</h6>
-                </td>
-                <td>
-                  <h6 class="text-muted mb-0">26 Ocak 11:15</h6>
-                </td>
-                <td>
-                  <span class="badge bg-success-500 text-white text-xs">Okundu</span>
-                </td>
-                <td>
-                  <a href="#!" class="text-primary-500 hover:text-primary-600 mx-1" title="Detay">
-                    <i class="fas fa-eye"></i>
-                  </a>
-                  <a href="#!" class="text-success-500 hover:text-success-600 mx-1" title="Okundu İşaretle">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#!" class="text-danger-500 hover:text-danger-600 mx-1" title="Sil">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr class="unread">
-                <td>
-                  <div class="flex items-center gap-3">
-                    <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-3.jpg" alt="user" />
-                    <div>
-                      <h6 class="mb-0">Mehmet Kaya</h6>
-                      <p class="text-muted text-sm mb-0">mehmet@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <h6 class="mb-0">E-Ticaret Sitesi</h6>
-                </td>
-                <td>
-                  <h6 class="text-muted mb-0">25 Ocak 16:45</h6>
-                </td>
-                <td>
-                  <span class="badge bg-danger-500 text-white text-xs">Okunmadı</span>
-                </td>
-                <td>
-                  <a href="#!" class="text-primary-500 hover:text-primary-600 mx-1" title="Detay">
-                    <i class="fas fa-eye"></i>
-                  </a>
-                  <a href="#!" class="text-success-500 hover:text-success-600 mx-1" title="Okundu İşaretle">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#!" class="text-danger-500 hover:text-danger-600 mx-1" title="Sil">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-3">
-                    <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-4.jpg" alt="user" />
-                    <div>
-                      <h6 class="mb-0">Zeynep Şahin</h6>
-                      <p class="text-muted text-sm mb-0">zeynep@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <h6 class="mb-0">Mobil Uygulama</h6>
-                </td>
-                <td>
-                  <h6 class="text-muted mb-0">25 Ocak 09:20</h6>
-                </td>
-                <td>
-                  <span class="badge bg-success-500 text-white text-xs">Okundu</span>
-                </td>
-                <td>
-                  <a href="#!" class="text-primary-500 hover:text-primary-600 mx-1" title="Detay">
-                    <i class="fas fa-eye"></i>
-                  </a>
-                  <a href="#!" class="text-success-500 hover:text-success-600 mx-1" title="Okundu İşaretle">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#!" class="text-danger-500 hover:text-danger-600 mx-1" title="Sil">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-3">
-                    <img class="rounded-full max-w-10" style="width: 40px" src="../assets/images/user/avatar-5.jpg" alt="user" />
-                    <div>
-                      <h6 class="mb-0">Can Öztürk</h6>
-                      <p class="text-muted text-sm mb-0">can@example.com</p>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <h6 class="mb-0">SEO Danışmanlığı</h6>
-                </td>
-                <td>
-                  <h6 class="text-muted mb-0">24 Ocak 18:55</h6>
-                </td>
-                <td>
-                  <span class="badge bg-success-500 text-white text-xs">Okundu</span>
-                </td>
-                <td>
-                  <a href="#!" class="text-primary-500 hover:text-primary-600 mx-1" title="Detay">
-                    <i class="fas fa-eye"></i>
-                  </a>
-                  <a href="#!" class="text-success-500 hover:text-success-600 mx-1" title="Okundu İşaretle">
-                    <i class="fas fa-check"></i>
-                  </a>
-                  <a href="#!" class="text-danger-500 hover:text-danger-600 mx-1" title="Sil">
-                    <i class="fas fa-trash"></i>
-                  </a>
-                </td>
-              </tr>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">@item.Subject</h6>
+                  </td>
+                  <td>
+                    <h6 class="text-muted mb-0">@item.CreatedDate</h6>
+                  </td>
+                  <td>
+                    <span class="badge bg-primary-500 text-white text-xs">Okundu</span>
+                  </td>
+                  <td>
+                    <a href="~/ContactMail/Detail/@item.ContactId" class="text-primary-500 hover:text-primary-600 mx-1" title="Detay">
+                      <i class="fas fa-eye"></i>
+                    </a>
+                    <a href="~/ContactMail/ChangeStatusFalse/@item.ContactId" class="text-success-500 hover:text-success-600 mx-1" title="Okunmadı İşaretle">
+                      <i class="fas fa-check"></i>
+                    </a>
+                    <a href="~/ContactMail/Delete/@item.ContactId" class="text-danger-500 hover:text-danger-600 mx-1" title="Sil">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+              }
+            }
             </tbody>
           </table>
         </div>
@@ -272,7 +223,7 @@
       </div>
       <div class="card-body">
         <div class="grid grid-cols-2 gap-4">
-          <a href="#" class="flex items-center gap-3 p-4 rounded-lg bg-primary-500/10 hover:bg-primary-500/20 transition-colors">
+          <a href="~/Blog/Add" class="flex items-center gap-3 p-4 rounded-lg bg-primary-500/10 hover:bg-primary-500/20 transition-colors">
             <div class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center text-white">
               <i class="fas fa-plus text-xl"></i>
             </div>
@@ -281,7 +232,7 @@
               <p class="text-muted text-sm mb-0">Yazı ekle</p>
             </div>
           </a>
-          <a href="#" class="flex items-center gap-3 p-4 rounded-lg bg-success-500/10 hover:bg-success-500/20 transition-colors">
+          <a href="~/Portfolio/Add" class="flex items-center gap-3 p-4 rounded-lg bg-success-500/10 hover:bg-success-500/20 transition-colors">
             <div class="w-12 h-12 rounded-full bg-success-500 flex items-center justify-center text-white">
               <i class="fas fa-briefcase text-xl"></i>
             </div>
@@ -290,7 +241,7 @@
               <p class="text-muted text-sm mb-0">Proje ekle</p>
             </div>
           </a>
-          <a href="#" class="flex items-center gap-3 p-4 rounded-lg bg-warning-500/10 hover:bg-warning-500/20 transition-colors">
+          <a href="~/Images/Index" class="flex items-center gap-3 p-4 rounded-lg bg-warning-500/10 hover:bg-warning-500/20 transition-colors">
             <div class="w-12 h-12 rounded-full bg-warning-500 flex items-center justify-center text-white">
               <i class="fas fa-image text-xl"></i>
             </div>
@@ -299,7 +250,7 @@
               <p class="text-muted text-sm mb-0">Görsel yükle</p>
             </div>
           </a>
-          <a href="#" class="flex items-center gap-3 p-4 rounded-lg bg-danger-500/10 hover:bg-danger-500/20 transition-colors">
+          <a href="~/Settings/Index" class="flex items-center gap-3 p-4 rounded-lg bg-danger-500/10 hover:bg-danger-500/20 transition-colors">
             <div class="w-12 h-12 rounded-full bg-danger-500 flex items-center justify-center text-white">
               <i class="fas fa-cog text-xl"></i>
             </div>
@@ -312,58 +263,4 @@
       </div>
     </div>
   </div>
-
-  <!-- Son Aktiviteler -->
-  <div class="col-span-12 xl:col-span-6">
-    <div class="card">
-      <div class="card-header">
-        <h5>Son Aktiviteler</h5>
-      </div>
-      <div class="card-body">
-        <div class="space-y-4">
-          <div class="flex items-start gap-3">
-            <div class="w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white shrink-0">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <div class="flex-1">
-              <h6 class="mb-1">Yeni blog yazısı eklendi</h6>
-              <p class="text-muted text-sm mb-0">"ASP.NET Core ile Modern Web Geliştirme"</p>
-              <span class="text-muted text-xs">2 saat önce</span>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <div class="w-10 h-10 rounded-full bg-success-500 flex items-center justify-center text-white shrink-0">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="flex-1">
-              <h6 class="mb-1">Proje tamamlandı</h6>
-              <p class="text-muted text-sm mb-0">"E-Ticaret Platformu v2.0"</p>
-              <span class="text-muted text-xs">5 saat önce</span>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <div class="w-10 h-10 rounded-full bg-warning-500 flex items-center justify-center text-white shrink-0">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="flex-1">
-              <h6 class="mb-1">Yeni mesaj alındı</h6>
-              <p class="text-muted text-sm mb-0">Ahmet Yılmaz'dan teklif talebi</p>
-              <span class="text-muted text-xs">1 gün önce</span>
-            </div>
-          </div>
-          <div class="flex items-start gap-3">
-            <div class="w-10 h-10 rounded-full bg-danger-500 flex items-center justify-center text-white shrink-0">
-              <i class="fas fa-image"></i>
-            </div>
-            <div class="flex-1">
-              <h6 class="mb-1">Yeni görseller yüklendi</h6>
-              <p class="text-muted text-sm mb-0">15 adet proje görseli eklendi</p>
-              <span class="text-muted text-xs">2 gün önce</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-<!-- [ Main Content ] end -->

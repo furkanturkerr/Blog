@@ -16,16 +16,75 @@
     </div>
 </div>
 
-@if (!Model.Any())
-{
-    <p>Kayıt bulunamadı.</p>
-}
-else
-{
-    @foreach (var log in Model)
-    {
-        <div class="mb-2 p-2 border rounded">
-            <small>@log</small>
+<div class="col-span-12 xl:col-span-6">
+    <div class="card">
+        <div class="card-header">
+            <h5>Son Aktiviteler</h5>
         </div>
-    }
-}
+
+        <div class="card-body">
+            <div class="space-y-4">
+
+                @if (!Model.Any())
+                {
+                    <p class="text-muted">Aktivite bulunamadı.</p>
+                }
+                else
+                {
+                    @foreach (var log in Model)
+                    {
+                        bool isSuccessLogin = log.Contains("BAŞARILI GİRİŞ");
+                        bool isFailedLogin  = log.Contains("BAŞARISIZ GİRİŞ");
+                        bool isLogout       = log.Contains("ÇIKIŞ YAPILDI");
+
+                        string title;
+                        string icon;
+                        string bgColor;
+
+                        if (isSuccessLogin)
+                        {
+                            title = "Giriş Yapıldı";
+                            icon = "fa-sign-in-alt";
+                            bgColor = "bg-primary-500";
+                        }
+                        else if (isFailedLogin)
+                        {
+                            title = "Başarısız Giriş";
+                            icon = "fa-exclamation-triangle";
+                            bgColor = "bg-warning-500";
+                        }
+                        else if (isLogout)
+                        {
+                            title = "Çıkış Yapıldı";
+                            icon = "fa-sign-out-alt";
+                            bgColor = "bg-danger-500";
+                        }
+                        else
+                        {
+                            title = "Bilinmeyen Aktivite";
+                            icon = "fa-question-circle";
+                            bgColor = "bg-gray-500";
+                        }
+
+                        <div class="mb-4 pb-4 ">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-full @bgColor flex items-center justify-center text-white shrink-0">
+                                    <i class="fas @icon"></i>
+                                </div>
+
+                                <div class="flex-1">
+                                    <h6 class="mb-1">@title</h6>
+                                    <span class="text-muted text-xs">
+                                        @log
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
