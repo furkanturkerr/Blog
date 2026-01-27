@@ -10,11 +10,9 @@ namespace MyBlog.Controllers;
 public class ContactMailController : Controller
 {
     private readonly IContactService  _contactService;
-    private readonly IMapper _mapper;
-    public ContactMailController(IContactService contactService,  IMapper mapper)
+    public ContactMailController(IContactService contactService)
     {
         _contactService = contactService;
-        _mapper = mapper;
     }
     
     [HttpGet]

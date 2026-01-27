@@ -8,10 +8,8 @@ namespace MyBlog.Controllers;
 public class GoogleController : Controller
 {
     private readonly IGoogleService _googleService;
-    private readonly IMapper _mapper;
-    public GoogleController(IGoogleService googleService , IMapper mapper)
+    public GoogleController(IGoogleService googleService)
     {
-        _mapper = mapper;
         _googleService = googleService;
     }
     

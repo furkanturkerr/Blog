@@ -86,8 +86,9 @@
                         <input type="text"  asp-for="Name" class="form-input" placeholder="İsim Soyisim" required data-form-input>
                         <input type="email" asp-for="Email" class="form-input" placeholder="Email Adresi" required data-form-input>
                     </div>
-
-                    <textarea class="form-input" asp-for="Message" placeholder="Mesajın" required data-form-input=""></textarea>
+                    <input type="text" asp-for="Subject" class="form-input" placeholder="Konu" required data-form-input>
+                    <br/>
+                    <textarea class="form-input" asp-for="Message" placeholder="Mesaj" required data-form-input=""></textarea>
 
                     <button class="form-btn" type="submit"  data-form-btn>
                         <ion-icon name="paper-plane"></ion-icon>

@@ -22,12 +22,11 @@
 
             <div class="card shadow-sm">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <span class="fw-bold mr-2">📨 Mesaj Detayı</span>
-
-                    <a href="~/ContactMail/ChangeStatusTrue/@Model.ContactId"
-                       class="btn btn-sm btn-warning">
-                        Okundu Olarak İşaretle
+                    <a href="/ContactMail/UnRead"
+                       class="btn btn-outline-secondary">
+                        ← Mesajlara Dön
                     </a>
+                    <span class="p-4 text-muted">@Model.CreatedDate.ToString("dd MMM yyyy, HH:mm")</span>
                 </div>
 
                 <div class="card-body">
@@ -47,6 +46,14 @@
                                value="@Model.Email"
                                readonly />
                     </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Konu</label>
+                        <input type="text"
+                               class="form-control"
+                               value="@Model.Subject"
+                               readonly />
+                    </div>
 
                     <div class="mb-4">
                         <label class="form-label fw-semibold">Mesaj</label>
@@ -56,9 +63,9 @@
                     </div>
 
                     <div class="d-flex justify-content-between">
-                        <a href="/ContactMail/UnRead"
-                           class="btn btn-outline-secondary">
-                            ← Mesajlara Dön
+                        <a href="~/ContactMail/ChangeStatusTrue/@Model.ContactId"
+                           class="btn btn-outline-primary">
+                            Okundu Olarak İşaretle
                         </a>
                     </div>
 

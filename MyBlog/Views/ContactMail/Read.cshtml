@@ -1,82 +1,107 @@
 @model List<Entities.Concrate.Contact>
 @{
-    ViewData["Title"] = "İletişim";
+    ViewData["Title"] = "Okunmuş Mesajlar";
     Layout = "~/Views/Admin/Index.cshtml";
 }
 
 <div class="page-header">
     <div class="page-block">
-        <div class="page-header-title">
-            <h5 class="mb-0 font-medium">İletişim</h5>
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="page-header-title">
+                    <h5 class="m-b-10">Mesajlar</h5>
+                </div>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="~/Admin/Index">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item"><a href="#">İletişim</a></li>
+                    <li class="breadcrumb-item">Okunmuş Mesajlar</li>
+                </ul>
+            </div>
         </div>
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item" aria-current="page">Mesajlar</li>
-            <li class="breadcrumb-item" aria-current="page">Okunmuş Mesajlar</li>
-        </ul>
     </div>
 </div>
 
-<div class="container-fluid mt-4">
-
-    <div class="row mb-3">
-        <div class="col d-flex gap-2">
-            <a href="~/ContactMail/Unread" class="btn btn-dark">📩 Okunmamış Mesajlar</a>
-            <a href="~/ContactMail/Read" class="btn btn-outline-dark active">📬 Okunmuş Mesajlar</a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <div class="card shadow-sm">
-                <div class="card-header fw-bold">
-                    Mesaj Listesi
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-3">
+                    <a href="~/ContactMail/Unread" class="btn btn-outline-primary">
+                        Okunmamış Mesajlar
+                    </a>
+                    <a href="~/ContactMail/Read" class="btn btn-primary">
+                        Okunmuş Mesajlar
+                    </a>
                 </div>
 
-                <div class="card-body p-0">
-                    <table class="table table-hover table-bordered mb-0 align-middle text-center">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>İsim Soyisim</th>
-                                <th>E-Mail</th>
-                                <th>Detay</th>
-                                <th>Durum</th>
-                                <th>Sil</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td class="fw-semibold">@item.Name</td>
-                                <td>@item.Email</td>
-
-                                <td>
-                                    <a href="~/ContactMail/Detail/@item.ContactId"
-                                       class="btn btn-sm btn-outline-success">
-                                        Detay
-                                    </a>
-                                </td>
-                                
-                                <td>
-                                    <a href="~/ContactMail/ChangeStatusFalse/@item.ContactId"
-                                       class="btn btn-sm btn-outline-warning">
-                                        Okunmadı
-                                    </a>
-                                </td>
-                                
-                                <td>
-                                    <a href="~/ContactMail/Delete/@item.ContactId"
-                                       class="btn btn-sm btn-outline-danger">
-                                        Sil
-                                    </a>
-                                </td>
-                            </tr>
-                        }
-                        </tbody>
-
-                    </table>
-                </div>
+                @if (Model != null && Model.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>GÖNDEREN</th>
+                                    <th>E-POSTA</th>
+                                    <th>KONU</th>
+                                    <th>TARİH</th>
+                                    <th>İŞLEMLER</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Select((value, index) => new { value, index }))
+                                {
+                                    <tr>
+                                        <td>@(item.index + 1)</td>
+                                        <td>@item.value.Name</td>
+                                        <td>@item.value.Email</td>
+                                        <td>
+                                            @if (!string.IsNullOrEmpty(item.value.Subject))
+                                            {
+                                                @item.value.Subject
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted">Konu Yok</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            @item.value.CreatedDate.ToString("dd MMM yyyy")
+                                            <br />
+                                            <small class="text-muted">@item.value.CreatedDate.ToString("HH:mm")</small>
+                                        </td>
+                                        <td>
+                                            <a href="~/ContactMail/Detail/@item.value.ContactId" 
+                                               class="btn btn-info btn-sm">
+                                                <i class="feather icon-eye"></i>
+                                            </a>
+                                            <a href="~/ContactMail/ChangeStatusFalse/@item.value.ContactId" 
+                                               class="btn btn-warning btn-sm">
+                                                <i class="feather icon-rotate-ccw"></i>
+                                            </a>
+                                            <a href="~/ContactMail/Delete/@item.value.ContactId" 
+                                               class="btn btn-danger btn-sm"
+                                               onclick="return confirm('Silmek istediğinize emin misiniz?')">
+                                                <i class="feather icon-trash-2"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center py-5">
+                        <i class="feather icon-inbox" style="font-size: 48px; color: #6c757d;"></i>
+                        <h5 class="mt-3 text-muted">Okunmuş mesaj bulunmuyor</h5>
+                        <p class="text-muted">Henüz mesaj okumadınız.</p>
+                        <a href="~/ContactMail/Unread" class="btn btn-primary btn-sm mt-2">
+                            Okunmamış Mesajları Görüntüle
+                        </a>
+                    </div>
+                }
             </div>
         </div>
     </div>
