@@ -1,27 +1,20 @@
-using System;
 using System.Globalization;
-using System.Reflection;
-using Business.Abstract;
-using Business.Concrate;
-using Data_Access_Layer.Abstract;
-using Data_Access_Layer.Concrate.EntityFramework;
 using Data_Access_Layer.Contexts;
+using Business.Container;
 using Entities.Concrate;
-using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using MyBlog.Hubs;
 using Serilog;
 using Serilog.Events;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+Extensions.ContainerDependencies(builder.Services);
+builder.Services.AddControllersWithViews();
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -32,7 +25,6 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Host.UseSerilog();
-
 
 builder.Host.UseSerilog();
 
@@ -63,7 +55,6 @@ builder.Services.AddControllersWithViews(options =>
     options.Filters.Add(new AuthorizeFilter(requireAuthorizationPolicy));
 });
 
-
 // ÖNEMLİ: Cookie ayarları
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -73,36 +64,6 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.ExpireTimeSpan = TimeSpan.FromHours(1); 
     options.SlidingExpiration = true;
 });
-
-builder.Services.AddScoped<IAbautService, AbautManager>();
-builder.Services.AddScoped<IAbautDal, EfAbautDal>();
-builder.Services.AddScoped<IServiceService, ServiceManager>();
-builder.Services.AddScoped<IServiceDal, EfServiceDal>();
-builder.Services.AddScoped<IExperinceService, ExperinceManager>();
-builder.Services.AddScoped<IExperinceDal, EfExperinceDal>();
-builder.Services.AddScoped<INavbarLeftService, NavbarLeftManager>();
-builder.Services.AddScoped<INavbarLeftDal, EfNavbarDal>();
-builder.Services.AddScoped<ISkilsDal, EfSkilsDal>();
-builder.Services.AddScoped<ISkillsService, SkillsManager>();
-builder.Services.AddScoped<IExperincePageService, ExperincePageManager>();
-builder.Services.AddScoped<IExprenicePageDal, EfExprenicePageDal>();
-builder.Services.AddScoped<IEducationService, EducationManager>();
-builder.Services.AddScoped<IEducationDal, EfEducationDal>();
-builder.Services.AddScoped<IPortfolioService, PortfolioManager>();
-builder.Services.AddScoped<IPortfolioDal, EfPortfolioDal>();
-builder.Services.AddScoped<IGoogleService, GoogleManager>();
-builder.Services.AddScoped<IGoogleDal, EfGoogleDal>();
-builder.Services.AddScoped<IContactService, ContactManager>();
-builder.Services.AddScoped<IContactDal, EfContactDal>();
-builder.Services.AddScoped<IBlogService, BlogManager>();
-builder.Services.AddScoped<IBlogDal, EfBlogDal>();
-builder.Services.AddScoped<IImagesDal, EfImagesDal>();
-builder.Services.AddScoped<IImagesService, ImagesManager>();
-builder.Services.AddScoped<IMapService, MapManager>();
-builder.Services.AddScoped<IMapDal, EfMapDal>();
-builder.Services.AddScoped<ICategoryService, CategoryManager>();
-builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
-
 
 var app = builder.Build();
 
