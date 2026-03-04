@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MyBlog.Controllers;
 
+
 public class AboutController:Controller
 {
     private readonly IAbautService _abautService;
@@ -30,6 +31,7 @@ public class AboutController:Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(About about)
     {
         AboutValidaton aboutValidaton = new AboutValidaton();

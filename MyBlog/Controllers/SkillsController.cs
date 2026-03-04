@@ -30,6 +30,7 @@ public class SkillsController:Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Add(Skills skills)
     {
         SkilsValidation skilsValidation = new SkilsValidation();
@@ -49,6 +50,8 @@ public class SkillsController:Controller
         return View();
     }
     
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Delete(int id)
     {
         var values = _skillsService.GetById(id);
@@ -64,6 +67,7 @@ public class SkillsController:Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(Skills skills)
     {
         SkilsValidation skilsValidation = new SkilsValidation();

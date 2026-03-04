@@ -66,6 +66,8 @@ public class ContactMailController : Controller
         return RedirectToAction("Read");
     }
     
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Delete(int id)
     {
         var values = _contactService.GetById(id);

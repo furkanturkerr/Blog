@@ -8,3 +8,5 @@
 2026-01-27 23:27:08.550 +03:00 [INF] BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1
 2026-01-29 13:39:36.546 +03:00 [INF] BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1
 2026-01-29 20:10:36.210 +03:00 [INF] BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1
+2026-01-29 21:23:22.097 +03:00 [WRN] BAŞARISIZ GİRİŞ | Kullanıcı: admin | IP: ::1
+2026-01-29 21:23:26.742 +03:00 [INF] BAŞARILI GİRİŞ | Kullanıcı: admin | IP: ::1

@@ -137,6 +137,95 @@
             font-size:13px;
             line-height:1.35;
         }
+
+        /* ================= BLOG İÇERİK DETAY AYARLARI ================= */
+
+        /* 1. İçerikteki Görsellerin Taşmasını Engelleme */
+        .about-text img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 20px 0;
+            display: block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Gorsellere hafif gölge */
+        }
+
+        /* 2. Başlıkların Aralarını ve Rengini Ayarlama */
+        .about-text h2, .about-text h3, .about-text h4 {
+            color: hsl(0, 0%, 95%); /* Tema rengiyle uyumlu açık gri */
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .about-text h2 { font-size: 1.4rem; }
+        .about-text h3 { font-size: 1.2rem; }
+
+        /* 3. Linklerin Görünümü (Turuncu Vurgu) */
+        .about-text a {
+            color: hsl(45, 100%, 72%); /* Temandaki turuncu/gold tonu */
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s ease;
+        }
+        .about-text a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        /* 4. Buton Görünümlü Linkler (GitHub/Linkedin için) */
+        /* Blog yazısına <a href="..." class="blog-btn"> şeklinde ekleyebilirsin */
+        .about-text .blog-btn {
+            display: inline-block;
+            background: hsl(45, 100%, 72%);
+            color: hsl(220, 40%, 16%); /* Koyu yazı rengi */
+            padding: 10px 20px;
+            border-radius: 14px;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .about-text .blog-btn:hover {
+            background: #ffffff;
+            transform: translateY(-2px);
+            text-decoration: none;
+            opacity: 1;
+        }
+
+        /* 5. Kod Blokları ve Listeler */
+        .about-text ul, .about-text ol {
+            padding-left: 25px;
+            margin-bottom: 18px;
+        }
+        .about-text li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        /* ================= MOBİL DÜZENLEMELER ================= */
+        @@media (max-width: 768px) {
+        /* Ana blog banner'ı mobilde çok uzun olmasın */
+        .blog-posts > .blog-banner-box {
+            height: 220px;
+            border-radius: 16px;
+        }
+
+        /* İçerik padding'lerini küçült */
+        .blog.active {
+            padding: 15px;
+            border-radius: 16px;
+        }
+
+        /* Yazı tipi boyutunu mobil için optimize et */
+        .about-text p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .about-text h2 { font-size: 1.2rem; }
+        .about-text h3 { font-size: 1.1rem; }
+        }
     </style>
 </head>
 

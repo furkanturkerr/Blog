@@ -17,6 +17,7 @@
 </div>
 
 <form method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="@Model.ImagesId"/>
     <img src="@Model.ImagePath" width="200" height="100"/>
     <label>Dosyadan Yükle</label>

@@ -16,25 +16,49 @@
     </div>
 </div>
 
-<form method="post" class="form-control">
+<form asp-action="Update" method="post" class="form-control p-4">
+
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="PortfolioId"/>
+
     <label>Proje Görseli</label>
-    <input type="text" value="@Model.PortfolioImage" asp-for="PortfolioImage" class="form-control"/>
-    @Html.ValidationMessageFor(x => x.PortfolioImage)
+    <input asp-for="PortfolioImage" class="form-control"/>
     <br/>
+
     <label>Proje Adı</label>
-    <input type="text" value="@Model.PortfolioName" asp-for="PortfolioName" class="form-control"/>
-    @Html.ValidationMessageFor(x => x.PortfolioName)
+    <input asp-for="PortfolioName" class="form-control"/>
     <br/>
+
     <label>Kategori</label>
-    <input type="text" value="@Model.PortfolioCategory" asp-for="PortfolioCategory" class="form-control"/>
-    @Html.ValidationMessageFor(x => x.PortfolioCategory)
+    <input asp-for="PortfolioCategory" class="form-control"/>
     <br/>
+
     <label>Proje Linki</label>
-    <input type="text" value="@Model.PortfolioLink" asp-for="PortfolioLink" class="form-control"/>
-    @Html.ValidationMessageFor(x => x.PortfolioLink)
+    <input asp-for="PortfolioLink" class="form-control"/>
     <br/>
-    <button class="btn btn-outline-warning">Kaydet</button>
-    <a href="~/Portfolio/Delete/@Model.PortfolioId" class="btn btn-outline-danger">Sil</a>
-    <a href="~/Portfolio/Index" class="btn btn-outline-dark">İptal</a>
+
+    <div class="d-flex gap-2 align-items-center">
+
+    <button type="submit" class="btn btn-outline-warning">
+        Kaydet
+    </button>
+
 </form>
+
+<form asp-action="Delete" style="display:inline-block; margin:0;"
+      method="post"
+      style="margin:0;">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.PortfolioId"/>
+
+    <button type="submit" class="btn btn-outline-danger">
+        Sil
+    </button>
+</form>
+
+<a href="~/Portfolio/Index"
+   class="btn btn-outline-dark">
+    İptal
+</a>
+
+</div>

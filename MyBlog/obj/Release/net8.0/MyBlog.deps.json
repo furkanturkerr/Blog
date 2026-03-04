@@ -22,7 +22,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
           "Microsoft.Extensions.Options": "8.0.2",
           "Serilog.AspNetCore": "8.0.2",
-          "Serilog.Sinks.File": "8.0.0-dev-02318"
+          "Serilog.Sinks.File": "8.0.0-dev-02318",
+          "SimpleMvcSitemap.Core": "4.4.0"
         },
         "runtime": {
           "MyBlog.dll": {}
@@ -867,6 +868,14 @@
           "lib/net8.0/Serilog.Sinks.File.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "SimpleMvcSitemap.Core/4.4.0": {
+        "runtime": {
+          "lib/net8.0/SimpleMvcSitemap.Core.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
           }
         }
       },
@@ -1828,6 +1837,13 @@
       "sha512": "sha512-D99fj7/Fl1ukWMedFgbLoy0rrPxieyQDZ8Exsx5CTERmC/3+8Bs3VTKf/QI8EO8B6hg5Rj+r1nb6hYhZ+kwJng==",
       "path": "serilog.sinks.file/8.0.0-dev-02318",
       "hashPath": "serilog.sinks.file.8.0.0-dev-02318.nupkg.sha512"
+    },
+    "SimpleMvcSitemap.Core/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0cQjzyFyACRAZwbd3tat9lmgYPlgjVbDrff/9TGCls3Vjv6sNmFcmk+KKpnBtylfOQVzyL0qwzKQ3wmrro1xjA==",
+      "path": "simplemvcsitemap.core/4.4.0",
+      "hashPath": "simplemvcsitemap.core.4.4.0.nupkg.sha512"
     },
     "System.Buffers/4.6.0": {
       "type": "package",

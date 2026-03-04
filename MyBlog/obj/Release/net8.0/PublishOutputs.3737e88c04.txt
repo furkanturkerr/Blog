@@ -44,6 +44,7 @@
 /Users/furkanturker/Desktop/ss/Serilog.Sinks.Console.dll
 /Users/furkanturker/Desktop/ss/Serilog.Sinks.Debug.dll
 /Users/furkanturker/Desktop/ss/Serilog.Sinks.File.dll
+/Users/furkanturker/Desktop/ss/SimpleMvcSitemap.Core.dll
 /Users/furkanturker/Desktop/ss/System.Configuration.ConfigurationManager.dll
 /Users/furkanturker/Desktop/ss/System.Drawing.Common.dll
 /Users/furkanturker/Desktop/ss/System.IdentityModel.Tokens.Jwt.dll

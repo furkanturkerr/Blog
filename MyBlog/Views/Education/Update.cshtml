@@ -18,6 +18,7 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="EducationId"/>
     <label>Başlık</label>
     <input type="text" asp-for="EducationContentlow" value="@Model.EducationContentlow" class="form-control"/>

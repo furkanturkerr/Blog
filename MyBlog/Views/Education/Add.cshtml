@@ -18,17 +18,18 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <label>Başlık</label>
-    <input type="text" asp-for="EducationContentlow" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.EducationContentlow)
+    <input type="text" asp-for="EducationContentlow" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.EducationContentlow)
     <br/>
     <label>Açıklama</label>
-    <input type="text" asp-for="EducationText" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.EducationText)
+    <input type="text" asp-for="EducationText" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.EducationText)
     <br/>
     <label>Tarih</label>
-    <input type="text" asp-for="EducationTime" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.EducationTime)
+    <input type="text" asp-for="EducationTime" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.EducationTime)
     <br/>
     <button class="btn btn-outline-warning">Kaydet</button>
 </form>

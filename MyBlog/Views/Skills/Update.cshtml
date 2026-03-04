@@ -18,14 +18,15 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="SkillsId"/>
     <label>Yetenek Adı</label>
     <input type="text" asp-for="SkillsContent" value="@Model.SkillsContent" class="form-control"/>
-    @Html.ValidationMessageFor(x=> x.SkillsContent)
+    @Html.ValidationMessageFor(x => x.SkillsContent)
     <br/>
     <label>Yüzde</label>
     <input type="text" asp-for="SkillsNumber" value="@Model.SkillsNumber" class="form-control"/>
-    @Html.ValidationMessageFor(x=> x.SkillsNumber)
+    @Html.ValidationMessageFor(x => x.SkillsNumber)
     <br/>
     <button class="btn btn-outline-dark">Güncelle</button>
 </form>

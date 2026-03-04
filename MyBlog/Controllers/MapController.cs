@@ -29,6 +29,7 @@ public class MapController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(Map map)
     {
         _mapService.Update(map);

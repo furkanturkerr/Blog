@@ -31,6 +31,7 @@ namespace MyBlog.Controllers
         }
         
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Add(Portfolio portfolio)
         {
             PortfolioValidation portfolioValidation = new PortfolioValidation();
@@ -58,6 +59,7 @@ namespace MyBlog.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Update(Portfolio portfolio)
         {
             PortfolioValidation portfolioValidation = new PortfolioValidation();
@@ -77,6 +79,8 @@ namespace MyBlog.Controllers
             return View(portfolio);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Delete(int id)
         {
             var values = _portfolioService.GetById(id);

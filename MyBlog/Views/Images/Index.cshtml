@@ -45,12 +45,24 @@ Layout = "~/Views/Admin/Index.cshtml";
                    onclick="event.stopPropagation()">
                     <i class="fas fa-edit"></i>
                 </a>
-                <a href="~/Images/Delete/@item.ImagesId"
-                   class="btn btn-danger btn-sm"
-                   style="padding: 3px 8px; font-size: 11px;"
-                   onclick="event.stopPropagation(); return confirm('Bu görseli silmek istediğinizden emin misiniz?');">
-                    <i class="fas fa-trash"></i>
-                </a>
+                <form asp-controller="Images"
+                      asp-action="Delete"
+                      method="post"
+                      style="display:inline;"
+                      onclick="event.stopPropagation();">
+
+                    @Html.AntiForgeryToken()
+
+                    <input type="hidden" name="id" value="@item.ImagesId" />
+
+                    <button type="submit"
+                            class="btn btn-danger btn-sm"
+                            style="padding: 3px 8px; font-size: 11px;"
+                            onclick="return confirm('Bu görseli silmek istediğinizden emin misiniz?');">
+                        <i class="fas fa-trash"></i>
+                    </button>
+
+                </form>
             </div>
 
             <!-- Yol Bilgisi -->

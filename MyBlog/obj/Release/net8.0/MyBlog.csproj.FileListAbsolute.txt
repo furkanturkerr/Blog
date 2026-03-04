@@ -252,3 +252,5 @@ C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/obj/Release/net8.0/ref/MyBlog.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Serilog.Sinks.Debug.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/Serilog.Sinks.File.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/System.Net.WebSockets.WebSocketProtocol.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Release/net8.0/SimpleMvcSitemap.Core.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/obj/Release/net8.0/MyBlog.MvcApplicationPartsAssemblyInfo.cs

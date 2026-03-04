@@ -32,6 +32,16 @@
             <td>@item.EducationText</td>
             <td><a href="~/Education/Update/@item.EducationId" class="btn btn-outline-dark">Güncelle</a></td>
             <td><a href="~/Education/Delete/@item.EducationId" class="btn btn-outline-dark">Sil</a></td>
+            <td>
+                <form asp-action="Delete" asp-controller="Education" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@item.EducationId" />
+                    <button type="submit" class="btn btn-outline-danger"
+                            onclick="return confirm('Silmek istediğinize emin misiniz?')">
+                        Sil
+                    </button>
+                </form>
+            </td>
         </tr>
     }
 </table>

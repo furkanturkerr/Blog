@@ -251,3 +251,5 @@ C:/Users/Furkan/Proje ve Dersler/Blog/MyBlog/bin/Debug/net8.0/FluentValidation.d
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Sinks.Console.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
 /Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/Serilog.Sinks.File.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/bin/Debug/net8.0/SimpleMvcSitemap.Core.dll
+/Users/furkanturker/RiderProjects/Blog/MyBlog/obj/Debug/net8.0/MyBlog.MvcApplicationPartsAssemblyInfo.cs

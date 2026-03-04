@@ -30,7 +30,16 @@
             <td>@item.UserName</td>
             <td>@item.Email</td>
             <td><a href="~/Register/UserUpdate/@item.Id" class="btn btn-outline-dark">Güncelle</a></td>
-            <td><a href="~/Register/UserDelete/@item.Id" class="btn btn-outline-dark">Sil</a></td>
+            <td>
+                <form asp-action="UserDelete" asp-controller="Register" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@item.Id" />
+                    <button type="submit" class="btn btn-outline-danger"
+                            onclick="return confirm('Silmek istediğinize emin misiniz?')">
+                        Sil
+                    </button>
+                </form>
+            </td>
         </tr>
     }
 </table>

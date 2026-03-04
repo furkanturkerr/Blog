@@ -79,11 +79,22 @@
                                                class="btn btn-warning btn-sm">
                                                 <i class="feather icon-rotate-ccw"></i>
                                             </a>
-                                            <a href="~/ContactMail/Delete/@item.value.ContactId" 
-                                               class="btn btn-danger btn-sm"
-                                               onclick="return confirm('Silmek istediğinize emin misiniz?')">
-                                                <i class="feather icon-trash-2"></i>
-                                            </a>
+                                            <form asp-controller="ContactMail" 
+                                                  asp-action="Delete" 
+                                                  method="post" 
+                                                  style="display:inline;">
+
+                                                @Html.AntiForgeryToken()
+    
+                                                <input type="hidden" name="id" value="@item.value.ContactId" />
+
+                                                <button type="submit"
+                                                        class="btn btn-danger btn-sm"
+                                                        onclick="return confirm('Silmek istediğinize emin misiniz?')">
+                                                    <i class="feather icon-trash-2"></i>
+                                                </button>
+
+                                            </form>
                                         </td>
                                     </tr>
                                 }

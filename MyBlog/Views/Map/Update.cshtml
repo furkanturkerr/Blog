@@ -18,6 +18,7 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="MapId"/>
     <label>Kod</label>
     <textarea rows="10" asp-for="MapUrl" class="form-control" required></textarea>

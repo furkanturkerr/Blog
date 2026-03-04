@@ -28,6 +28,7 @@ public class CategoryController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult CreateCategory(Category category)
     {
         CategoryValidation categoryValidation = new CategoryValidation();
@@ -54,6 +55,7 @@ public class CategoryController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult EditCategory(Category category)
     {
         CategoryValidation categoryValidation = new CategoryValidation();
@@ -73,6 +75,8 @@ public class CategoryController : Controller
         return View(category);
     }
 
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult DeleteCategory(int id)
     {
         

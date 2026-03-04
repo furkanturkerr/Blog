@@ -27,6 +27,7 @@ public class ImagesController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Add(ImagesViewModel model)
     {
         if (ModelState.IsValid)
@@ -88,6 +89,7 @@ public class ImagesController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(ImagesViewModel model)
     {
         if (ModelState.IsValid)
@@ -131,6 +133,8 @@ public class ImagesController : Controller
         return View();
     }
 
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Delete(int id)
     {
         var value = _imagesService.GetById(id);

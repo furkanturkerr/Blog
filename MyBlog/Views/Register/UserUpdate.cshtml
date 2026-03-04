@@ -19,6 +19,7 @@
 
 <br/>
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="Id"/>
     <label>Ad</label>
     <input type="text" asp-for="Name" value="@Model.Name *" class="form-control"/>

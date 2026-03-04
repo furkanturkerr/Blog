@@ -37,54 +37,48 @@
                         bool isFailedLogin  = log.Contains("BAŞARISIZ GİRİŞ");
                         bool isLogout       = log.Contains("ÇIKIŞ YAPILDI");
 
-                        string title;
-                        string icon;
-                        string bgColor;
+                        string title, icon, bgColor;
 
-                        if (isSuccessLogin)
-                        {
+                        if (isSuccessLogin) {
                             title = "Giriş Yapıldı";
                             icon = "fa-sign-in-alt";
                             bgColor = "bg-primary-500";
-                        }
-                        else if (isFailedLogin)
-                        {
+                        } else if (isFailedLogin) {
                             title = "Başarısız Giriş";
                             icon = "fa-exclamation-triangle";
                             bgColor = "bg-warning-500";
-                        }
-                        else if (isLogout)
-                        {
+                        } else if (isLogout) {
                             title = "Çıkış Yapıldı";
                             icon = "fa-sign-out-alt";
                             bgColor = "bg-danger-500";
-                        }
-                        else
-                        {
-                            title = "Bilinmeyen Aktivite";
-                            icon = "fa-question-circle";
-                            bgColor = "bg-gray-500";
+                        } else {
+                            // artık buraya hiç uğramamalı
+                            continue;
                         }
 
-                        <div class="mb-4 pb-4 ">
+                        <div class="mb-4 pb-4">
                             <div class="flex items-start gap-3">
                                 <div class="w-10 h-10 rounded-full @bgColor flex items-center justify-center text-white shrink-0">
                                     <i class="fas @icon"></i>
                                 </div>
-
                                 <div class="flex-1">
                                     <h6 class="mb-1">@title</h6>
-                                    <span class="text-muted text-xs">
-                                        @log
-                                    </span>
+                                    <span class="text-muted text-xs">@log</span>
                                 </div>
                             </div>
                         </div>
                     }
-
                 }
 
             </div>
         </div>
     </div>
 </div>
+
+<form asp-action="ClearLogs" method="post"
+      onsubmit="return confirm('Tüm loglar temizlenecek. Emin misiniz?');">
+    <button type="submit" class="btn btn-danger btn-sm">
+        <i class="fas fa-trash"></i> Logları Temizle
+    </button>
+</form>
+

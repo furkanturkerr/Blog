@@ -18,17 +18,18 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <label>Başlık</label>
-    <input type="text" asp-for="ExperiencePageContentlow" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.ExperiencePageContentlow)
+    <input type="text" asp-for="ExperiencePageContentlow" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.ExperiencePageContentlow)
     <br/>
     <label>Açıklama</label>
-    <input type="text" asp-for="ExperiencePageText" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.ExperiencePageText)
+    <input type="text" asp-for="ExperiencePageText" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.ExperiencePageText)
     <br/>
     <label>Tarih</label>
-    <input type="text" asp-for="ExperiencePageTime" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.ExperiencePageTime)
+    <input type="text" asp-for="ExperiencePageTime" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.ExperiencePageTime)
     <br/>
     <button class="btn btn-outline-warning">Kaydet</button>
 </form>

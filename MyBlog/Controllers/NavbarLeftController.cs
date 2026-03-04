@@ -30,6 +30,7 @@ public class NavbarLeftController:Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(NavbarLeft navbarLeft)
     {
         NavbarLeftValidation navbarLeftValidation = new NavbarLeftValidation();

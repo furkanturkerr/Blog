@@ -26,7 +26,16 @@
     {
         <tr>
             <td><img src="@item.ExperiencImage" width="300" alt="Görsel Yok"/></td>
-            <td><a href="~/Experince/Delete/@item.ExperienceId" class="btn btn-outline-dark">Sil</a></td>
+            <td>
+                <form asp-action="Delete" asp-controller="Experince" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@item.ExperienceId" />
+                    <button type="submit" class="btn btn-outline-danger"
+                            onclick="return confirm('Silmek istediğinize emin misiniz?')">
+                        Sil
+                    </button>
+                </form>
+            </td>
         </tr>
     }
 </table>

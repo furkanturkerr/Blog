@@ -17,8 +17,9 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <label>Görsel Yolu</label>
-    <input type="text" asp-for="ExperiencImage" class="form-control" />
+    <input type="text" asp-for="ExperiencImage" class="form-control"/>
     <br/>
     <button class="btn btn-outline-warning">Ekle</button>
 </form>

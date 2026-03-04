@@ -18,6 +18,7 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="ExperiencePageId"/>
     <label>Başlık</label>
     <input type="text" asp-for="ExperiencePageContentlow" value="@Model.ExperiencePageContentlow" class="form-control"/>

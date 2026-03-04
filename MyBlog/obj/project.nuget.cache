@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NaEbvm+cn3c=",
+  "dgSpecHash": "sA4oGNEcyn0=",
   "success": true,
   "projectFilePath": "/Users/furkanturker/RiderProjects/Blog/MyBlog/MyBlog.csproj",
   "expectedPackageFiles": [
@@ -99,6 +99,7 @@
     "/Users/furkanturker/.nuget/packages/serilog.sinks.console/5.0.0/serilog.sinks.console.5.0.0.nupkg.sha512",
     "/Users/furkanturker/.nuget/packages/serilog.sinks.debug/2.0.0/serilog.sinks.debug.2.0.0.nupkg.sha512",
     "/Users/furkanturker/.nuget/packages/serilog.sinks.file/8.0.0-dev-02318/serilog.sinks.file.8.0.0-dev-02318.nupkg.sha512",
+    "/Users/furkanturker/.nuget/packages/simplemvcsitemap.core/4.4.0/simplemvcsitemap.core.4.4.0.nupkg.sha512",
     "/Users/furkanturker/.nuget/packages/system.buffers/4.6.0/system.buffers.4.6.0.nupkg.sha512",
     "/Users/furkanturker/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/furkanturker/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",

@@ -23,6 +23,7 @@ public class RegisterController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Index(RegisterViewModel registerViewModel)
     {
         var appUser = new AppUser()
@@ -47,6 +48,8 @@ public class RegisterController : Controller
         return View(users);
     }
 
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> UserDelete()
     {
         var user = await _userManager.FindByNameAsync(User.Identity.Name);
@@ -77,6 +80,7 @@ public class RegisterController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> UserUpdate(UserUpdateViewModel model)
     {
         if (!ModelState.IsValid)

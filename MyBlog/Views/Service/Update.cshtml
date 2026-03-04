@@ -17,18 +17,19 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <input type="hidden" asp-for="ServiceId"/>
     <label>Başlık</label>
     <input type="text" asp-for="ServiceContent" value="@Model.ServiceContent" class="form-control"/>
-    @Html.ValidationMessageFor(x=> x.ServiceContent)
+    @Html.ValidationMessageFor(x => x.ServiceContent)
     <br/>
     <label>Metin</label>
     <textarea name="ServiceText" rows="4" class="form-control">@Model.ServiceText</textarea>
-    @Html.ValidationMessageFor(x=> x.ServiceText)
+    @Html.ValidationMessageFor(x => x.ServiceText)
     <br/>
     <label>Icon</label>
     <input type="text" asp-for="ServiceIcon" value="@Model.ServiceIcon" class="form-control"/>
-    @Html.ValidationMessageFor(x=> x.ServiceIcon)
+    @Html.ValidationMessageFor(x => x.ServiceIcon)
     <br/>
     <button class="btn btn-outline-warning">Güncelle</button>
 </form>

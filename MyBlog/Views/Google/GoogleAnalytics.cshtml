@@ -36,7 +36,16 @@
                 </div>
             </td>
             <td><a href="~/Google/GoogleAnalyticsUpdate/@item.GoogleId" class="btn btn-outline-dark">Güncelle</a></td>
-            <td><a href="~/Google/GoogleAnalyticsDelete/@item.GoogleId" class="btn btn-outline-dark">Sil</a></td>
+            <td>
+                <form asp-action="GoogleAnalyticsDelete" asp-controller="Google" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@item.GoogleId" />
+                    <button type="submit" class="btn btn-outline-danger"
+                            onclick="return confirm('Silmek istediğinize emin misiniz?')">
+                        Sil
+                    </button>
+                </form>
+            </td>
         </tr>
     }
 </table>

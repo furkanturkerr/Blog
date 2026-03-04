@@ -25,6 +25,7 @@ public class LoginController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Index(LoginViewModel model)
     {
         var result = await _signInManager.PasswordSignInAsync(
@@ -57,7 +58,8 @@ public class LoginController : Controller
         return View();
     }
 
-    [HttpGet]
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Logout()
     {
         Log.Information(

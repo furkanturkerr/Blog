@@ -29,6 +29,7 @@ public class ExperinceController:Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Add(Experience experience)
     {
         ExperinceValidation experinceValidation = new ExperinceValidation();
@@ -48,6 +49,8 @@ public class ExperinceController:Controller
         return View();
     }
 
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Delete(int id)
     {
         var values = _experinceService.GetById(id);

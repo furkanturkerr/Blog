@@ -54,7 +54,16 @@
                 <td><a href="~/Blog/ChangeStatus/@item.BlogId" class="btn btn-outline-info">Yayınla</a></td>
             }
             <td><a href="~/Blog/Update/@item.BlogId" class="btn btn-outline-dark">Güncelle</a></td>
-            <td><a href="~/Blog/Delete/@item.BlogId" class="btn btn-outline-dark">Sil</a></td>
+            <td>
+                <form asp-action="Delete" asp-controller="Blog" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@item.BlogId" />
+                    <button type="submit" class="btn btn-outline-danger"
+                            onclick="return confirm('Bu blogu silmek istediğinize emin misiniz?')">
+                        Sil
+                    </button>
+                </form>
+            </td>
         </tr>
     }
 </table>

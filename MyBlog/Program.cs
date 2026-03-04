@@ -16,15 +16,6 @@ var builder = WebApplication.CreateBuilder(args);
 Extensions.ContainerDependencies(builder.Services);
 builder.Services.AddControllersWithViews();
 
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .MinimumLevel.Override("Microsoft", LogEventLevel.Fatal)
-    .MinimumLevel.Override("System", LogEventLevel.Fatal)
-    .MinimumLevel.Override("Microsoft.AspNetCore.HttpsPolicy", LogEventLevel.Fatal)
-    .WriteTo.File("Logs/auth-log.txt", shared: true)
-    .CreateLogger();
-
-builder.Host.UseSerilog();
 
 builder.Host.UseSerilog();
 

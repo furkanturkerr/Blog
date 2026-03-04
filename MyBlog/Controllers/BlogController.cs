@@ -56,6 +56,7 @@ public class BlogController : Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Add(Blog blog)
     {
         BlogValidation blogValidation = new BlogValidation();
@@ -84,6 +85,8 @@ public class BlogController : Controller
         return View();
     }
 
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Delete(int id)
     {
         var value = _blogService.GetById(id);
@@ -106,6 +109,7 @@ public class BlogController : Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(Blog blog)
     {
         BlogValidation blogValidation = new BlogValidation();

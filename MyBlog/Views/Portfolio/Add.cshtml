@@ -17,21 +17,22 @@
 </div>
 
 <form method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
     <label>Proje Görsel Yolu</label>
     <input type="text" asp-for="PortfolioImage" class="form-control"/>
-    @Html.ValidationMessageFor(x=>x.PortfolioImage)
+    @Html.ValidationMessageFor(x => x.PortfolioImage)
     <br/>
     <label>Proje Adı</label>
     <input type="text" asp-for="PortfolioName" class="form-control"/>
-    @Html.ValidationMessageFor(x=>x.PortfolioName)
+    @Html.ValidationMessageFor(x => x.PortfolioName)
     <br/>
     <label>Kategori</label>
     <input type="text" asp-for="PortfolioCategory" class="form-control"/>
-    @Html.ValidationMessageFor(x=>x.PortfolioCategory)
+    @Html.ValidationMessageFor(x => x.PortfolioCategory)
     <br/>
     <label>Proje Linki</label>
     <input type="text" asp-for="PortfolioLink" class="form-control"/>
-    @Html.ValidationMessageFor(x=>x.PortfolioLink)
+    @Html.ValidationMessageFor(x => x.PortfolioLink)
     <br/>
     <button class="btn btn-outline-warning">Kaydet</button>
 </form>

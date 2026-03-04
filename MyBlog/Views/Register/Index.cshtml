@@ -59,20 +59,21 @@
               <div class="card-body !p-10">
                 <h4 class="text-center font-medium mb-4">Kullanıcı Oluştur</h4>
                 <form method="post">
-                    <div class="grid grid-cols-12 gap-3 mb-3">
-                      <div class="col-span-12 sm:col-span-6">
-                        <input type="text" class="form-control" placeholder="İsim" asp-for="Name" required >
-                      </div>
-                      <div class="col-span-12 sm:col-span-6">
-                        <input type="text" class="form-control" placeholder="Soyisim" asp-for="Surname" required >
-                      </div>
+                  @Html.AntiForgeryToken()
+                  <div class="grid grid-cols-12 gap-3 mb-3">
+                    <div class="col-span-12 sm:col-span-6">
+                      <input type="text" class="form-control" placeholder="İsim" asp-for="Name" required>
                     </div>
-                    <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="Kullanıcı Adı" asp-for="Username"required >
+                    <div class="col-span-12 sm:col-span-6">
+                      <input type="text" class="form-control" placeholder="Soyisim" asp-for="Surname" required>
                     </div>
-                    <div class="mb-3">
-                      <input type="password" class="form-control" placeholder="Şifre" asp-for="Password" required >
-                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Kullanıcı Adı" asp-for="Username"required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Şifre" asp-for="Password" required>
+                  </div>
                   <div class="mt-4 text-center">
                     <input type="submit" name="register" class="btn btn-primary mx-auto shadow-2xl" value="Kullanıcı Oluştur"/>
                   </div>

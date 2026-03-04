@@ -21,7 +21,7 @@ public class EducationController : Controller
         var vievs = _educationService.GetAll();
         return View(vievs);
     }
-    
+
     [HttpGet]
     public IActionResult Add()
     {
@@ -29,6 +29,7 @@ public class EducationController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Add(Education education)
     {
         EducationValidation experincePageValidation = new EducationValidation();
@@ -45,9 +46,12 @@ public class EducationController : Controller
                 ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
         }
+
         return View();
     }
-    
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Delete(int id)
     {
         var values = _educationService.GetById(id);
@@ -63,6 +67,7 @@ public class EducationController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(Education education)
     {
        EducationValidation experincePageValidation = new EducationValidation();

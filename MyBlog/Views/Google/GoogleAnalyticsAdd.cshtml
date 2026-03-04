@@ -18,6 +18,7 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <label>Kod</label>
     <textarea rows="10" asp-for="Googletag" class="form-control" required></textarea>
     <br/>

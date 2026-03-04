@@ -29,6 +29,7 @@ public class ServiceController:Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Update(Service service)
     {
         ServiceValidation serviceValidation = new ServiceValidation();

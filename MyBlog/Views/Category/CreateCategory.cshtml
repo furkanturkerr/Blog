@@ -18,13 +18,14 @@
 </div>
 
 <form method="post" class="form-control">
+    @Html.AntiForgeryToken()
     <label>Kategori Adı</label>
-    <input type="text" asp-for="CategoryName" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.CategoryName)
+    <input type="text" asp-for="CategoryName" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.CategoryName)
     <br/>
     <label>Kısa Adı</label>
-    <input type="text" asp-for="CategorySlug" class="form-control" />
-    @Html.ValidationMessageFor(x=> x.CategorySlug)
+    <input type="text" asp-for="CategorySlug" class="form-control"/>
+    @Html.ValidationMessageFor(x => x.CategorySlug)
     <br/>
     <button class="btn btn-outline-warning">Kaydet</button>
 </form>

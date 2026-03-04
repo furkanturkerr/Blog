@@ -121,13 +121,6 @@
             <span class="pc-mtext">Kullanıcılar</span>
           </a>
         </li>
-        
-        <li class="pc-item pc-hasmenu">
-          <a href="~/Settings/Index" class="pc-link">
-            <span class="pc-micon"> <i data-feather="map"></i></span>
-            <span class="pc-mtext">Giriş / Çıkış Kayıtları</span>
-          </a>
-        </li>
 
         <li class="pc-item pc-hasmenu">
           <a href="~/Google/GoogleAnalytics" class="pc-link">
@@ -143,11 +136,22 @@
           </a>
         </li>
         
-        <li class="pc-item pc-hasmenu">
-          <a href="~/Login/Logout" class="pc-link">
-            <span class="pc-micon"> <i data-feather="log-in"></i></span>
+        <li class="pc-item">
+          <a href="#" class="pc-link"
+             onclick="event.preventDefault(); document.getElementById('logoutForm').submit();">
+            <span class="pc-micon">
+              <i data-feather="log-in"></i>
+            </span>
             <span class="pc-mtext">Çıkış Yap</span>
           </a>
+
+          <form id="logoutForm"
+                asp-controller="Login"
+                asp-action="Logout"
+                method="post"
+                style="display:none;">
+            @Html.AntiForgeryToken()
+          </form>
         </li>
       </ul>
     </div>

@@ -33,7 +33,16 @@
             <td>@item.CategoryName</td>
             <td>@item.CategorySlug</td>
             <td><a href="~/Category/EditCategory/@item.CategoryId" class="btn btn-outline-dark">Güncelle</a></td>
-            <td><a href="~/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-dark">Sil</a></td>
+            <td>
+                <form asp-action="DeleteCategory" asp-controller="Category" method="post" style="display:inline;">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@item.CategoryId" />
+                    <button type="submit" class="btn btn-outline-danger"
+                            onclick="return confirm('Silmek istediğinize emin misiniz?')">
+                        Sil
+                    </button>
+                </form>
+            </td>
         </tr>
     }
 </table>

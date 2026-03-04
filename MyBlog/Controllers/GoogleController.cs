@@ -27,6 +27,7 @@ public class GoogleController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult GoogleAnalyticsAdd(Google google)
     {
         _googleService.Insert(google);
@@ -41,12 +42,15 @@ public class GoogleController : Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult GoogleAnalyticsUpdate(Google google)
     {
         _googleService.Update(google);
         return RedirectToAction("GoogleAnalytics");
     }
 
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult GoogleAnalyticsDelete(int id)
     {
         var values = _googleService.GetById(id);
