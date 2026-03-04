@@ -61,6 +61,7 @@ ASP.NET Core 8.0 ile geliştirilen, çok katmanlı mimariye sahip modern bir Blo
 
 # 🛠 **Admin Panel**
 
+<img width="1920" height="1358" alt="image" src="https://github.com/user-attachments/assets/e1ddff89-09dc-4afb-8792-aa8b10f50ef6" />
 <img width="1469" height="833" alt="image" src="https://github.com/user-attachments/assets/2b71c114-0974-435e-a7b4-2f93628796dc" />
 <img width="1468" height="831" alt="image" src="https://github.com/user-attachments/assets/a579fd8f-cdaa-42dd-9fbb-d07a8cde1ee2" />
 <img width="1469" height="829" alt="image" src="https://github.com/user-attachments/assets/6b51549d-7d0f-4df4-9cc9-68825dd34c42" />
