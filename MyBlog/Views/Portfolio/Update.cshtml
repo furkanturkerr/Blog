@@ -17,7 +17,6 @@
 </div>
 
 <form asp-action="Update" method="post" class="form-control p-4">
-
     @Html.AntiForgeryToken()
     <input type="hidden" asp-for="PortfolioId"/>
 
@@ -37,28 +36,23 @@
     <input asp-for="PortfolioLink" class="form-control"/>
     <br/>
 
-    <div class="d-flex gap-2 align-items-center">
-
     <button type="submit" class="btn btn-outline-warning">
         Kaydet
     </button>
-
 </form>
 
-<form asp-action="Delete" style="display:inline-block; margin:0;"
-      method="post"
-      style="margin:0;">
-    @Html.AntiForgeryToken()
-    <input type="hidden" name="id" value="@Model.PortfolioId"/>
+<div style="display:flex; flex-direction:row; gap:8px; margin-top:8px;">
 
-    <button type="submit" class="btn btn-outline-danger">
-        Sil
-    </button>
-</form>
+    <form asp-action="Delete" method="post" style="margin:0; padding:0;">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="id" value="@Model.PortfolioId"/>
+        <button type="submit" class="btn btn-outline-danger">
+            Sil
+        </button>
+    </form>
 
-<a href="~/Portfolio/Index"
-   class="btn btn-outline-dark">
-    İptal
-</a>
+    <a href="~/Portfolio/Index" class="btn btn-outline-dark">
+        İptal
+    </a>
 
 </div>

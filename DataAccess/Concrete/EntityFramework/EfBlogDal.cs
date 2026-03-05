@@ -8,31 +8,34 @@ namespace Data_Access_Layer.Concrate.EntityFramework;
 
 public class EfBlogDal:GenericRepository<Blog>,IBlogDal
 {
+    private readonly BlogContexts _context;
+    public EfBlogDal(BlogContexts context) : base(context)
+    {
+        _context = context;
+    }
+
     public List<Blog> GetListWithCategory()
     {
-        using var contexts = new BlogContexts();
-        return contexts.Blogs.Include(x => x.Category).ToList();
+        return _context.Blogs.Include(x => x.Category).ToList();
     }
 
     public void ChangeStatus(int id)
     {
-        using var context = new BlogContexts();
-        var value = context.Blogs.Find(id);
+        var value = _context.Blogs.Find(id);
         if (value.BlogStatus == true)
         {
             value.BlogStatus = false;
-            context.SaveChanges();
+            _context.SaveChanges();
         }
         else
         {
             value.BlogStatus = true;
-            context.SaveChanges();
+            _context.SaveChanges();
         }
     }
 
     public List<Blog> GetListWithStatus()
     {
-        using var contexts = new BlogContexts();
-        return contexts.Blogs.Where(x => x.BlogStatus == true).Include(y=>y.Category).ToList();
+        return _context.Blogs.Where(x => x.BlogStatus == true).Include(y=>y.Category).ToList();
     }
 }

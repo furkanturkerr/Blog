@@ -16,6 +16,8 @@ var builder = WebApplication.CreateBuilder(args);
 Extensions.ContainerDependencies(builder.Services);
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDbContext<BlogContexts>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ServerConnection")));
 
 builder.Host.UseSerilog();
 
@@ -34,8 +36,6 @@ builder.Services.AddSignalR();
 var requireAuthorizationPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
 
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddDbContext<BlogContexts>();
 
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<BlogContexts>();
 builder.Services.AddHttpClient();

@@ -7,27 +7,32 @@ namespace Data_Access_Layer.Concrate.EntityFramework;
 
 public class EfPortfolioDal:GenericRepository<Portfolio>,IPortfolioDal
 {
+    private readonly BlogContexts _context;
+
+    public EfPortfolioDal(BlogContexts context) : base(context)
+    {
+        _context = context;
+    }
+
     public void ChageStatus(int id)
     {
-        using var contexts = new BlogContexts();
-        var values = contexts.Portfolios.Find(id);
+        var values = _context.Portfolios.Find(id);
 
         if (values.Status == true)
         {
             values.Status = false;
-            contexts.SaveChanges();
+            _context.SaveChanges();
         }
         else
         {
             values.Status = true;
-            contexts.SaveChanges();
+            _context.SaveChanges();
         }
     }
 
     public List<Portfolio> ListStatusTrue()
     {
-        using var contexts = new BlogContexts();
-        var values = contexts.Portfolios.Where(x => x.Status == true).ToList();
+        var values = _context.Portfolios.Where(x => x.Status == true).ToList();
         return values;
     }
 }
