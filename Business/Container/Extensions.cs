@@ -38,5 +38,7 @@ public class Extensions
         services.AddScoped<IMapDal, EfMapDal>();
         services.AddScoped<ICategoryService, CategoryManager>();
         services.AddScoped<ICategoryDal, EfCategoryDal>();
+        services.AddScoped<INoteService, NoteManager>();
+        services.AddScoped<INoteDal, EfNoteDal>();
     }
 }

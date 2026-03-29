@@ -25,4 +25,8 @@ public class BlogContexts :  IdentityDbContext<AppUser, AppRole, int>
     public DbSet<Images> Images { get; set; }
     public DbSet<Map> Maps { get; set; }
     public DbSet<Category> Categories { get; set; }
+    
+    public DbSet<Note> Notes { get; set; }
+    public DbSet<NoteBlock> NoteBlocks { get; set; }
+    public DbSet<NoteTag> NoteTags { get; set; }
 }

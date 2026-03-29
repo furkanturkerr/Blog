@@ -1,0 +1,1225 @@
+@model MyBlog.Models.NoteEditorViewModel
+@using System.Text.Json
+@using System.Linq
+
+@{
+Layout = null;
+
+var noteList = new List<object>();
+
+if (Model?.Notes != null)
+{
+foreach (var n in Model.Notes)
+{
+var tagList = new List<string>();
+
+if (n.NoteTags != null)
+{
+foreach (var tag in n.NoteTags)
+{
+tagList.Add(tag.TagName);
+}
+}
+
+var blockList = new List<object>();
+
+if (n.NoteBlocks != null)
+{
+foreach (var b in n.NoteBlocks.OrderBy(x => x.OrderIndex))
+{
+blockList.Add(new
+{
+type = b.Type,
+content = b.Content,
+lang = b.Lang
+});
+}
+}
+
+noteList.Add(new
+{
+id = n.NoteId,
+title = n.Title,
+category = n.Category,
+date = n.CreatedDate.ToString("yyyy-MM-dd"),
+tags = tagList,
+blocks = blockList
+});
+}
+}
+
+var notesJson = JsonSerializer.Serialize(noteList);
+}
+
+<style>
+    * { box-sizing: border-box; }
+
+    :root {
+        --bg: #0d0f1a;
+        --bg2: #13152a;
+        --bg3: #1a1d35;
+        --bg4: #101325;
+        --border: #2a2d4a;
+        --border2: #3a3d60;
+        --text: #cdd6f4;
+        --text2: #a0aabf;
+        --text3: #6272a4;
+        --blue: #89b4fa;
+        --danger: #ff6b81;
+        --success: #7ee787;
+        --code-bg: #0a0c18;
+    }
+
+    body {
+        background: var(--bg);
+    }
+
+    .notes-page {
+        width: 100%;
+        min-height: calc(100vh - 40px);
+        background: var(--bg);
+        color: var(--text);
+        border-radius: 18px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topbar {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        background: linear-gradient(to bottom, rgba(19,21,42,.98), rgba(14,16,29,.98));
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(10px);
+    }
+
+    .logo {
+        font-family: monospace;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--blue);
+        white-space: nowrap;
+    }
+
+    .search-wrap {
+        flex: 1;
+        position: relative;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text3);
+        font-size: 13px;
+    }
+
+    .search-input {
+        width: 100%;
+        height: 42px;
+        padding: 0 14px 0 32px;
+        background: var(--bg3);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        color: var(--text);
+        outline: none;
+        font-size: 14px;
+    }
+
+    .search-input:focus {
+        border-color: var(--blue);
+    }
+
+    .btn-primary {
+        height: 42px;
+        padding: 0 18px;
+        border: none;
+        border-radius: 10px;
+        background: var(--blue);
+        color: #0d0f1a;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        transition: .15s ease;
+        white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+        opacity: .92;
+    }
+
+    .main {
+        display: flex;
+        flex: 1;
+        min-height: 0;
+    }
+
+    .sidebar {
+        width: 280px;
+        background: linear-gradient(to bottom, var(--bg2), #101223);
+        border-right: 1px solid var(--border);
+        overflow-y: auto;
+        flex-shrink: 0;
+    }
+
+    .sidebar-empty {
+        padding: 30px 18px;
+        color: var(--text3);
+        font-size: 13px;
+    }
+
+    .cat-hdr {
+        padding: 16px 16px 6px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: .14em;
+        color: var(--text3);
+        text-transform: uppercase;
+    }
+
+    .nitem {
+        padding: 12px 16px;
+        border-left: 2px solid transparent;
+        cursor: pointer;
+        transition: .15s ease;
+    }
+
+    .nitem:hover {
+        background: rgba(137,180,250,.06);
+    }
+
+    .nitem.active {
+        background: rgba(137,180,250,.08);
+        border-left-color: var(--blue);
+    }
+
+    .ni-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1.4;
+        margin-bottom: 4px;
+    }
+
+    .ni-date {
+        font-size: 11px;
+        color: var(--text3);
+        margin-bottom: 6px;
+    }
+
+    .ni-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 10px;
+        padding: 3px 8px;
+        border-radius: 999px;
+        background: rgba(137,180,250,.14);
+        border: 1px solid rgba(137,180,250,.22);
+        color: var(--blue);
+    }
+
+    .editor {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        background: linear-gradient(to bottom, #090c18, #050814);
+    }
+
+    .empty-editor {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text3);
+        font-size: 14px;
+    }
+
+    .editor-inner {
+        display: none;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+    }
+
+    .editor-header {
+        padding: 20px 28px 14px;
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(to bottom, rgba(19,21,42,.94), rgba(13,15,26,.94));
+        position: sticky;
+        top: 67px;
+        z-index: 30;
+        backdrop-filter: blur(10px);
+    }
+
+    .title-input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--text);
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .note-date {
+        color: var(--text3);
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+    }
+
+    .tag-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(137,180,250,.22);
+        background: rgba(137,180,250,.14);
+        color: var(--blue);
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+    .tag-input {
+        min-width: 120px;
+        height: 34px;
+        padding: 0 10px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--bg3);
+        color: var(--text);
+        outline: none;
+        font-size: 12px;
+    }
+
+    .tag-input:focus {
+        border-color: var(--blue);
+    }
+
+    .header-actions {
+        margin-left: auto;
+        display: flex;
+        gap: 8px;
+    }
+
+    .btn-ghost {
+        height: 34px;
+        padding: 0 12px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: transparent;
+        color: var(--text2);
+        cursor: pointer;
+        font-size: 12px;
+        transition: .15s ease;
+    }
+
+    .btn-ghost:hover {
+        border-color: var(--blue);
+        color: var(--text);
+    }
+
+    .btn-danger:hover {
+        border-color: var(--danger);
+        color: #fff;
+    }
+
+    .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+        padding: 10px 28px;
+        border-bottom: 1px solid var(--border);
+        background: rgba(19,21,42,.92);
+        position: sticky;
+        top: 184px;
+        z-index: 25;
+        backdrop-filter: blur(10px);
+    }
+
+    .tool-btn {
+        height: 34px;
+        padding: 0 12px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background: transparent;
+        color: var(--text2);
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 700;
+        transition: .15s ease;
+    }
+
+    .tool-btn:hover {
+        background: var(--bg3);
+        border-color: var(--border);
+        color: var(--text);
+    }
+
+    .tool-sep {
+        width: 1px;
+        height: 18px;
+        background: var(--border);
+        margin: 0 2px;
+    }
+
+    .editor-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 26px 28px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .block {
+        position: relative;
+        padding: 8px 14px 8px 16px;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        transition: .15s ease;
+    }
+
+    .block:hover {
+        border-color: var(--border);
+        background: rgba(255,255,255,.01);
+    }
+
+    .block-delete {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        opacity: 0;
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: var(--bg2);
+        color: var(--text3);
+        cursor: pointer;
+        transition: .15s ease;
+    }
+
+    .block:hover .block-delete {
+        opacity: 1;
+    }
+
+    .block-delete:hover {
+        color: #fff;
+        border-color: var(--danger);
+    }
+
+    .text-block textarea,
+    .h1-block input,
+    .h2-block input,
+    .h3-block input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--text);
+    }
+
+    .text-block textarea {
+        min-height: 42px;
+        resize: vertical;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .h1-block input {
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    .h2-block input {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+
+    .h3-block input {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--text2);
+    }
+
+    .code-block {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        background: var(--code-bg);
+    }
+
+    .code-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--border);
+        background: #090d1a;
+    }
+
+    .lang-select {
+        background: transparent;
+        color: var(--text2);
+        border: none;
+        outline: none;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .code-copy {
+        height: 30px;
+        padding: 0 10px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: var(--bg3);
+        color: var(--text2);
+        cursor: pointer;
+        font-size: 11px;
+    }
+
+    .code-copy:hover {
+        border-color: var(--blue);
+        color: var(--text);
+    }
+
+    .code-textarea {
+        width: 100%;
+        min-height: 180px;
+        resize: vertical;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #d7ddf7;
+        font-size: 14px;
+        line-height: 1.8;
+        font-family: "Cascadia Code", "Fira Code", monospace;
+        padding: 16px;
+    }
+
+    .category-combobox {
+        position: relative;
+        min-width: 180px;
+    }
+
+    .category-trigger {
+        height: 36px;
+        min-width: 180px;
+        padding: 0 12px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: var(--bg3);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .category-trigger:hover {
+        border-color: var(--blue);
+    }
+
+    .category-arrow {
+        color: var(--text3);
+    }
+
+    .category-dropdown {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        width: 260px;
+        background: #12162a;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0,0,0,.45);
+        display: none;
+        z-index: 70;
+        overflow: hidden;
+    }
+
+    .category-dropdown.open {
+        display: block;
+    }
+
+    .category-search {
+        width: 100%;
+        height: 42px;
+        border: none;
+        outline: none;
+        padding: 0 12px;
+        background: #0f1326;
+        color: var(--text);
+        border-bottom: 1px solid var(--border);
+        font-size: 12px;
+    }
+
+    .category-options {
+        max-height: 220px;
+        overflow-y: auto;
+        padding: 6px;
+    }
+
+    .category-option {
+        width: 100%;
+        min-height: 36px;
+        padding: 8px 10px;
+        border-radius: 8px;
+        color: var(--text);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .category-option:hover {
+        background: rgba(137,180,250,.08);
+    }
+
+    .category-option.add-new {
+        color: var(--blue);
+        border: 1px dashed rgba(137,180,250,.25);
+    }
+
+    .status-badge {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 100;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        display: none;
+        box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .status-badge.show {
+        display: block;
+    }
+
+    .status-success {
+        background: rgba(126,231,135,.15);
+        border: 1px solid rgba(126,231,135,.25);
+        color: var(--success);
+    }
+
+    .status-error {
+        background: rgba(255,107,129,.15);
+        border: 1px solid rgba(255,107,129,.25);
+        color: #ff96a8;
+    }
+
+    @@media (max-width: 1100px) {
+        .sidebar {
+            width: 240px;
+        }
+
+        .title-input {
+            font-size: 24px;
+        }
+    }
+
+    @@media (max-width: 900px) {
+        .main {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 100%;
+            max-height: 220px;
+            border-right: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .editor-header,
+        .toolbar {
+            top: 0;
+        }
+    }
+
+    .btn-back {
+        height: 42px;
+        padding: 0 14px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text2);
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: .15s ease;
+    }
+
+    .btn-back:hover {
+        border-color: var(--blue);
+        color: var(--text);
+        background: rgba(137,180,250,.08);
+    }
+</style>
+
+<div class="notes-page">
+    <div class="topbar">
+        <a href="/Admin" class="btn-back">← Admin Panel</a>
+        <div class="logo">// notlarım</div>
+
+        <div class="search-wrap">
+            <span class="search-icon">⌕</span>
+            <input id="gSearch" class="search-input" placeholder="Başlık, içerik veya etiket ara..." oninput="filterNotes()"/>
+        </div>
+
+        <button class="btn-primary" type="button" onclick="newNote()">+ Yeni Not</button>
+    </div>
+
+    <div class="main">
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <section class="editor">
+            <div class="empty-editor" id="noNote">← Bir not seç veya yeni not oluştur</div>
+
+            <div class="editor-inner" id="edInner">
+                <div class="editor-header">
+                    <input id="edTitle" class="title-input" placeholder="Başlık..." oninput="saveLocalState()" />
+
+                    <div class="meta-row">
+                        <div class="note-date" id="edDate"></div>
+
+                        <div class="category-combobox" id="categoryBox">
+                            <button type="button" class="category-trigger" id="categoryTrigger" onclick="toggleCategoryDropdown()">
+                                <span id="selectedCategoryText">Kategori Seç</span>
+                                <span class="category-arrow">⌄</span>
+                            </button>
+
+                            <div class="category-dropdown" id="categoryDropdown">
+                                <input type="text"
+                                       id="categorySearch"
+                                       class="category-search"
+                                       placeholder="Kategori ara veya yeni ekle..."
+                                       oninput="renderCategoryOptions(this.value)"
+                                       onkeydown="handleCategoryKey(event)" />
+
+                                <div class="category-options" id="categoryOptions"></div>
+                            </div>
+                        </div>
+
+                        <div class="tag-list" id="edTags"></div>
+                        <input class="tag-input" id="tagInp" placeholder="+ etiket" onkeydown="handleTag(event)" />
+
+                        <div class="header-actions">
+                            <button type="button" class="btn-ghost btn-danger" onclick="deleteNote()">sil</button>
+                            <button type="button" class="btn-ghost" onclick="saveNoteToServer()">kaydet</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolbar">
+                    <button type="button" class="tool-btn" onclick="addBlock('h1')">H1</button>
+                    <button type="button" class="tool-btn" onclick="addBlock('h2')">H2</button>
+                    <button type="button" class="tool-btn" onclick="addBlock('h3')">H3</button>
+                    <div class="tool-sep"></div>
+                    <button type="button" class="tool-btn" onclick="addBlock('text')">¶ Metin</button>
+                    <button type="button" class="tool-btn" onclick="addBlock('code')">{ } Kod</button>
+                </div>
+
+                <div class="editor-body" id="edBody"></div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<form id="deleteForm" method="post" action="/Notes/Delete">
+    @Html.AntiForgeryToken()
+    <input type="hidden" id="deleteNoteId" name="id" />
+</form>
+
+<div id="statusBadge" class="status-badge"></div>
+
+<script>
+    let notes = @Html.Raw(notesJson);
+    let currentId = null;
+    let categoryDropdownOpen = false;
+
+    function getAllCategories() {
+        const raw = notes
+            .map(x => (x.category || '').trim())
+            .filter(x => x.length > 0);
+
+        const distinct = [...new Set(raw)];
+        distinct.sort((a, b) => a.localeCompare(b, 'tr'));
+        return distinct;
+    }
+
+    function showStatus(message, isSuccess = true) {
+        const badge = document.getElementById('statusBadge');
+        badge.textContent = message;
+        badge.className = 'status-badge show ' + (isSuccess ? 'status-success' : 'status-error');
+
+        setTimeout(() => {
+            badge.className = 'status-badge';
+        }, 2200);
+    }
+
+    function renderSidebar(q = '') {
+        const sb = document.getElementById('sidebar');
+        sb.innerHTML = '';
+
+        const query = (q || '').toLowerCase().trim();
+
+        const list = query
+            ? notes.filter(n =>
+                (n.title || '').toLowerCase().includes(query) ||
+                (n.category || '').toLowerCase().includes(query) ||
+                (n.tags || []).some(t => (t || '').toLowerCase().includes(query)) ||
+                (n.blocks || []).some(b => ((b.content || '').toLowerCase().includes(query))))
+            : notes;
+
+        if (!list.length) {
+            sb.innerHTML = `<div class="sidebar-empty">Sonuç bulunamadı.</div>`;
+            return;
+        }
+
+        const groups = {};
+        list.forEach(n => {
+            const cat = n.category || 'Genel';
+            if (!groups[cat]) groups[cat] = [];
+            groups[cat].push(n);
+        });
+
+        Object.keys(groups)
+            .sort((a, b) => a.localeCompare(b, 'tr'))
+            .forEach(cat => {
+                const hdr = document.createElement('div');
+                hdr.className = 'cat-hdr';
+                hdr.textContent = cat;
+                sb.appendChild(hdr);
+
+                groups[cat].forEach(n => {
+                    const el = document.createElement('div');
+                    el.className = 'nitem' + (n.id === currentId ? ' active' : '');
+                    el.innerHTML = `
+                        <div class="ni-title">${escapeHtml(n.title || 'Yeni Not')}</div>
+                        <div class="ni-date">${escapeHtml(n.date || '')}</div>
+                        <div class="ni-tags">
+                            ${(n.tags || []).slice(0, 3).map(t => `<span class="pill">${escapeHtml(t)}</span>`).join('')}
+                        </div>
+                    `;
+                    el.onclick = () => openNote(n.id);
+                    sb.appendChild(el);
+                });
+            });
+    }
+
+    function filterNotes() {
+        renderSidebar(document.getElementById('gSearch').value);
+    }
+
+    function openNote(id) {
+        currentId = id;
+        const note = notes.find(x => x.id === id);
+        if (!note) return;
+
+        document.getElementById('noNote').style.display = 'none';
+        document.getElementById('edInner').style.display = 'flex';
+
+        document.getElementById('edTitle').value = note.title || '';
+        document.getElementById('edDate').textContent = note.date || '';
+        setSelectedCategory(note.category || 'Genel');
+
+        renderTags();
+        renderBlocks();
+        renderSidebar(document.getElementById('gSearch').value);
+    }
+
+    function newNote() {
+        const tempId = -Date.now();
+        const today = new Date().toISOString().split('T')[0];
+
+        const newItem = {
+            id: tempId,
+            title: 'Yeni Not',
+            category: 'Genel',
+            date: today,
+            tags: [],
+            blocks: [
+                { type: 'h1', content: '' },
+                { type: 'text', content: '' }
+            ]
+        };
+
+        notes.unshift(newItem);
+        openNote(tempId);
+        renderSidebar(document.getElementById('gSearch').value);
+    }
+
+    function saveLocalState() {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        note.title = document.getElementById('edTitle').value || 'Yeni Not';
+        renderSidebar(document.getElementById('gSearch').value);
+    }
+
+    function renderTags() {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        const container = document.getElementById('edTags');
+        container.innerHTML = '';
+
+        (note.tags || []).forEach(tag => {
+            const span = document.createElement('span');
+            span.className = 'tag-item';
+            span.innerHTML = `${escapeHtml(tag)} <span>✕</span>`;
+            span.onclick = () => removeTag(tag);
+            container.appendChild(span);
+        });
+    }
+
+    function handleTag(e) {
+        if (e.key === 'Enter' || e.key === ',') {
+            e.preventDefault();
+
+            const value = e.target.value.trim().replace(',', '');
+            if (!value) return;
+
+            const note = notes.find(x => x.id === currentId);
+            if (!note) return;
+
+            note.tags = note.tags || [];
+
+            if (!note.tags.includes(value)) {
+                note.tags.push(value);
+            }
+
+            e.target.value = '';
+            renderTags();
+            renderSidebar(document.getElementById('gSearch').value);
+        }
+    }
+
+    function removeTag(tag) {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        note.tags = (note.tags || []).filter(x => x !== tag);
+        renderTags();
+        renderSidebar(document.getElementById('gSearch').value);
+    }
+
+    function setSelectedCategory(category) {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        note.category = category || 'Genel';
+        document.getElementById('selectedCategoryText').textContent = note.category;
+        renderSidebar(document.getElementById('gSearch').value);
+    }
+
+    function toggleCategoryDropdown() {
+        categoryDropdownOpen = !categoryDropdownOpen;
+        const dd = document.getElementById('categoryDropdown');
+
+        if (categoryDropdownOpen) {
+            dd.classList.add('open');
+            document.getElementById('categorySearch').value = '';
+            renderCategoryOptions('');
+            setTimeout(() => document.getElementById('categorySearch').focus(), 30);
+        } else {
+            dd.classList.remove('open');
+        }
+    }
+
+    function closeCategoryDropdown() {
+        categoryDropdownOpen = false;
+        document.getElementById('categoryDropdown').classList.remove('open');
+    }
+
+    function renderCategoryOptions(search = '') {
+        const container = document.getElementById('categoryOptions');
+        const keyword = (search || '').trim().toLowerCase();
+        const categories = getAllCategories();
+
+        const filtered = categories.filter(x => x.toLowerCase().includes(keyword));
+
+        container.innerHTML = '';
+
+        filtered.forEach(cat => {
+            const item = document.createElement('div');
+            item.className = 'category-option';
+            item.innerHTML = `<span>${escapeHtml(cat)}</span>`;
+            item.onclick = () => {
+                setSelectedCategory(cat);
+                closeCategoryDropdown();
+            };
+            container.appendChild(item);
+        });
+
+        if (search.trim().length > 0 && !categories.some(x => x.toLowerCase() === search.trim().toLowerCase())) {
+            const addNew = document.createElement('div');
+            addNew.className = 'category-option add-new';
+            addNew.innerHTML = `<span>+ "${escapeHtml(search.trim())}" kategorisini ekle</span>`;
+            addNew.onclick = () => {
+                setSelectedCategory(search.trim());
+                closeCategoryDropdown();
+            };
+            container.appendChild(addNew);
+        }
+
+        if (!container.innerHTML.trim()) {
+            container.innerHTML = `<div class="category-option">Sonuç yok</div>`;
+        }
+    }
+
+    function handleCategoryKey(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const value = e.target.value.trim();
+            if (!value) return;
+            setSelectedCategory(value);
+            closeCategoryDropdown();
+        }
+
+        if (e.key === 'Escape') {
+            closeCategoryDropdown();
+        }
+    }
+
+    function addBlock(type) {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        note.blocks = note.blocks || [];
+        note.blocks.push({
+            type: type,
+            content: '',
+            lang: type === 'code' ? 'csharp' : null
+        });
+
+        renderBlocks();
+    }
+
+    function renderBlocks() {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        const body = document.getElementById('edBody');
+        body.innerHTML = '';
+
+        (note.blocks || []).forEach((block, index) => {
+            const wrap = document.createElement('div');
+            wrap.className = 'block';
+
+            const del = document.createElement('button');
+            del.type = 'button';
+            del.className = 'block-delete';
+            del.textContent = '✕';
+            del.onclick = () => {
+                note.blocks.splice(index, 1);
+                renderBlocks();
+            };
+
+            wrap.appendChild(del);
+
+            if (block.type === 'text') {
+                const d = document.createElement('div');
+                d.className = 'text-block';
+
+                const ta = document.createElement('textarea');
+                ta.placeholder = 'Metin yaz...';
+                ta.value = block.content || '';
+                ta.oninput = () => {
+                    block.content = ta.value;
+                };
+
+                d.appendChild(ta);
+                wrap.appendChild(d);
+            }
+            else if (block.type === 'h1' || block.type === 'h2' || block.type === 'h3') {
+                const d = document.createElement('div');
+                d.className = block.type + '-block';
+
+                const input = document.createElement('input');
+                input.value = block.content || '';
+                input.placeholder = block.type.toUpperCase() + ' başlık';
+                input.oninput = () => {
+                    block.content = input.value;
+                };
+
+                d.appendChild(input);
+                wrap.appendChild(d);
+            }
+            else if (block.type === 'code') {
+                const codeWrap = document.createElement('div');
+                codeWrap.className = 'code-block';
+
+                const top = document.createElement('div');
+                top.className = 'code-top';
+
+                const lang = document.createElement('select');
+                lang.className = 'lang-select';
+
+                ['csharp', 'sql', 'bash', 'json', 'javascript', 'html', 'css'].forEach(l => {
+                    const opt = document.createElement('option');
+                    opt.value = l;
+                    opt.textContent = l;
+                    if ((block.lang || 'csharp') === l) opt.selected = true;
+                    lang.appendChild(opt);
+                });
+
+                lang.onchange = () => {
+                    block.lang = lang.value;
+                };
+
+                const copy = document.createElement('button');
+                copy.type = 'button';
+                copy.className = 'code-copy';
+                copy.textContent = 'kopyala';
+                copy.onclick = async () => {
+                    await navigator.clipboard.writeText(block.content || '');
+                    showStatus('Kod kopyalandı');
+                };
+
+                top.appendChild(lang);
+                top.appendChild(copy);
+
+                const ta = document.createElement('textarea');
+                ta.className = 'code-textarea';
+                ta.value = block.content || '';
+                ta.placeholder = 'Kod yaz...';
+                ta.oninput = () => {
+                    block.content = ta.value;
+                };
+
+                codeWrap.appendChild(top);
+                codeWrap.appendChild(ta);
+                wrap.appendChild(codeWrap);
+            }
+
+            body.appendChild(wrap);
+        });
+    }
+
+    async function saveNoteToServer() {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        saveLocalState();
+
+        const payload = {
+            noteId: note.id > 0 ? note.id : null,
+            title: note.title,
+            category: note.category || 'Genel',
+            tags: note.tags || [],
+            blocks: (note.blocks || []).map((b, i) => ({
+                type: b.type,
+                content: b.content || '',
+                lang: b.lang,
+                orderIndex: i
+            }))
+        };
+
+        try {
+            const response = await fetch('/Notes/Save', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                if (note.id < 0 && result.noteId) {
+                    note.id = result.noteId;
+                }
+
+                note.date = new Date().toISOString().split('T')[0];
+                document.getElementById('edDate').textContent = note.date;
+                renderSidebar(document.getElementById('gSearch').value);
+                showStatus('Not kaydedildi', true);
+            } else {
+                showStatus(result.message || 'Kaydetme sırasında hata oluştu', false);
+            }
+        }
+        catch {
+            showStatus('Sunucuya ulaşılamadı', false);
+        }
+    }
+
+    function deleteNote() {
+        const note = notes.find(x => x.id === currentId);
+        if (!note) return;
+
+        if (!confirm('Bu not silinsin mi?')) return;
+
+        if (note.id < 0) {
+            notes = notes.filter(x => x.id !== note.id);
+            currentId = null;
+            document.getElementById('edInner').style.display = 'none';
+            document.getElementById('noNote').style.display = 'flex';
+            renderSidebar(document.getElementById('gSearch').value);
+            return;
+        }
+
+        document.getElementById('deleteNoteId').value = note.id;
+        document.getElementById('deleteForm').submit();
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text ?? '';
+        return div.innerHTML;
+    }
+
+    document.addEventListener('click', function (e) {
+        const box = document.getElementById('categoryBox');
+        if (box && !box.contains(e.target)) {
+            closeCategoryDropdown();
+        }
+    });
+
+    renderSidebar();
+
+    if (notes.length > 0) {
+        openNote(notes[0].id);
+    }
+</script>

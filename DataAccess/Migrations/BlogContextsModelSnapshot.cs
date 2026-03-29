@@ -411,6 +411,90 @@ namespace Data_Access_Layer.Migrations
                     b.ToTable("NavbarLefts");
                 });
 
+            modelBuilder.Entity("Entities.Concrate.Note", b =>
+                {
+                    b.Property<int>("NoteId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NoteId"));
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("NoteId");
+
+                    b.ToTable("Notes");
+                });
+
+            modelBuilder.Entity("Entities.Concrate.NoteBlock", b =>
+                {
+                    b.Property<int>("NoteBlockId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NoteBlockId"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Lang")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NoteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderIndex")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NoteBlockId");
+
+                    b.HasIndex("NoteId");
+
+                    b.ToTable("NoteBlocks");
+                });
+
+            modelBuilder.Entity("Entities.Concrate.NoteTag", b =>
+                {
+                    b.Property<int>("NoteTagId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NoteTagId"));
+
+                    b.Property<int>("NoteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TagName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NoteTagId");
+
+                    b.HasIndex("NoteId");
+
+                    b.ToTable("NoteTags");
+                });
+
             modelBuilder.Entity("Entities.Concrate.Portfolio", b =>
                 {
                     b.Property<int>("PortfolioId")
@@ -632,6 +716,28 @@ namespace Data_Access_Layer.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("Entities.Concrate.NoteBlock", b =>
+                {
+                    b.HasOne("Entities.Concrate.Note", "Note")
+                        .WithMany("NoteBlocks")
+                        .HasForeignKey("NoteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Note");
+                });
+
+            modelBuilder.Entity("Entities.Concrate.NoteTag", b =>
+                {
+                    b.HasOne("Entities.Concrate.Note", "Note")
+                        .WithMany("NoteTags")
+                        .HasForeignKey("NoteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Note");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("Entities.Concrate.AppRole", null)
@@ -686,6 +792,13 @@ namespace Data_Access_Layer.Migrations
             modelBuilder.Entity("Entities.Concrate.Category", b =>
                 {
                     b.Navigation("Blogs");
+                });
+
+            modelBuilder.Entity("Entities.Concrate.Note", b =>
+                {
+                    b.Navigation("NoteBlocks");
+
+                    b.Navigation("NoteTags");
                 });
 #pragma warning restore 612, 618
         }

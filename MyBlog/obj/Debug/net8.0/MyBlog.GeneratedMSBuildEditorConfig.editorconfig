@@ -174,6 +174,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmF2YmFyTGVmdC9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Notes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm90ZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/furkanturker/RiderProjects/Blog/MyBlog/Views/Portfolio/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9ydGZvbGlvL0FkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

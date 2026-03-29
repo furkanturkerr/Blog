@@ -17,7 +17,7 @@ Extensions.ContainerDependencies(builder.Services);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<BlogContexts>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ServerConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LocalConnection")));
 
 builder.Host.UseSerilog();
 
